@@ -152,10 +152,10 @@ class DecisionTreeClassifier:
 
             left_data = self.target.loc[left]
             right_data = self.target.loc[right]
-            print(data)
-            if data.columns == 'Name':
-                print(left_data)
-                print(right_data)
+            # print(data)
+            # if data.columns == 'Name':
+            # print(left_data)
+            # print(right_data)
             subset_left_weight = len(left_data) / len(data)
             subset_right_weight = len(right_data) / len(data)
 
@@ -224,8 +224,11 @@ class DecisionTreeClassifier:
         entropy_child, partition_column, decision_criteria, match_index, values = self.calc_information_gain(node)
         #
         # print(values)
-        self.dtree.append(Node(Entropy=entropy_child[0], decision_criteria={partition_column: decision_criteria}, match_index=match_index[0], Values=values, samples=len(match_index[0])))
-        self.dtree.append(Node(Entropy=entropy_child[1], decision_criteria={}))
+        print(type(decision_criteria))
+        # if str(type(decision_criteria)) ==  '<class \'numpy.float64\'>':
+
+        self.dtree.append(Node(Entropy=entropy_child[0], decision_criteria={partition_column: decision_criteria}, match_index=match_index[0], Values=values[0], samples=len(match_index[0])))
+        # self.dtree.append(Node(Entropy=entropy_child[1], decision_criteria={}))
 
     def build(self):
         """decision tree를 구성하는 함수입니다."""
