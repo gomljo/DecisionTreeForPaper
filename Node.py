@@ -18,7 +18,7 @@ class Node:
 
     def __str__(self):
         s = ''
-        s += 'Entropy: {}, decision criteria: {}, match_index: {}'\
-            .format(self.entropy, self.dcs_criteria, self.match_index)
+        s += 'Entropy: {}, decision criteria: {}, values: {}'\
+            .format(self.entropy, self.dcs_criteria, self.classes)
 
         return s
