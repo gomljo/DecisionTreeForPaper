@@ -12,13 +12,16 @@ from Node import *
 # 3. make decision tree to Ensemble model
 
 
-class DecisionTreeClassifier:
+class DecisionTreeClassifier_OWN:
 
-    def __init__(self, DATA_PATH, outComeLabel, minimum_subset_size=4, max_depth=5):
+    def __init__(self, DATA_PATH = None, DATA = None,outComeLabel=None, minimum_subset_size=4, max_depth=5):
         """"""
         self.dtree = list()
+        if DATA_PATH is not None:
+            self.raw_data = pd.read_csv(DATA_PATH)
+        else:
+            self.raw_data = DATA
 
-        self.raw_data = pd.read_csv(DATA_PATH)
         self.min_subset_size = minimum_subset_size
         self.max_depth = max_depth
 
@@ -282,7 +285,7 @@ class DecisionTreeClassifier:
 
 if __name__ =='__main__':
 
-    dt= DecisionTreeClassifier('data/census.csv', 'Born')
+    dt= DecisionTreeClassifier_OWN('data/census.csv', 'Born')
     dt.build()
 
 
