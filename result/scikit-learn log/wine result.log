@@ -1,0 +1,22 @@
+|--- flavanoids <= 1.58
+|   |--- color_intensity <= 3.82
+|   |   |--- class: 1
+|   |--- color_intensity >  3.82
+|   |   |--- ash <= 2.06
+|   |   |   |--- class: 1
+|   |   |--- ash >  2.06
+|   |   |   |--- class: 2
+|--- flavanoids >  1.58
+|   |--- proline <= 724.50
+|   |   |--- alcohol <= 13.17
+|   |   |   |--- class: 1
+|   |   |--- alcohol >  13.17
+|   |   |   |--- hue <= 0.90
+|   |   |   |   |--- class: 0
+|   |   |   |--- hue >  0.90
+|   |   |   |   |--- class: 1
+|   |--- proline >  724.50
+|   |   |--- color_intensity <= 3.46
+|   |   |   |--- class: 1
+|   |   |--- color_intensity >  3.46
+|   |   |   |--- class: 0

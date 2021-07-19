@@ -1,0 +1,46 @@
+|--- worst perimeter <= 105.95
+|   |--- worst concave points <= 0.14
+|   |   |--- area error <= 48.98
+|   |   |   |--- worst texture <= 30.15
+|   |   |   |   |--- class: 1
+|   |   |   |--- worst texture >  30.15
+|   |   |   |   |--- worst area <= 775.95
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- worst area >  775.95
+|   |   |   |   |   |--- class: 0
+|   |   |--- area error >  48.98
+|   |   |   |--- worst compactness <= 0.08
+|   |   |   |   |--- class: 0
+|   |   |   |--- worst compactness >  0.08
+|   |   |   |   |--- class: 1
+|   |--- worst concave points >  0.14
+|   |   |--- worst texture <= 27.58
+|   |   |   |--- worst symmetry <= 0.36
+|   |   |   |   |--- class: 1
+|   |   |   |--- worst symmetry >  0.36
+|   |   |   |   |--- worst concavity <= 0.97
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- worst concavity >  0.97
+|   |   |   |   |   |--- class: 1
+|   |   |--- worst texture >  27.58
+|   |   |   |--- class: 0
+|--- worst perimeter >  105.95
+|   |--- worst perimeter <= 117.45
+|   |   |--- worst smoothness <= 0.14
+|   |   |   |--- worst texture <= 25.67
+|   |   |   |   |--- class: 1
+|   |   |   |--- worst texture >  25.67
+|   |   |   |   |--- worst area <= 871.80
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- worst area >  871.80
+|   |   |   |   |   |--- class: 0
+|   |   |--- worst smoothness >  0.14
+|   |   |   |--- mean texture <= 13.42
+|   |   |   |   |--- class: 1
+|   |   |   |--- mean texture >  13.42
+|   |   |   |   |--- class: 0
+|   |--- worst perimeter >  117.45
+|   |   |--- fractal dimension error <= 0.00
+|   |   |   |--- class: 1
+|   |   |--- fractal dimension error >  0.00
+|   |   |   |--- class: 0
