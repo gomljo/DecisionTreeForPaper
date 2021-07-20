@@ -11,10 +11,10 @@
 |   |   |--- alcohol <= 13.17
 |   |   |   |--- class: 1
 |   |   |--- alcohol >  13.17
-|   |   |   |--- hue <= 0.90
-|   |   |   |   |--- class: 0
-|   |   |   |--- hue >  0.90
+|   |   |   |--- color_intensity <= 4.08
 |   |   |   |   |--- class: 1
+|   |   |   |--- color_intensity >  4.08
+|   |   |   |   |--- class: 0
 |   |--- proline >  724.50
 |   |   |--- color_intensity <= 3.46
 |   |   |   |--- class: 1

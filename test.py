@@ -42,6 +42,10 @@ class test_result:
 test_Result = test_result()
 test_Result.compare()
 
+# a = np.array([50, 100])
+# print(np.argmax(a))
+
+
 # data3 =
 #
 #

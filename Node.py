@@ -1,6 +1,6 @@
 class Node:
 
-    def __init__(self, Entropy=None, decision_criteria=None, match_index=None, samples=None, Values=None):
+    def __init__(self, Entropy=None, decision_criteria=None, match_index=None, samples=None, Values=None, decision_criteria_type=None, attribute=None, most_target_value=None):
         """
         디시전 트리의 각 노드들의 자료구조입니다.
         각 노드들이 가지는 정보는 아래와 같습니다.
@@ -10,15 +10,24 @@ class Node:
         - self.pos : 분기시 조건에 부합하거나 조건보다 크거나 작은 열의 갯수
         - self.neg : 분기시 조건에 부합하지 않거나 조건보다 작거나 큰 열의 갯수
         """
+        # for training data
         self.entropy = Entropy
         self.dcs_criteria = decision_criteria
         self.match_index = match_index
         self.num_of_samples = samples
         self.classes = Values
 
+        # for prediction
+        self.dcs_criteria_type = decision_criteria_type
+        self.Attribute_name = attribute
+        self.target = most_target_value
+
     def __str__(self):
         s = ''
-        s += 'Entropy: {}, decision criteria: {}, values: {}'\
-            .format(self.entropy, self.dcs_criteria, self.classes)
-
+        if self.target is not None:
+            s += 'Entropy: {}, decision criteria: {}, values: {}, outcome: {}'\
+            .format(self.entropy, self.dcs_criteria, self.classes, self.target)
+        else:
+            s += 'Entropy: {}, decision criteria: {}, values: {}' \
+                .format(self.entropy, self.dcs_criteria, self.classes)
         return s
