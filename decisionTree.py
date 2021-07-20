@@ -253,19 +253,21 @@ class DecisionTreeClassifier_OWN:
 
         if (str(type(decision_criteria)) == '<class \'numpy.float64\'>') or (str(type(decision_criteria)) =='<class \'numpy.int64\'>'):
 
+            node.dcs_criteria_val = decision_criteria
             decision_criteria = partition_column + ' < ' + str(decision_criteria)
             node.dcs_criteria_type = 'numeric'
             node.Attribute_name = partition_column
 
-        else:
 
+        else:
+            node.dcs_criteria_val = decision_criteria
             decision_criteria = partition_column + ' = ' + decision_criteria
             node.dcs_criteria_type = 'categorical'
             node.Attribute_name = partition_column
 
+
         node.dcs_criteria = decision_criteria
         node.classes = (np.sum(values, axis=0))
-        # node.target = self.target_col_value[np.argmax(np.sum(values, axis=0))]
         for idx in match_index:
 
             if len(set(self.target.loc[idx][self.target_col])) != 1:
@@ -303,13 +305,39 @@ class DecisionTreeClassifier_OWN:
             level += 1
             iter += 1
 
-    def predict(self, test_x, test_y):
+    def predict(self,test_data):
         """구성한 decision tree에서 입력된 값이 어떤 클래스인지 알아보는 함수입니다."""
+        pred_y = list()
+        print(test_data)
+        for data_idx in range(len(test_data)):
+            index = 0
+            data = test_data.iloc[data_idx]
+            print(data)
+            while True:
 
+                if self.dtree[index].dcs_criteria is None:
+                    print('predict: {}'.format(self.dtree[index].target))
+                    pred_y.append(self.dtree[index].target)
+                    break
+                if self.dtree[index].dcs_criteria_type == 'numeric':
+                    print(self.dtree[index].Attribute_name)
+                    print(data[self.dtree[index].Attribute_name])
+                    print(self.dtree[index].dcs_criteria_val)
+                    if data[self.dtree[index].Attribute_name] < self.dtree[index].dcs_criteria_val:
+                        index = index * 2 + 1
+                    else:
+                        index = index * 2 + 2
 
+                else:
+                    if data[self.dtree[index].Attribute_name] == self.dtree[index].dcs_criteria_val:
+                        index = index * 2 + 1
+                    else:
+                        index = index * 2 + 2
+        return pred_y
 
 if __name__ =='__main__':
 
-    dt= DecisionTreeClassifier_OWN(DATA_PATH='data/census.csv', outComeLabel='Born')
+    dt = DecisionTreeClassifier_OWN(DATA_PATH='data/census.csv', outComeLabel='Born')
+
     dt.build()
 

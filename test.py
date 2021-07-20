@@ -25,18 +25,26 @@ class test_result:
         self.clf_own = None
 
     def compare(self):
+
         for dn in (self.data_names):
             d = self.data[dn].iloc[:, :-1]
             t = self.data[dn]['target']
+
             print(self.data[dn])
+
             self.clf_own = DecisionTreeClassifier_OWN(DATA=self.data[dn], outComeLabel='target')
             self.clf_own.build()
+            # y_pred = self.clf_own.predict()
+            # print(y_pred)
+
             self.clf_sklearn.fit(d, t)
-            result_sklearn = export_text(self.clf_sklearn, feature_names=list(self.data[dn].columns)[:-1])
-            with open('result/scikit-learn log/'+str(dn)+' result.log', 'w') as f:
-                f.write(result_sklearn)
-            export_graphviz(self.clf_sklearn, out_file='result/scikit-learn dot/'+str(dn)+' result.dot', feature_names=list(self.data[dn].columns)[:-1])
-            print(result_sklearn)
+
+            break
+            # result_sklearn = export_text(self.clf_sklearn, feature_names=list(self.data[dn].columns)[:-1])
+            # with open('result/scikit-learn log/'+str(dn)+' result.log', 'w') as f:
+            #     f.write(result_sklearn)
+            # export_graphviz(self.clf_sklearn, out_file='result/scikit-learn dot/'+str(dn)+' result.dot', feature_names=list(self.data[dn].columns)[:-1])
+            # print(result_sklearn)
 
 
 test_Result = test_result()
