@@ -1,0 +1,13 @@
+|--- color_intensity <= 3.46
+|   |--- class: 1
+|--- color_intensity >  3.46
+|   |--- flavanoids <= 1.57
+|   |   |--- class: 2
+|   |--- flavanoids >  1.57
+|   |   |--- proline <= 724.50
+|   |   |   |--- malic_acid <= 2.89
+|   |   |   |   |--- class: 1
+|   |   |   |--- malic_acid >  2.89
+|   |   |   |   |--- class: 0
+|   |   |--- proline >  724.50
+|   |   |   |--- class: 0

@@ -1,0 +1,37 @@
+|--- worst area <= 880.75
+|   |--- worst concave points <= 0.14
+|   |   |--- mean texture <= 21.43
+|   |   |   |--- area error <= 48.70
+|   |   |   |   |--- class: 1
+|   |   |   |--- area error >  48.70
+|   |   |   |   |--- class: 1
+|   |   |--- mean texture >  21.43
+|   |   |   |--- worst radius <= 14.43
+|   |   |   |   |--- class: 1
+|   |   |   |--- worst radius >  14.43
+|   |   |   |   |--- compactness error <= 0.01
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- compactness error >  0.01
+|   |   |   |   |   |--- class: 1
+|   |--- worst concave points >  0.14
+|   |   |--- worst texture <= 26.90
+|   |   |   |--- mean concave points <= 0.05
+|   |   |   |   |--- class: 1
+|   |   |   |--- mean concave points >  0.05
+|   |   |   |   |--- worst concave points <= 0.17
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- worst concave points >  0.17
+|   |   |   |   |   |--- class: 0
+|   |   |--- worst texture >  26.90
+|   |   |   |--- class: 0
+|--- worst area >  880.75
+|   |--- mean concavity <= 0.06
+|   |   |--- mean texture <= 19.54
+|   |   |   |--- worst texture <= 29.87
+|   |   |   |   |--- class: 1
+|   |   |   |--- worst texture >  29.87
+|   |   |   |   |--- class: 0
+|   |   |--- mean texture >  19.54
+|   |   |   |--- class: 0
+|   |--- mean concavity >  0.06
+|   |   |--- class: 0
