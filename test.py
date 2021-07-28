@@ -2,8 +2,8 @@ from sklearn.datasets import load_iris, load_diabetes, load_wine, load_breast_ca
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.tree import export_graphviz
 from sklearn.tree import export_text
-from DecisionTreeForPaper.decisionTree import *
-from DecisionTreeForPaper.dtree import *
+from decisionTree import *
+from dtree import *
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 
@@ -39,8 +39,7 @@ class test_result:
 
             self.clf_own = DecisionTreeClassifier_OWN(DATA=train_data, outComeLabel='target')
             self.clf_own.build()
-            # for idx, node in enumerate(self.clf_own.dtree):
-            #     print('Node {}\'s info: {}'.format(idx, node))
+            self.clf_own.traverse_tree(file_name='result/my log file/'+ dn +'_result.txt')
             self.clf_sklearn.fit(train_x, train_y)
             y_pred_own = self.clf_own.predict(test_x)
 

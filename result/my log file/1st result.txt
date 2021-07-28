@@ -1,0 +1,18 @@
+|--- Entropy: 0.5185697317883058, decision criteria: Age < 18.5, values: [ 5 38], outcome: Texas
+|   |--- Entropy: 0.3095434291503252, decision criteria: Age < 17.0, values: [ 2 34], outcome: Texas
+|   |   |--- Entropy: 0.0, values: [0, 33]
+|   |   |--- Entropy: 0.9182958340544896, decision criteria: Gender = female, values: [2 1], outcome: Germany
+|   |   |   |   |--- Entropy: 0.0, values: [0, 1]
+|   |   |   |   |--- Entropy: 0.0, values: [2, 0]
+|   |--- Entropy: 0.9852281360342515, decision criteria: Gender = female, values: [3 4], outcome: Texas
+|   |   |   |--- Entropy: 0.0, values: [3, 2]
+|   |   |   |--- Entropy: 0.9709505944546686, decision criteria: Name = Lucy, values: [3 2], outcome: Germany
+|   |   |   |   |--- Entropy: 0.0, values: [0, 1]
+|   |   |   |   |--- Entropy: 1.0, decision criteria: Marital Status = Married, values: [2 2], outcome: Germany
+|   |   |   |   |   |--- Entropy: 0.0, values: [1, 2]
+|   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: Name = Henrietta, values: [1 2], outcome: Texas
+|   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0]
+|   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: Age < 26.5, values: [1 1], outcome: Germany
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1]
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0]
+|--- Entropy: 0.0, values: [15, 0]

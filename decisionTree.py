@@ -1,6 +1,6 @@
-import pandas as pd
-import numpy as np
-from DecisionTreeForPaper.Node import *
+from Node import *
+from common import *
+
 
 # decision tree 구성 시에 고려해야할 것
 
@@ -47,6 +47,10 @@ class DecisionTreeClassifier_OWN:
         # data
         self.data = self.raw_data[self.raw_data.columns.difference([outComeLabel])]
         self.data_cols = list(self.data.columns)
+
+        # for cross validation set
+        self.fold_x = list()
+        self.fold_y = list()
 
     def calc_entropy(self, data):
         """이 함수는 엔트로피를 구하는 함수입니다."""
@@ -346,11 +350,70 @@ class DecisionTreeClassifier_OWN:
                         index = index * 2 + 2
         return pred_y
 
+    def traverse_tree(self, file_name=None, node_index=0):
+        eps = 0.1
+        if node_index == 0:
+            file = os.getcwd() + '\\' + file_name
+            f = open(file, 'w')
+            f.close()
+        else:
+            file = file_name
+        left_node_index = 2 * node_index + 1
+        right_node_index = 2 * node_index + 2
 
-if __name__ =='__main__':
+        if node_index != 0:
+            level = int(np.floor(np.log2(node_index-eps)))
+            if self.dtree[node_index].classes is not None:
+                contents = str('|   ' * level + '|--- {}'.format(self.dtree[node_index]))
+                print(contents)
+                f = open(file, 'a')
+                f.write(contents + '\n')
+                f.close()
+        if (left_node_index > len(self.dtree)) or (right_node_index > len(self.dtree)):
+            return 0
+        self.traverse_tree(node_index=left_node_index, file_name=file)
+        self.traverse_tree(node_index=right_node_index, file_name=file)
+        return 0
 
+    def make_cross_validation_dataset(self, k=5):
+
+        fold_x = list()
+        fold_y = list()
+        num_of_fold = 0
+
+        reminder = len(self.data) % k
+        data_index = list(self.data.index)
+
+        if reminder == 0:
+            num_of_fold = len(self.data) // k
+
+            for iters in range(k):
+                fold_index = random.sample(data_index, num_of_fold)
+                data_index = list(set(data_index) - set(fold_index))
+                fold_x.append(self.data.loc[fold_index])
+                fold_y.append(self.data.loc[fold_index])
+        else:
+            num_of_fold = int(np.floor(len(self.data) // k))
+
+            for iters in range(k):
+                fold_index = random.sample(data_index, num_of_fold)
+                if iters >= (k - reminder):
+                    fold_index = random.sample(data_index, num_of_fold+1)
+                print(len(fold_index))
+                data_index = list(set(data_index) - set(fold_index))
+                fold_x.append(self.data.loc[fold_index])
+                fold_y.append(self.data.loc[fold_index])
+
+        self.fold_x = fold_x
+        self.fold_y = fold_y
+
+        return fold_x, fold_y
+
+
+if __name__ == '__main__':
     dt = DecisionTreeClassifier_OWN(DATA_PATH='data/census.csv', outComeLabel='Born')
 
     dt.build()
-
+    # dt.traverse_tree(file_name='result\\my log file\\1st result.txt')
+    X, Y = dt.make_cross_validation_dataset()
 

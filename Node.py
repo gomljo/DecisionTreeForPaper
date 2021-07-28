@@ -26,10 +26,10 @@ class Node:
 
     def __str__(self):
         s = ''
-        if self.target is not None:
+        if self.dcs_criteria is not None:
             s += 'Entropy: {}, decision criteria: {}, values: {}, outcome: {}'\
             .format(self.entropy, self.dcs_criteria, self.classes, self.target)
         else:
-            s += 'Entropy: {}, decision criteria: {}, values: {}' \
-                .format(self.entropy, self.dcs_criteria, self.classes)
+            s += 'Entropy: {}, values: {}' \
+                .format(self.entropy, self.classes)
         return s
