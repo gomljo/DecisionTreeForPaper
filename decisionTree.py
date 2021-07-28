@@ -1,21 +1,23 @@
 import pandas as pd
 import numpy as np
-from DecisionTreeForPaper.Node import *
+import os
+from Node import *
+
 
 # decision tree 구성 시에 고려해야할 것
 
 # 1. tree building
 
-    #   1-1. calculate entropy and information gain
+#   1-1. calculate entropy and information gain
 
-        #   1-1-1. binary partition
-        #   1-1-2. multi partition
+#   1-1-1. binary partition
+#   1-1-2. multi partition
 
-    #   1-2. partition of continuous values
+#   1-2. partition of continuous values
 
-        #   1-2-1.
-        #   1-2-2.
-        #   1-2-3.
+#   1-2-1.
+#   1-2-2.
+#   1-2-3.
 
 # 2. pruning
 
@@ -24,7 +26,7 @@ from DecisionTreeForPaper.Node import *
 
 class DecisionTreeClassifier_OWN:
 
-    def __init__(self, DATA_PATH = None, DATA = None, outComeLabel=None, minimum_subset_size=1, max_depth=None):
+    def __init__(self, DATA_PATH=None, DATA=None, outComeLabel=None, minimum_subset_size=1, max_depth=None):
         """"""
         self.workQueue = list()
         self.dtree = list()
@@ -99,11 +101,13 @@ class DecisionTreeClassifier_OWN:
 
                     else:
 
-                        boundary_values.append((sorted_data.loc[sorted_data < sorted_data[idx[i]]].iloc[-1] + sorted_data.loc[sorted_data >= sorted_data[idx[i]]].iloc[0])/2)
+                        boundary_values.append((sorted_data.loc[sorted_data < sorted_data[idx[i]]].iloc[-1] +
+                                                sorted_data.loc[sorted_data >= sorted_data[idx[i]]].iloc[0]) / 2)
 
                 else:
 
-                    boundary_values.append((sorted_data[idx[i]] + sorted_data.loc[sorted_data > sorted_data[idx[i]]].iloc[0])/2)
+                    boundary_values.append(
+                        (sorted_data[idx[i]] + sorted_data.loc[sorted_data > sorted_data[idx[i]]].iloc[0]) / 2)
         boundary_values = sorted(list(set(boundary_values)))
 
         # calc entropy each discontinuity point
@@ -138,12 +142,11 @@ class DecisionTreeClassifier_OWN:
 
                     p_i = len(part_data.loc[part_data[self.target_col] == val]) / len(part_data)
 
-                    entropy_first[idx_ent] = -1 * np.log2(p_i+eps) * p_i
+                    entropy_first[idx_ent] = -1 * np.log2(p_i + eps) * p_i
                     continuous_entropy_temp += subset_weight[idx_i_g] * entropy_first[idx_ent]
                 values.append(value)
 
             if (parent_entropy - continuous_entropy_temp) > continuous_info_gain:
-
                 continuous_info_gain = parent_entropy - continuous_entropy_temp
                 partition_idx[0], partition_idx[1] = left, right
                 dcs_criteria = boundary_values[iter]
@@ -152,7 +155,6 @@ class DecisionTreeClassifier_OWN:
 
     def calc_non_continuous_value_information_gain(self, data, parent_entropy):
         """이 함수는 연속적인 값들을 가지는 열의 엔트로피를 구하기 위한 메소드입니다."""
-
 
         # 불연속적인 열들의 Information gain값을 저장하는 변수
         non_continuous_info_gain = 0
@@ -166,7 +168,7 @@ class DecisionTreeClassifier_OWN:
         #
         subset_weight = [[], []]
 
-        partition_idx = [[],[]]
+        partition_idx = [[], []]
 
         part_entropy = np.zeros(len(self.target_col_value))
 
@@ -213,7 +215,6 @@ class DecisionTreeClassifier_OWN:
                     non_continuous_info_gain_temp += part_entropy[idx_en] * subset_weight[idx_i_g]
                 values.append(temp)
             if (parent_entropy - non_continuous_info_gain_temp) > non_continuous_info_gain:
-
                 non_continuous_info_gain = parent_entropy - non_continuous_info_gain_temp
 
                 partition_idx_final = partition_idx
@@ -237,9 +238,11 @@ class DecisionTreeClassifier_OWN:
         for col in cols:
 
             if ('int' in str(type(self.data[col].iloc[0]))) or ('float' in str(type(self.data[col].iloc[0]))):
-                info_gain, partition_index, decision_criteria, values = self.calc_continuous_value_information_gain(data[col], parent_node.entropy)
+                info_gain, partition_index, decision_criteria, values = self.calc_continuous_value_information_gain(
+                    data[col], parent_node.entropy)
             else:
-                info_gain, partition_index, decision_criteria, values = self.calc_non_continuous_value_information_gain(data[col], parent_node.entropy)
+                info_gain, partition_index, decision_criteria, values = self.calc_non_continuous_value_information_gain(
+                    data[col], parent_node.entropy)
 
             if info_gain > info_gain_c:
                 info_gain_c = info_gain
@@ -264,7 +267,8 @@ class DecisionTreeClassifier_OWN:
         # calculate Information Gain
         partition_column, decision_criteria, match_index, values = self.calc_information_gain(node)
 
-        if (str(type(decision_criteria)) == '<class \'numpy.float64\'>') or (str(type(decision_criteria)) =='<class \'numpy.int64\'>'):
+        if (str(type(decision_criteria)) == '<class \'numpy.float64\'>') or (
+                str(type(decision_criteria)) == '<class \'numpy.int64\'>'):
 
             node.dcs_criteria_val = decision_criteria
             decision_criteria = partition_column + ' < ' + str(decision_criteria)
@@ -286,8 +290,12 @@ class DecisionTreeClassifier_OWN:
             if len(set(self.target.loc[idx][self.target_col])) != 1:
                 self.workQueue.append(idx)
 
-        self.dtree.append(Node(match_index=match_index[0], Entropy=self.calc_entropy(self.target.loc[match_index[0]][self.target_col]),Values=values[0], most_target_value=self.target_col_value[np.argmax(values[0])]))
-        self.dtree.append(Node(match_index=match_index[1], Entropy=self.calc_entropy(self.target.loc[match_index[1]][self.target_col]), Values=values[1],  most_target_value=self.target_col_value[np.argmax(values[1])]))
+        self.dtree.append(Node(match_index=match_index[0],
+                               Entropy=self.calc_entropy(self.target.loc[match_index[0]][self.target_col]),
+                               Values=values[0], most_target_value=self.target_col_value[np.argmax(values[0])]))
+        self.dtree.append(Node(match_index=match_index[1],
+                               Entropy=self.calc_entropy(self.target.loc[match_index[1]][self.target_col]),
+                               Values=values[1], most_target_value=self.target_col_value[np.argmax(values[1])]))
 
     def build(self, display_data=False):
         """decision tree를 구성하는 함수입니다."""
@@ -298,28 +306,22 @@ class DecisionTreeClassifier_OWN:
         iter = 0
         while len(self.workQueue) > 0:
 
-            print('tree level: {}'.format(level))
-            for idx in range(2**level-1, 2**(level+1)-1):
+            for idx in range(2 ** level - 1, 2 ** (level + 1) - 1):
 
                 if (self.dtree[idx].entropy == 0.0) or (self.dtree[idx].match_index is None):
                     if self.dtree[idx].classes is not None:
-                        print(idx)
                         self.dtree[idx].target = self.target_col_value[np.argmax(self.dtree[idx].classes)]
                     for _ in range(2):
                         self.dtree.append(Node())
                 else:
                     self.partition(self.dtree[idx])
-                if self.dtree[idx].match_index is not None:
-                    print('node {}: {}'.format(idx, self.dtree[idx]))
-                    if display_data:
-                        print(self.raw_data.loc[self.dtree[idx].match_index])
             if self.max_depth is not None:
                 if self.max_depth == iter:
                     break
             level += 1
             iter += 1
 
-    def predict(self,test_data):
+    def predict(self, test_data):
         """구성한 decision tree에서 입력된 값이 어떤 클래스인지 알아보는 함수입니다."""
         pred_y = list()
 
@@ -346,11 +348,32 @@ class DecisionTreeClassifier_OWN:
                         index = index * 2 + 2
         return pred_y
 
+    def traverse_tree(self, file_name=None, node_index=0):
+        if node_index == 0:
+            file = os.getcwd() + '\\' + file_name
+            f = open(file, 'w')
+            f.close()
+        else:
+            file = file_name
+        left_node_index = 2 * node_index + 1
+        right_node_index = 2 * node_index + 2
+        if self.dtree[node_index].match_index is not None:
+            if node_index != 0:
+                level = int(np.ceil(np.log2(node_index)))
+                contents = str('|   ' * level + '|--- {}'.format(self.dtree[node_index]))
+                print(contents)
+                f = open(file, 'a')
+                f.write(contents + '\n')
+                f.close()
+        if (left_node_index > len(self.dtree)) or (right_node_index > len(self.dtree)):
+            return 0
+        self.traverse_tree(node_index=left_node_index, file_name=file)
+        self.traverse_tree(node_index=right_node_index, file_name=file)
+        return 0
 
-if __name__ =='__main__':
 
+if __name__ == '__main__':
     dt = DecisionTreeClassifier_OWN(DATA_PATH='data/census.csv', outComeLabel='Born')
 
     dt.build()
-
-
+    dt.traverse_tree(file_name='result\\my log file\\1st result.txt')
