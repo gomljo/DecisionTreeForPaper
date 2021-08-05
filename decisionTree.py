@@ -1,4 +1,5 @@
 from Node import *
+from ccp import *
 from common import *
 
 
@@ -18,7 +19,14 @@ from common import *
         #   1-2-3.
 
 # 2. pruning
+    # 2-1. pre-pruning(Decision tree's parameter controll)
 
+        # 2-1-1. controll tree depth
+        # 2-1-2. controll node's minimum samples
+        # 2-1-3. controll number of samples when parent node do partition
+
+    # 2-2 post-pruning(build best tree with defensing overfitting)
+        # 2-2-1. cost complexity pruning
 
 # 3. make decision tree to Ensemble model
 
@@ -51,6 +59,9 @@ class DecisionTreeClassifier_OWN:
         # for cross validation set
         self.fold_x = list()
         self.fold_y = list()
+
+        # post pruning variables
+        self.ccp_alpha = list()
 
     def calc_entropy(self, data):
         """이 함수는 엔트로피를 구하는 함수입니다."""
@@ -409,11 +420,86 @@ class DecisionTreeClassifier_OWN:
 
         return fold_x, fold_y
 
+    def is_leaf(self, Node):
+        """This method need when calculate Cost Complexity Pruning."""
+        if (Node.dcs_criteria is None) and (Node.classes is not None):
+            # if node instances have not decision criteria and have values then leaf node
+            return True
+        else:
+            # but if variables of node instances are all None, then that node instances have no information
+            return False
 
+    def R_of_t(self, Node):
+
+        r_of_t = 1 - (np.max(Node.classes) / np.sum(Node.classes))
+        p_of_t = np.sum(Node.classes) / len(self.data)
+
+        return r_of_t * p_of_t
+
+    def R_of_T_t(self, Node):
+
+        sum_of_leaves_R_t = 0
+        for node in self.dtree[self.dtree.index(Node):]:
+
+            if self.is_leaf(node):
+                r_of_t = 1-(np.max(node.classes) / np.sum(node.classes))
+                p_of_t = np.sum(node.classes) / len(self.data)
+                sum_of_leaves_R_t += r_of_t * p_of_t
+        return sum_of_leaves_R_t
+
+    def leaf_count(self):
+
+        leaf_cnt = 0
+
+        for node in self.dtree:
+
+            if self.is_leaf(node):
+                leaf_cnt += 1
+
+        return leaf_cnt
+
+    def g_of_t(self, Node):
+        if (Node.classes is not None) and (Node.dcs_criteria is not None):
+            R_t = self.R_of_t(Node)
+            R_T_t = self.R_of_T_t(Node)
+            leaf_count = self.leaf_count()
+            alpha = (R_t - R_T_t) / (leaf_count - 1)
+
+            return alpha
+        else:
+            return np.inf
+
+    def prune(self, node_index=0):
+
+        # end_condition = (self.dtree[1] is not None) or (self.dtree[2] is not None)
+        end_condition = 1
+
+        while end_condition:
+            temp_alpha = list()
+            alpha_n = np.inf
+
+            for node_index, node in enumerate(self.dtree):
+
+                if self.g_of_t(self.dtree[node_index]) < alpha_n:
+
+                    temp_alpha.append(ccp(node_index, self.g_of_t(self.dtree[node_index])))
+
+            comp = np.inf
+
+            for iter, c in enumerate(temp_alpha):
+
+                if comp > c.alpha:
+
+                    print(c.alpha)
+                    print(self.dtree[c.node_idx])
+                    print()
+            break
 if __name__ == '__main__':
     dt = DecisionTreeClassifier_OWN(DATA_PATH='data/census.csv', outComeLabel='Born')
 
     dt.build()
+
     # dt.traverse_tree(file_name='result\\my log file\\1st result.txt')
-    X, Y = dt.make_cross_validation_dataset()
+    # X, Y = dt.make_cross_validation_dataset()
+    dt.prune()
 
