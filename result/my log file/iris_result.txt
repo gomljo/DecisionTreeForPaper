@@ -1,30 +1,8 @@
-|--- Entropy: 0.1654270339962668, decision criteria: petal length (cm) < 2.45, values: [40  1  0], outcome: 0
-|   |--- Entropy: 0.0, decision criteria: None, values: [40, 0, 0], outcome: 0
-|   |   |--- Entropy: None, decision criteria: None, values: None
-|   |   |   |--- Entropy: None, decision criteria: None, values: None
-|   |   |   |--- Entropy: None, decision criteria: None, values: None
-|   |   |--- Entropy: None, decision criteria: None, values: None
-|   |   |   |   |--- Entropy: None, decision criteria: None, values: None
-|   |   |   |   |--- Entropy: None, decision criteria: None, values: None
-|   |--- Entropy: 0.0, decision criteria: None, values: [0, 1, 0], outcome: 1
-|   |   |   |--- Entropy: None, decision criteria: None, values: None
-|   |   |   |   |--- Entropy: None, decision criteria: None, values: None
-|   |   |   |   |--- Entropy: None, decision criteria: None, values: None
-|   |   |   |--- Entropy: None, decision criteria: None, values: None
-|   |   |   |   |--- Entropy: None, decision criteria: None, values: None
-|   |   |   |   |--- Entropy: None, decision criteria: None, values: None
-|--- Entropy: 0.9987117514654893, decision criteria: petal width (cm) < 1.75, values: [ 0 34 37], outcome: 2
-|   |   |--- Entropy: 0.31599713297842463, decision criteria: petal length (cm) < 5.699999999999999, values: [ 0 33  2], outcome: 1
-|   |   |   |--- Entropy: 0.19143325481419343, decision criteria: petal length (cm) < 5.3, values: [ 0 33  1], outcome: 1
-|   |   |   |   |--- Entropy: 0.0, decision criteria: None, values: [0, 33, 0], outcome: 1
-|   |   |   |   |--- Entropy: 0.0, decision criteria: None, values: [0, 0, 1], outcome: 2
-|   |   |   |--- Entropy: 0.0, decision criteria: None, values: [0, 0, 1], outcome: 2
-|   |   |   |   |--- Entropy: None, decision criteria: None, values: None
-|   |   |   |   |--- Entropy: None, decision criteria: None, values: None
-|   |   |--- Entropy: 0.18312206830137276, decision criteria: petal length (cm) < 4.85, values: [ 0  1 35], outcome: 2
-|   |   |   |--- Entropy: 0.9182958340544896, decision criteria: sepal width (cm) < 3.1, values: [0 1 2], outcome: 2
-|   |   |   |   |--- Entropy: 0.0, decision criteria: None, values: [0, 0, 2], outcome: 2
-|   |   |   |   |--- Entropy: 0.0, decision criteria: None, values: [0, 1, 0], outcome: 1
-|   |   |   |--- Entropy: 0.0, decision criteria: None, values: [0, 0, 33], outcome: 2
-|   |   |   |   |--- Entropy: None, decision criteria: None, values: None
-|   |   |   |   |--- Entropy: None, decision criteria: None, values: None
+|--- Entropy: 0.1654270339962668, decision criteria: petal length (cm) < 2.45, values: [40  1  0]
+|   |--- Entropy: 0.0, values: [40, 0, 0],  outcome: 0
+|   |--- Entropy: 0.0, values: [0, 1, 0],  outcome: 1
+|--- Entropy: 0.9987117514654893, decision criteria: petal width (cm) < 1.75, values: [ 0 34 37]
+|   |   |--- Entropy: 0.31599713297842463, decision criteria: petal length (cm) < 5.699999999999999, values: [ 0 33  2]
+|   |   |   |--- Entropy: 0.19143325481419343, values: [ 0 33  1],  outcome: 1
+|   |   |   |--- Entropy: 0.0, values: [0, 0, 1],  outcome: 2
+|   |   |--- Entropy: 0.18312206830137276, values: [ 0  1 35],  outcome: 2

@@ -1,9 +1,8 @@
-from sklearn.datasets import load_iris, load_diabetes, load_wine, load_breast_cancer
+from sklearn.datasets import load_iris, load_wine, load_breast_cancer
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.tree import export_graphviz
 from sklearn.tree import export_text
 from decisionTree import *
-from dtree import *
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 
@@ -28,7 +27,7 @@ class test_result:
 
     def compare(self):
 
-        for dn in (self.data_names):
+        for dn in self.data_names:
             d = self.data[dn].iloc[:, :-1]
             t = self.data[dn]['target']
             train_x, test_x, train_y, test_y = train_test_split(d, t, random_state=41, shuffle=True)
@@ -39,9 +38,13 @@ class test_result:
 
             self.clf_own = DecisionTreeClassifier_OWN(DATA=train_data, outComeLabel='target')
             self.clf_own.build()
-            self.clf_own.traverse_tree(file_name='result/my log file/'+ dn +'_result.txt')
+            self.clf_own.prune()
+            # print(self.clf_own.best_tree)
+            # print(len(self.clf_own.best_tree))
+            self.clf_own.traverse_tree(file_name='result\\my log file\\' + dn + '_result.txt')
             self.clf_sklearn.fit(train_x, train_y)
             y_pred_own = self.clf_own.predict(test_x)
+            print(y_pred_own)
 
             print('self-made code\'s result')
             # print(y_pred_own)

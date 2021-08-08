@@ -23,13 +23,17 @@ class Node:
         self.dcs_criteria_type = decision_criteria_type
         self.Attribute_name = attribute
         self.target = most_target_value
+        # graphviz
+
+        self.cnt = None
+
 
     def __str__(self):
         s = ''
         if self.dcs_criteria is not None:
-            s += 'Entropy: {}, decision criteria: {}, values: {}, outcome: {}'\
-            .format(self.entropy, self.dcs_criteria, self.classes, self.target)
+            s += 'Entropy: {}, decision criteria: {}, values: {}'\
+            .format(self.entropy, self.dcs_criteria, self.classes)
         else:
-            s += 'Entropy: {}, values: {}' \
-                .format(self.entropy, self.classes)
+            s += 'Entropy: {}, values: {},  outcome: {}' \
+                .format(self.entropy, self.classes, self.target)
         return s
