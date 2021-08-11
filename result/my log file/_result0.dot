@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box] ;0[label="magnesium < 99.5\nentropy = 1.5726236638951638\nsamples = 11\nvalue = [4 4 3]\nclass = 0"] ;
+1[label="entropy = 0.7219280948873623\nsamples = 5\nvalue = [1 4 0]\nclass = 1"] ;
+0 -> 1 ;
+
+2[label="flavanoids < 3.0300000000000002\nentropy = 1.0\nsamples = 6\nvalue = [3 0 3]\nclass = 0"] ;
+0 -> 2 ;
+
+3[label="flavanoids < 2.14\nentropy = 0.8112781244591328\nsamples = 4\nvalue = [1 0 3]\nclass = 2"] ;
+2 -> 3 ;
+
+4[label="None\nentropy = 0.0\nsamples = 3\nvalue = [0, 0, 3]\nclass = 2"] ;
+3 -> 4 ;
+
+5[label="None\nentropy = 0.0\nsamples = 1\nvalue = [1, 0, 0]\nclass = 0"] ;
+3 -> 5 ;
+
+6[label="entropy = 0.0\nsamples = 2\nvalue = [2, 0, 0]\nclass = 0"] ;
+2 -> 6 ;
+
+}

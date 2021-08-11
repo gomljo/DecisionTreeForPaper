@@ -1,0 +1,4 @@
+|--- Entropy: 0.39124356362925566, decision criteria: radius error < 0.41695000000000004, values: [ 1 12]
+|   |--- Entropy: 0.0, values: [0, 12],  outcome: 1
+|   |--- Entropy: 0.0, values: [1, 0],  outcome: 0
+|--- Entropy: 0.0, values: [7, 0],  outcome: 0

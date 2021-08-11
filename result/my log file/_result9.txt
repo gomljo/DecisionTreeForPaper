@@ -1,0 +1,4 @@
+|--- Entropy: 0.3372900666170139, decision criteria: area error < 59.65, values: [ 1 15]
+|   |--- Entropy: 0.0, values: [0, 15],  outcome: 1
+|   |--- Entropy: 0.0, values: [1, 0],  outcome: 0
+|--- Entropy: 0.0, values: [5, 0],  outcome: 0

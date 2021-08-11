@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box] ;0[label="area error < 58.425\nentropy = 0.7918583525674836\nsamples = 21\nvalue = [ 5 16]\nclass = 1"] ;
+1[label="area error < 46.925\nentropy = 0.5032583347756457\nsamples = 18\nvalue = [ 2 16]\nclass = 1"] ;
+0 -> 1 ;
+
+2[label="mean symmetry < 0.21155\nentropy = 0.3227569588973982\nsamples = 17\nvalue = [ 1 16]\nclass = 1"] ;
+1 -> 2 ;
+
+3[label="None\nentropy = 0.0\nsamples = 16\nvalue = [0, 16]\nclass = 1"] ;
+2 -> 3 ;
+
+4[label="None\nentropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = 0"] ;
+2 -> 4 ;
+
+5[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = 0"] ;
+1 -> 5 ;
+
+6[label="entropy = 0.0\nsamples = 3\nvalue = [3, 0]\nclass = 0"] ;
+0 -> 6 ;
+
+}

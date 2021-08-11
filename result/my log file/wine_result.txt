@@ -1,10 +1,8 @@
-|--- Entropy: 0.14144054254182067, decision criteria: alcohol < 13.42, values: [ 1 49  0]
-|   |--- Entropy: 0.0, values: [0, 49, 0],  outcome: 1
-|   |--- Entropy: 0.0, values: [1, 0, 0],  outcome: 0
-|--- Entropy: 1.3034484397652215, decision criteria: flavanoids < 1.815, values: [46  7 30]
-|   |   |--- Entropy: 0.205592508185083, values: [ 0  1 30],  outcome: 2
-|   |   |--- Entropy: 0.5159469300074474, decision criteria: proline < 724.5, values: [46  6  0]
-|   |   |   |--- Entropy: 0.5916727785823275, decision criteria: magnesium < 100.5, values: [1 6 0]
-|   |   |   |   |--- Entropy: 0.0, values: [0, 6, 0],  outcome: 1
-|   |   |   |   |--- Entropy: 0.0, values: [1, 0, 0],  outcome: 0
-|   |   |   |--- Entropy: 0.0, values: [44, 0, 0],  outcome: 0
+|--- Entropy: 0.6152538910563409, decision criteria: color_intensity < 4.05, values: [ 0  7 39]
+|   |--- Entropy: 0.5435644431995964, values: [0 7 1],  outcome: 1
+|   |--- Entropy: 0.0, values: [0, 0, 38],  outcome: 2
+|--- Entropy: 0.9976161146077624, decision criteria: proline < 712.0, values: [46 41  0]
+|   |   |--- Entropy: 0.17203694935311378, values: [ 1 38  0],  outcome: 1
+|   |   |--- Entropy: 0.3372900666170139, decision criteria: alcohol < 13.02, values: [45  3  0]
+|   |   |   |--- Entropy: 0.8112781244591328, values: [1 3 0],  outcome: 1
+|   |   |   |--- Entropy: 0.0, values: [40, 0, 0],  outcome: 0

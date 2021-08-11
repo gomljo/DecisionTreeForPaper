@@ -1,0 +1,30 @@
+digraph Tree {
+node [shape=box] ;0[label="Age < 29.5\nentropy = 0.9293636260137187\nsamples = 58\nvalue = [20 38]\nclass = Texas"] ;
+1[label="Age < 18.5\nentropy = 0.5185697317883058\nsamples = 43\nvalue = [ 5 38]\nclass = Texas"] ;
+0 -> 1
+2[label="Age < 17.0\nentropy = 0.3095434291503252\nsamples = 36\nvalue = [ 2 34]\nclass = Texas"] ;
+1 -> 2
+3[label="entropy = 0.0\nsamples = 33\nvalue = [0, 33]\nclass = Texas"] ;
+2 -> 3
+4[label="Name = Olga\nentropy = 0.9182958340544896\nsamples = 3\nvalue = [2 1]\nclass = Germany"] ;
+2 -> 4
+5[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = Texas"] ;
+4 -> 5
+6[label="entropy = 0.0\nsamples = 2\nvalue = [2, 0]\nclass = Germany"] ;
+4 -> 6
+7[label="Name = Henrietta\nentropy = 0.9852281360342515\nsamples = 7\nvalue = [3 4]\nclass = Texas"] ;
+1 -> 7
+8[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = Germany"] ;
+7 -> 8
+9[label="Name = Henrietta\nentropy = 0.9182958340544896\nsamples = 6\nvalue = [2 4]\nclass = Texas"] ;
+7 -> 9
+10[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = Germany"] ;
+9 -> 10
+11[label="Age < 27.5\nentropy = 0.9709505944546686\nsamples = 5\nvalue = [2 3]\nclass = Texas"] ;
+9 -> 11
+12[label="entropy = 0.8112781244591328\nsamples = 4\nvalue = [1 3]\nclass = Texas"] ;
+11 -> 12
+13[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = Germany"] ;
+11 -> 13
+14[label="entropy = 0.0\nsamples = 15\nvalue = [15, 0]\nclass = Germany"] ;
+0 -> 14

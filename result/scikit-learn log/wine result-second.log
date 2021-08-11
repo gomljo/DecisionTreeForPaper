@@ -1,13 +1,16 @@
-|--- color_intensity <= 3.46
-|   |--- class: 1
-|--- color_intensity >  3.46
-|   |--- flavanoids <= 1.57
+|--- flavanoids <= 1.58
+|   |--- color_intensity <= 3.90
+|   |   |--- class: 1
+|   |--- color_intensity >  3.90
 |   |   |--- class: 2
-|   |--- flavanoids >  1.57
-|   |   |--- proline <= 724.50
-|   |   |   |--- malic_acid <= 2.89
-|   |   |   |   |--- class: 1
-|   |   |   |--- malic_acid >  2.89
-|   |   |   |   |--- class: 0
-|   |   |--- proline >  724.50
+|--- flavanoids >  1.58
+|   |--- proline <= 724.50
+|   |   |--- alcalinity_of_ash <= 17.75
+|   |   |   |--- class: 0
+|   |   |--- alcalinity_of_ash >  17.75
+|   |   |   |--- class: 1
+|   |--- proline >  724.50
+|   |   |--- color_intensity <= 3.46
+|   |   |   |--- class: 1
+|   |   |--- color_intensity >  3.46
 |   |   |   |--- class: 0

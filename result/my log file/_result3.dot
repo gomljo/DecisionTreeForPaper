@@ -1,0 +1,15 @@
+digraph Tree {
+node [shape=box] ;0[label="flavanoids < 1.52\nentropy = 1.4949188482339508\nsamples = 11\nvalue = [2 5 4]\nclass = 1"] ;
+1[label="entropy = 0.7219280948873623\nsamples = 5\nvalue = [0 1 4]\nclass = 2"] ;
+0 -> 1 ;
+
+2[label="alcohol < 13.865\nentropy = 0.9182958340544896\nsamples = 6\nvalue = [2 4 0]\nclass = 1"] ;
+0 -> 2 ;
+
+3[label="entropy = 0.7219280948873623\nsamples = 5\nvalue = [1 4 0]\nclass = 1"] ;
+2 -> 3 ;
+
+4[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0, 0]\nclass = 0"] ;
+2 -> 4 ;
+
+}

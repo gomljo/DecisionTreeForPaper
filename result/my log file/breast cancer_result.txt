@@ -1,40 +1,40 @@
-|--- Entropy: 0.4882370563912056, decision criteria: worst concave points < 0.13369999999999999, values: [ 31 261]
-|   |--- Entropy: 0.1638605128691584, decision criteria: area error < 91.555, values: [  6 243]
-|   |   |--- Entropy: 0.1423451859891269, decision criteria: mean fractal dimension < 0.062885, values: [  5 243]
-|   |   |   |--- Entropy: 0.21192797897135754, decision criteria: worst concave points < 0.12025, values: [  5 144]
-|   |   |   |   |--- Entropy: 0.14450614339047504, decision criteria: area error < 48.7, values: [  3 143]
-|   |   |   |   |   |--- Entropy: 0.10500149581279873, decision criteria: smoothness error < 0.003294, values: [  2 143]
-|   |   |   |   |   |   |--- Entropy: 0.7219280948873623, decision criteria: mean symmetry < 0.17595, values: [1 4]
-|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 4],  outcome: 1
-|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: 0
-|   |   |   |   |   |   |--- Entropy: 0.061191523312341185, values: [  1 139],  outcome: 1
-|   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: 0
-|   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: fractal dimension error < 0.0036320000000000002, values: [2 1]
-|   |   |   |   |   |   |--- Entropy: 0.0, values: [2, 0],  outcome: 0
-|   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: 1
-|   |   |   |--- Entropy: 0.0, values: [0, 98],  outcome: 1
-|   |   |--- Entropy: 0.0, values: [1, 0],  outcome: 0
-|   |--- Entropy: 0.9807983646944296, decision criteria: worst texture < 27.415, values: [25 18]
-|   |   |   |--- Entropy: 0.8904916402194913, decision criteria: worst concave points < 0.18075, values: [ 8 18]
-|   |   |   |   |--- Entropy: 0.7553754125614287, decision criteria: compactness error < 0.0388, values: [ 5 18]
-|   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: symmetry error < 0.021495, values: [ 5 10]
-|   |   |   |   |   |   |--- Entropy: 0.7793498372920851, decision criteria: mean area < 629.25, values: [ 3 10]
-|   |   |   |   |   |   |   |--- Entropy: 0.954434002924965, decision criteria: mean texture < 18.465, values: [3 5]
-|   |   |   |   |   |   |   |   |--- Entropy: 0.9709505944546686, decision criteria: mean area < 581.5, values: [3 2]
-|   |   |   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: mean area < 549.45, values: [1 2]
-|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 2],  outcome: 1
-|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: 0
-|   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [2, 0],  outcome: 0
-|   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 3],  outcome: 1
-|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 5],  outcome: 1
-|   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: 0
-|   |   |   |   |   |--- Entropy: 0.0, values: [0, 8],  outcome: 1
-|   |   |   |   |--- Entropy: 0.0, values: [2, 0],  outcome: 0
-|   |   |   |--- Entropy: 0.0, values: [16, 0],  outcome: 0
-|--- Entropy: 0.26377743669413856, decision criteria: mean concavity < 0.067715, values: [128   6]
-|   |   |--- Entropy: 0.9709505944546686, decision criteria: mean texture < 19.545, values: [9 6]
-|   |   |   |--- Entropy: 0.5916727785823275, decision criteria: worst texture < 29.87, values: [1 6]
-|   |   |   |   |--- Entropy: 0.0, values: [0, 6],  outcome: 1
+|--- Entropy: 0.5098891423431209, decision criteria: worst concave points < 0.11155, values: [ 34 266]
+|   |--- Entropy: 0.17203694935311378, decision criteria: mean compactness < 0.060450000000000004, values: [  6 228]
+|   |   |--- Entropy: 0.37123232664087563, decision criteria: mean concave points < 0.027360000000000002, values: [ 6 78]
+|   |   |   |--- Entropy: 0.17738945318599736, decision criteria: mean compactness < 0.060155, values: [ 2 73]
+|   |   |   |   |--- Entropy: 0.10327508457163546, values: [ 1 73],  outcome: 1
 |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: 0
-|   |   |   |--- Entropy: 0.0, values: [7, 0],  outcome: 0
-|   |   |--- Entropy: 0.0, values: [119, 0],  outcome: 0
+|   |   |   |--- Entropy: 0.9910760598382222, decision criteria: area error < 47.245000000000005, values: [4 5]
+|   |   |   |   |   |--- Entropy: 0.863120568566631, decision criteria: mean concave points < 0.028585, values: [2 5]
+|   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: compactness error < 0.014345, values: [2 1]
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [2, 0],  outcome: 0
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: 1
+|   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 3],  outcome: 1
+|   |   |   |   |   |--- Entropy: 0.0, values: [2, 0],  outcome: 0
+|   |   |--- Entropy: 0.0, values: [0, 149],  outcome: 1
+|   |--- Entropy: 0.9833761901392235, decision criteria: worst concave points < 0.1603, values: [28 38]
+|   |   |   |--- Entropy: 0.8267463724926178, decision criteria: worst texture < 28.009999999999998, values: [13 37]
+|   |   |   |   |--- Entropy: 0.4220005168831531, decision criteria: mean texture < 22.355, values: [ 3 32]
+|   |   |   |   |   |--- Entropy: 0.3227569588973982, decision criteria: texture error < 0.81165, values: [ 2 32]
+|   |   |   |   |   |   |--- Entropy: 0.5916727785823275, decision criteria: texture error < 0.7991999999999999, values: [ 2 12]
+|   |   |   |   |   |   |   |--- Entropy: 0.39124356362925566, decision criteria: worst symmetry < 0.2614, values: [ 1 12]
+|   |   |   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: area error < 18.61, values: [1 1]
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: 1
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: 0
+|   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 10],  outcome: 1
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: 0
+|   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 19],  outcome: 1
+|   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: 0
+|   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: worst concave points < 0.13055, values: [10  5]
+|   |   |   |   |   |--- Entropy: 0.954434002924965, decision criteria: fractal dimension error < 0.0034615, values: [3 5]
+|   |   |   |   |   |   |--- Entropy: 0.8112781244591328, decision criteria: mean texture < 21.880000000000003, values: [3 1]
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [3, 0],  outcome: 0
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: 1
+|   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 3],  outcome: 1
+|   |   |   |   |   |--- Entropy: 0.0, values: [6, 0],  outcome: 0
+|   |   |   |--- Entropy: 0.3372900666170139, decision criteria: area error < 16.505, values: [15  1]
+|   |   |   |   |--- Entropy: 1.0, decision criteria: area error < 13.725000000000001, values: [1 1]
+|   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: 1
+|   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: 0
+|   |   |   |   |--- Entropy: 0.0, values: [14, 0],  outcome: 0
+|--- Entropy: 0.0, values: [123, 0],  outcome: 0

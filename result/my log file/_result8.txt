@@ -1,0 +1,6 @@
+|--- Entropy: 0.5032583347756457, decision criteria: area error < 46.925, values: [ 2 16]
+|   |--- Entropy: 0.3227569588973982, decision criteria: mean symmetry < 0.21155, values: [ 1 16]
+|   |   |--- Entropy: 0.0, values: [0, 16],  outcome: 1
+|   |   |--- Entropy: 0.0, values: [1, 0],  outcome: 0
+|   |--- Entropy: 0.0, values: [1, 0],  outcome: 0
+|--- Entropy: 0.0, values: [3, 0],  outcome: 0
