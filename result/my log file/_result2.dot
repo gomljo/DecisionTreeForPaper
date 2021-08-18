@@ -1,39 +1,15 @@
 digraph Tree {
-node [shape=box] ;0[label="ash < 2.565\nentropy = 1.3250112108241772\nsamples = 12\nvalue = [1 6 5]\nclass = 1"] ;
-1[label="ash < 2.335\nentropy = 0.9910760598382222\nsamples = 9\nvalue = [0 4 5]\nclass = 2"] ;
+node [shape=box] ;0[label="mean compactness < 0.15825\nentropy = 0.863120568566631\nsamples = 21\nvalue = [ 6 15]\nclass = 1"] ;
+1[label="mean radius < 16.82\nentropy = 0.3372900666170139\nsamples = 16\nvalue = [ 1 15]\nclass = 1"] ;
 0 -> 1 ;
 
-2[label="magnesium < 87.0\nentropy = 0.8112781244591328\nsamples = 4\nvalue = [0 3 1]\nclass = 1"] ;
+2[label="None\nentropy = 0.0\nsamples = 15\nvalue = [0, 15]\nclass = 1"] ;
 1 -> 2 ;
 
-3[label="ash < 2.3\nentropy = 1.0\nsamples = 2\nvalue = [0 1 1]\nclass = 1"] ;
-2 -> 3 ;
+3[label="None\nentropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = 0"] ;
+1 -> 3 ;
 
-4[label="None\nentropy = 0.0\nsamples = 1\nvalue = [0, 0, 1]\nclass = 2"] ;
-3 -> 4 ;
-
-5[label="None\nentropy = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = 1"] ;
-3 -> 5 ;
-
-6[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = 1"] ;
-2 -> 6 ;
-
-7[label="entropy = 0.7219280948873623\nsamples = 5\nvalue = [0 1 4]\nclass = 2"] ;
-1 -> 7 ;
-
-8[label="ash < 2.6550000000000002\nentropy = 0.9182958340544896\nsamples = 3\nvalue = [1 2 0]\nclass = 1"] ;
-0 -> 8 ;
-
-9[label="ash < 2.605\nentropy = 1.0\nsamples = 2\nvalue = [1 1 0]\nclass = 0"] ;
-8 -> 9 ;
-
-10[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = 1"] ;
-9 -> 10 ;
-
-11[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0, 0]\nclass = 0"] ;
-9 -> 11 ;
-
-12[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = 1"] ;
-8 -> 12 ;
+4[label="entropy = 0.0\nsamples = 4\nvalue = [4, 0]\nclass = 0"] ;
+0 -> 4 ;
 
 }

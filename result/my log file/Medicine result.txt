@@ -1,0 +1,676 @@
+|--- Entropy: 0.702907154232157, decision criteria: age < 50.864924987484926, values: [ 86 365]
+|   |--- Entropy: 0.9752464212926022, decision criteria: age < 43.640109397199154, values: [64 93]
+|   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 41.34624352390837, values: [28 14]
+|   |   |   |--- Entropy: 0.9975025463691153, decision criteria: age < 41.294759798375836, values: [9 8]
+|   |   |   |   |--- Entropy: 0.9886994082884974, decision criteria: age < 41.23610118718088, values: [9 7]
+|   |   |   |   |   |--- Entropy: 0.9967916319816366, decision criteria: age < 41.08039472095455, values: [8 7]
+|   |   |   |   |   |   |--- Entropy: 0.9852281360342515, decision criteria: age < 40.935615700567865, values: [8 6]
+|   |   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: age < 40.90436650881662, values: [6 6]
+|   |   |   |   |   |   |   |   |--- Entropy: 0.9940302114769565, decision criteria: age < 40.86703735978371, values: [5 6]
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.9910760598382222, decision criteria: age < 40.80601405964026, values: [5 4]
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.954434002924965, decision criteria: age < 40.756144357763645, values: [5 3]
+|   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9852281360342515, decision criteria: age < 40.736274100062865, values: [4 3]
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: age < 40.63548131113559, values: [3 3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9709505944546686, decision criteria: age < 40.49911322570128, values: [3 2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8112781244591328, decision criteria: age < 40.22069409119478, values: [3 1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: age < 40.07660130446236, values: [1 1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 2],  outcome: yes
+|   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [2, 0],  outcome: no
+|   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |--- Entropy: 0.7950402793845223, decision criteria: age < 43.50292193397503, values: [19  6]
+|   |   |   |   |   |--- Entropy: 0.7382848661434506, decision criteria: age < 42.88206532331327, values: [19  5]
+|   |   |   |   |   |   |--- Entropy: 0.5665095065529053, decision criteria: age < 41.92617547855618, values: [13  2]
+|   |   |   |   |   |   |   |--- Entropy: 0.8112781244591328, decision criteria: age < 41.87657404724489, values: [3 1]
+|   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [3, 0],  outcome: no
+|   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |--- Entropy: 0.4394969869215134, decision criteria: age < 42.82506446246653, values: [10  1]
+|   |   |   |   |   |   |   |   |--- Entropy: 0.4689955935892812, decision criteria: age < 42.766140456574085, values: [9 1]
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [9, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 43.160476384181806, values: [6 3]
+|   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 43.08960552960738, values: [1 2]
+|   |   |   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: age < 42.969119623851284, values: [1 1]
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |--- Entropy: 0.6500224216483541, decision criteria: age < 43.341824527729344, values: [5 1]
+|   |   |   |   |   |   |   |   |--- Entropy: 0.8112781244591328, decision criteria: age < 43.29613323484473, values: [3 1]
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [3, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |--- Entropy: 0.8966554495712067, decision criteria: age < 50.23307284836133, values: [36 79]
+|   |   |   |   |--- Entropy: 0.844099171796772, decision criteria: age < 47.71648236234283, values: [28 75]
+|   |   |   |   |   |--- Entropy: 0.9348490242345944, decision criteria: age < 44.55792614571553, values: [20 37]
+|   |   |   |   |   |   |--- Entropy: 0.4394969869215134, decision criteria: age < 44.39919473088703, values: [ 1 10]
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 10],  outcome: yes
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |--- Entropy: 0.978070970973496, decision criteria: age < 44.73230635984115, values: [19 27]
+|   |   |   |   |   |   |   |--- Entropy: 0.8112781244591328, decision criteria: age < 44.655917269830894, values: [3 1]
+|   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [3, 0],  outcome: no
+|   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |--- Entropy: 0.9587118829771318, decision criteria: age < 47.65051461749664, values: [16 26]
+|   |   |   |   |   |   |   |   |--- Entropy: 0.9649567669505685, decision criteria: age < 47.5682158090923, values: [16 25]
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.954434002924965, decision criteria: age < 47.46259275202501, values: [15 25]
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9418285354475157, decision criteria: age < 47.23846840697019, values: [14 25]
+|   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9709505944546686, decision criteria: age < 47.209990898642445, values: [14 21]
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9596868937742169, decision criteria: age < 47.20125254283431, values: [13 21]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9672947789468944, decision criteria: age < 47.18672388797519, values: [13 20]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.954434002924965, decision criteria: age < 47.150507179854, values: [12 20]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9383153522334069, decision criteria: age < 45.80992232227702, values: [11 20]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9967916319816366, decision criteria: age < 45.572566906598865, values: [7 8]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 45.440323037596215, values: [3 6]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8112781244591328, decision criteria: age < 44.97957807963416, values: [2 6]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: age < 44.93581527491531, values: [2 2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 44.904478963250796, values: [2 1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: age < 44.82582581537488, values: [1 1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 4],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 45.77562558361335, values: [4 2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9709505944546686, decision criteria: age < 45.73842238064573, values: [3 2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8112781244591328, decision criteria: age < 45.67970739822571, values: [3 1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [3, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8112781244591328, decision criteria: age < 47.11845688613086, values: [ 4 12]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8366407419411672, decision criteria: age < 47.074877023612274, values: [ 4 11]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.863120568566631, decision criteria: age < 46.98750539116231, values: [ 4 10]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.7793498372920851, decision criteria: age < 46.922533826942036, values: [ 3 10]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.6500224216483541, decision criteria: age < 46.321954826901816, values: [ 2 10]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.863120568566631, decision criteria: age < 46.22864972945515, values: [2 5]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.6500224216483541, decision criteria: age < 46.14025506857895, values: [1 5]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.7219280948873623, decision criteria: age < 46.12392312138056, values: [1 4]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 4],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 4],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 3],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |--- Entropy: 0.6665783579949205, decision criteria: age < 50.16987014368463, values: [ 8 38]
+|   |   |   |   |   |   |--- Entropy: 0.6235702082127974, decision criteria: age < 49.57185347528775, values: [ 7 38]
+|   |   |   |   |   |   |   |--- Entropy: 0.6997722217733069, decision criteria: age < 49.54922585551829, values: [ 7 30]
+|   |   |   |   |   |   |   |   |--- Entropy: 0.6500224216483541, decision criteria: age < 48.574707466777596, values: [ 6 30]
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.4537163391869448, decision criteria: age < 48.46333517902234, values: [ 2 19]
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.4689955935892812, decision criteria: age < 48.4187250864199, values: [ 2 18]
+|   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.2974722489192896, decision criteria: age < 47.92721023138014, values: [ 1 18]
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.41381685030363374, decision criteria: age < 47.92461249680676, values: [ 1 11]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 11],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 6],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.8366407419411672, decision criteria: age < 49.3116599198686, values: [ 4 11]
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 49.23418454213902, values: [4 8]
+|   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.7642045065086203, decision criteria: age < 48.68059583531078, values: [2 7]
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: age < 48.66083432757952, values: [1 1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.5916727785823275, decision criteria: age < 49.19577791859583, values: [1 6]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.6500224216483541, decision criteria: age < 49.12017710259033, values: [1 5]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 5],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 49.28066942160402, values: [2 1]
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [2, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 3],  outcome: yes
+|   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 7],  outcome: yes
+|   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 50.84430405599353, values: [8 4]
+|   |   |   |   |   |--- Entropy: 0.8453509366224364, decision criteria: age < 50.722479907069925, values: [8 3]
+|   |   |   |   |   |   |--- Entropy: 0.954434002924965, decision criteria: age < 50.6734130495537, values: [5 3]
+|   |   |   |   |   |   |   |--- Entropy: 0.863120568566631, decision criteria: age < 50.615803689628336, values: [5 2]
+|   |   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 50.52708637914225, values: [4 2]
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.9709505944546686, decision criteria: age < 50.458766973467014, values: [3 2]
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8112781244591328, decision criteria: age < 50.40788215325187, values: [3 1]
+|   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [3, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |--- Entropy: 0.0, values: [2, 0],  outcome: no
+|   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |--- Entropy: 0.38369483316931385, decision criteria: age < 66.90561404399372, values: [ 22 272]
+|   |   |   |--- Entropy: 0.42276234377915156, decision criteria: age < 66.67978602131214, values: [ 22 234]
+|   |   |   |   |--- Entropy: 0.41041614171818885, decision criteria: age < 65.53209877527121, values: [ 21 234]
+|   |   |   |   |   |--- Entropy: 0.4231990442818129, decision criteria: age < 65.4029366959689, values: [ 21 223]
+|   |   |   |   |   |   |--- Entropy: 0.41024773167172657, decision criteria: age < 63.89776844638128, values: [ 20 223]
+|   |   |   |   |   |   |   |--- Entropy: 0.43275015878875406, decision criteria: age < 63.738029638070344, values: [ 20 205]
+|   |   |   |   |   |   |   |   |--- Entropy: 0.4189440151199052, decision criteria: age < 62.829047167555885, values: [ 19 205]
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.4394969869215134, decision criteria: age < 62.768376490724016, values: [ 19 190]
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.42480887386781474, decision criteria: age < 55.97975752602445, values: [ 18 190]
+|   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.31599713297842463, decision criteria: age < 51.427962372820154, values: [ 6 99]
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.6193821946787638, decision criteria: age < 51.35050364342271, values: [ 2 11]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.41381685030363374, decision criteria: age < 51.000500788725596, values: [ 1 11]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.6500224216483541, decision criteria: age < 50.905126163587035, values: [1 5]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 5],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 5],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.2580186686648155, decision criteria: age < 53.757212236704156, values: [ 4 88]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.16866093149667025, decision criteria: age < 53.74452170742586, values: [ 1 39]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.17203694935311378, decision criteria: age < 53.72280251348809, values: [ 1 38]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 38],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.31821529768323314, decision criteria: age < 53.93345514058066, values: [ 3 49]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: age < 53.793677052559445, values: [1 1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.24229218908241482, decision criteria: age < 55.494034311545406, values: [ 2 48]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.19590927087360493, decision criteria: age < 55.438651733836835, values: [ 1 32]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.20062232431271465, decision criteria: age < 55.40224949112563, values: [ 1 31]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 31],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.3227569588973982, decision criteria: age < 55.950201442913155, values: [ 1 16]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.3372900666170139, decision criteria: age < 55.925362243426676, values: [ 1 15]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 15],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.5192300197391869, decision criteria: age < 58.201249913700806, values: [12 91]
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.7355085815538398, decision criteria: age < 58.05920151683297, values: [ 6 23]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.676941869780886, decision criteria: age < 57.857645062340104, values: [ 5 23]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.7219280948873623, decision criteria: age < 57.83486173859842, values: [ 5 20]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.6500224216483541, decision criteria: age < 57.21022018504786, values: [ 4 20]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.7642045065086203, decision criteria: age < 57.19127995091736, values: [ 4 14]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.6722948170756379, decision criteria: age < 56.883019680990856, values: [ 3 14]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.7793498372920851, decision criteria: age < 56.7590051249925, values: [ 3 10]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.6500224216483541, decision criteria: age < 56.43023417368603, values: [ 2 10]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8112781244591328, decision criteria: age < 56.331963260016295, values: [2 6]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.5916727785823275, decision criteria: age < 56.28668898045687, values: [1 6]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8112781244591328, decision criteria: age < 56.15969251771821, values: [1 3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 3],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 2],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 3],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 3],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 5],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 2],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.4059770384755711, decision criteria: age < 62.08708455876646, values: [ 6 68]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.4349734800747426, decision criteria: age < 62.08144478567308, values: [ 6 61]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.38705142139219784, decision criteria: age < 61.42535489436923, values: [ 5 61]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.44506485705083865, decision criteria: age < 61.204117217301814, values: [ 5 49]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.3322866302216151, decision criteria: age < 59.534219691640956, values: [ 3 46]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.39124356362925566, decision criteria: age < 59.523290045262115, values: [ 2 24]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.24229218908241482, decision criteria: age < 59.20116163154281, values: [ 1 24]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.28639695711595625, decision criteria: age < 59.15457086400965, values: [ 1 19]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 19],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 4],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.2580186686648155, decision criteria: age < 61.11577586047473, values: [ 1 22]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.26676498780302604, decision criteria: age < 61.00859993568567, values: [ 1 21]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 21],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9709505944546686, decision criteria: age < 61.36989939976907, values: [2 3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: age < 61.313987632617014, values: [2 2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 61.284783997704366, values: [1 2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 2],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 12],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 6],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 14],  outcome: yes
+|   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 17],  outcome: yes
+|   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |--- Entropy: 0.0, values: [0, 10],  outcome: yes
+|   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |--- Entropy: 0.0, values: [0, 37],  outcome: yes
+|--- Entropy: 0.7594377698530199, decision criteria: age < 53.512490373931385, values: [121 430]
+|   |   |--- Entropy: 0.9360814319397586, decision criteria: age < 45.00422788550157, values: [ 93 171]
+|   |   |   |--- Entropy: 0.9988455359952018, decision criteria: age < 43.298955263315136, values: [39 36]
+|   |   |   |   |--- Entropy: 0.9949848281859701, decision criteria: age < 41.365074632901326, values: [22 26]
+|   |   |   |   |   |--- Entropy: 0.9709505944546686, decision criteria: age < 40.347233414849384, values: [9 6]
+|   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 40.31959425045635, values: [1 2]
+|   |   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: age < 40.26532952300032, values: [1 1]
+|   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 41.31381251713162, values: [8 4]
+|   |   |   |   |   |   |   |--- Entropy: 0.9456603046006401, decision criteria: age < 41.22093806941138, values: [7 4]
+|   |   |   |   |   |   |   |   |--- Entropy: 0.8812908992306927, decision criteria: age < 41.11767100748689, values: [7 3]
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.954434002924965, decision criteria: age < 40.952965124464825, values: [5 3]
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.863120568566631, decision criteria: age < 40.80271482084372, values: [5 2]
+|   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 40.72051256848443, values: [4 2]
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9709505944546686, decision criteria: age < 40.63408545470716, values: [3 2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8112781244591328, decision criteria: age < 40.565146072001326, values: [3 1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [3, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |--- Entropy: 0.9672947789468944, decision criteria: age < 43.19060192411374, values: [13 20]
+|   |   |   |   |   |   |--- Entropy: 0.954434002924965, decision criteria: age < 43.0435094595166, values: [12 20]
+|   |   |   |   |   |   |   |--- Entropy: 0.9709505944546686, decision criteria: age < 42.97864829596439, values: [12 18]
+|   |   |   |   |   |   |   |   |--- Entropy: 0.9575534837147482, decision criteria: age < 42.913481961845996, values: [11 18]
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.9666186325481028, decision criteria: age < 42.875484094398516, values: [11 17]
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9509560484549725, decision criteria: age < 42.84337897144802, values: [10 17]
+|   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9305861291319928, decision criteria: age < 42.773210651535095, values: [ 9 17]
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.954434002924965, decision criteria: age < 42.59685616372772, values: [ 9 15]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8997437586982626, decision criteria: age < 42.54311131505664, values: [ 6 13]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8524051786494786, decision criteria: age < 42.439183050198196, values: [ 5 13]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 42.40945411048462, values: [ 5 10]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9402859586706311, decision criteria: age < 42.390970040396596, values: [5 9]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8904916402194913, decision criteria: age < 42.350671587452055, values: [4 9]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8112781244591328, decision criteria: age < 41.89233686252361, values: [3 9]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.954434002924965, decision criteria: age < 41.824119864090974, values: [3 5]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.863120568566631, decision criteria: age < 41.744460561169184, values: [2 5]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9709505944546686, decision criteria: age < 41.70960184236222, values: [2 3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8112781244591328, decision criteria: age < 41.669411311426884, values: [1 3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 41.63598299035349, values: [1 2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 2],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 3],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 3],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9709505944546686, decision criteria: age < 42.75891488400741, values: [3 2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8112781244591328, decision criteria: age < 42.73242275185679, values: [3 1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: age < 42.67907805406303, values: [1 1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 2],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |--- Entropy: 0.9509560484549725, decision criteria: age < 44.20947025495388, values: [17 10]
+|   |   |   |   |   |--- Entropy: 0.7793498372920851, decision criteria: age < 44.08719621017103, values: [10  3]
+|   |   |   |   |   |   |--- Entropy: 0.6500224216483541, decision criteria: age < 43.93870528868314, values: [10  2]
+|   |   |   |   |   |   |   |--- Entropy: 0.8112781244591328, decision criteria: age < 43.885434741455704, values: [6 2]
+|   |   |   |   |   |   |   |   |--- Entropy: 0.5916727785823275, decision criteria: age < 43.71367236692882, values: [6 1]
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.8112781244591328, decision criteria: age < 43.671666810208734, values: [3 1]
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [3, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [2, 0],  outcome: no
+|   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [3, 0],  outcome: no
+|   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |--- Entropy: 1.0, decision criteria: age < 44.92630505703181, values: [7 7]
+|   |   |   |   |   |   |--- Entropy: 0.9957274520849255, decision criteria: age < 44.850426836337604, values: [7 6]
+|   |   |   |   |   |   |   |--- Entropy: 0.9709505944546686, decision criteria: age < 44.63202270535754, values: [4 6]
+|   |   |   |   |   |   |   |   |--- Entropy: 0.9709505944546686, decision criteria: age < 44.507163997479324, values: [3 2]
+|   |   |   |   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: age < 44.47417821221689, values: [2 2]
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 44.404934515804534, values: [2 1]
+|   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: age < 44.32453079644006, values: [1 1]
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |--- Entropy: 0.7219280948873623, decision criteria: age < 44.83561067362452, values: [1 4]
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.8112781244591328, decision criteria: age < 44.82277376939744, values: [1 3]
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 3],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [2, 0],  outcome: no
+|   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |--- Entropy: 0.863120568566631, decision criteria: age < 53.407879292723294, values: [ 54 135]
+|   |   |   |   |--- Entropy: 0.854864096781804, decision criteria: age < 53.372171918956546, values: [ 52 134]
+|   |   |   |   |   |--- Entropy: 0.8494914931547565, decision criteria: age < 53.13985063052359, values: [ 51 134]
+|   |   |   |   |   |   |--- Entropy: 0.8620633055293611, decision criteria: age < 53.06870632532858, values: [ 51 128]
+|   |   |   |   |   |   |   |--- Entropy: 0.8566727035015875, decision criteria: age < 52.32946859606982, values: [ 50 128]
+|   |   |   |   |   |   |   |   |--- Entropy: 0.8730895488432588, decision criteria: age < 52.30755639072039, values: [ 49 118]
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.8676293117125106, decision criteria: age < 47.94679847365505, values: [ 48 118]
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9348490242345944, decision criteria: age < 46.38820545540146, values: [20 37]
+|   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.7024665512903903, decision criteria: age < 46.32475467493781, values: [ 4 17]
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.7219280948873623, decision criteria: age < 46.27642302087682, values: [ 4 16]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.6292492238560345, decision criteria: age < 45.99114324898944, values: [ 3 16]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.7793498372920851, decision criteria: age < 45.89077982209622, values: [ 3 10]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.6500224216483541, decision criteria: age < 45.70232631722834, values: [ 2 10]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.7219280948873623, decision criteria: age < 45.652813329166406, values: [2 8]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.5032583347756457, decision criteria: age < 45.24919788075255, values: [1 8]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.7219280948873623, decision criteria: age < 45.208245534912294, values: [1 4]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 4],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 3],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 5],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9910760598382222, decision criteria: age < 46.77119635994054, values: [16 20]
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 46.747576050737656, values: [6 3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8112781244591328, decision criteria: age < 46.6346275681983, values: [6 2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9709505944546686, decision criteria: age < 46.58673028127451, values: [3 2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8112781244591328, decision criteria: age < 46.53471589157131, values: [3 1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 46.45807235077689, values: [2 1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [2, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [2, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9509560484549725, decision criteria: age < 47.604856965601726, values: [10 17]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8524051786494786, decision criteria: age < 47.53822324177035, values: [ 5 13]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8739810481273578, decision criteria: age < 47.48560172809016, values: [ 5 12]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8112781244591328, decision criteria: age < 47.450251985789365, values: [ 4 12]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8904916402194913, decision criteria: age < 47.41843346220766, values: [4 9]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 47.361287311295335, values: [4 8]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8453509366224364, decision criteria: age < 47.315850302396015, values: [3 8]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.7219280948873623, decision criteria: age < 47.00847483890408, values: [2 8]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.863120568566631, decision criteria: age < 46.982818742065064, values: [2 5]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 46.96603227087165, values: [2 4]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.7219280948873623, decision criteria: age < 46.92863106721201, values: [1 4]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 4],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 3],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 3],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9910760598382222, decision criteria: age < 47.90639144561241, values: [5 4]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.954434002924965, decision criteria: age < 47.813174430964764, values: [5 3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: age < 47.7872839092156, values: [3 3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9709505944546686, decision criteria: age < 47.75322068260188, values: [2 3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 47.67644658666569, values: [2 1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [2, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 2],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [2, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8220027830221786, decision criteria: age < 48.28739129473867, values: [28 81]
+|   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.35335933502142136, decision criteria: age < 48.27193962651445, values: [ 1 14]
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.37123232664087563, decision criteria: age < 48.25799568098981, values: [ 1 13]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 13],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8651214227512076, decision criteria: age < 50.224555826823696, values: [27 67]
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9321115676166747, decision criteria: age < 48.81113997764717, values: [16 30]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.7793498372920851, decision criteria: age < 48.50935414790571, values: [ 3 10]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 48.452663942316406, values: [2 4]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.7219280948873623, decision criteria: age < 48.420850545318956, values: [1 4]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 48.409821725566204, values: [1 2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 2],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.5916727785823275, decision criteria: age < 48.77820106154592, values: [1 6]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.6500224216483541, decision criteria: age < 48.70238771283192, values: [1 5]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 5],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9672947789468944, decision criteria: age < 49.04393343779781, values: [13 20]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9852281360342515, decision criteria: age < 48.92480036195144, values: [4 3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 48.887002996375415, values: [1 2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: age < 48.84014776723335, values: [1 1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8112781244591328, decision criteria: age < 49.00618173284177, values: [3 1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 48.99104726283945, values: [2 1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [2, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9305861291319928, decision criteria: age < 49.35643974056046, values: [ 9 17]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.5916727785823275, decision criteria: age < 49.285860253399164, values: [1 6]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.6500224216483541, decision criteria: age < 49.221991753211356, values: [1 5]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 5],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9819407868640977, decision criteria: age < 50.12005256216085, values: [ 8 11]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9910760598382222, decision criteria: age < 50.011047772279674, values: [ 8 10]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9774178175281716, decision criteria: age < 49.95519711955211, values: [ 7 10]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.954434002924965, decision criteria: age < 49.796597047749145, values: [ 6 10]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9957274520849255, decision criteria: age < 49.78300719558359, values: [6 7]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9798687566511528, decision criteria: age < 49.77582225763386, values: [5 7]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9940302114769565, decision criteria: age < 49.76160100738217, values: [5 6]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: age < 49.73754163289188, values: [5 5]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9910760598382222, decision criteria: age < 49.71929488438742, values: [4 5]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.954434002924965, decision criteria: age < 49.61778225063744, values: [3 5]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: age < 49.61229936508515, values: [3 3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9709505944546686, decision criteria: age < 49.50340017467177, values: [2 3]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 49.45000099395886, values: [2 1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: age < 49.417664442201534, values: [1 1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 2],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.77655578544446, decision criteria: age < 50.79766285974896, values: [11 37]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.4394969869215134, decision criteria: age < 50.73766337171814, values: [ 1 10]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.4689955935892812, decision criteria: age < 50.65919307478545, values: [1 9]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 9],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8418521897563207, decision criteria: age < 52.28352770121286, values: [10 27]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.863120568566631, decision criteria: age < 52.24782245326654, values: [10 25]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.833764907210665, decision criteria: age < 52.11235604052327, values: [ 9 25]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8812908992306927, decision criteria: age < 52.07716764556173, values: [ 9 21]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8497511372532974, decision criteria: age < 51.906905626224884, values: [ 8 21]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9043814577244937, decision criteria: age < 51.896316216720464, values: [ 8 17]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 51.87020484769607, values: [ 8 16]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8865408928220899, decision criteria: age < 51.83967433905846, values: [ 7 16]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8453509366224364, decision criteria: age < 51.735590705099796, values: [ 6 16]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8812908992306927, decision criteria: age < 50.94599894530948, values: [ 6 14]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: age < 50.92099867525418, values: [2 2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 50.90538070170619, values: [1 2]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: age < 50.85680581627404, values: [1 1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.8112781244591328, decision criteria: age < 51.37736165180411, values: [ 4 12]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.5916727785823275, decision criteria: age < 51.31716926058245, values: [1 6]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 6],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 51.64605403841715, values: [3 6]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.954434002924965, decision criteria: age < 51.613250836862136, values: [3 5]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.863120568566631, decision criteria: age < 51.59610184218751, values: [2 5]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.6500224216483541, decision criteria: age < 51.43508828308636, values: [1 5]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: age < 51.410008586236756, values: [1 1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 4],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 2],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 4],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 3],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |--- Entropy: 0.4394969869215134, decision criteria: age < 52.97155523765517, values: [ 1 10]
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.4689955935892812, decision criteria: age < 52.89066776437579, values: [1 9]
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 9],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 5],  outcome: yes
+|   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 53.493462544332836, values: [2 1]
+|   |   |   |   |   |--- Entropy: 0.0, values: [2, 0],  outcome: no
+|   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |--- Entropy: 0.46121604051390946, decision criteria: age < 55.73934039309117, values: [ 28 259]
+|   |   |   |--- Entropy: 0.710676853856123, decision criteria: age < 54.24958591553326, values: [ 7 29]
+|   |   |   |   |--- Entropy: 0.4854607607459134, decision criteria: age < 54.14479164084857, values: [ 2 17]
+|   |   |   |   |   |--- Entropy: 0.39124356362925566, decision criteria: age < 54.06172143741823, values: [ 1 12]
+|   |   |   |   |   |   |--- Entropy: 0.41381685030363374, decision criteria: age < 53.96983366071183, values: [ 1 11]
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 11],  outcome: yes
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |--- Entropy: 0.6500224216483541, decision criteria: age < 54.23841253669908, values: [1 5]
+|   |   |   |   |   |   |--- Entropy: 0.7219280948873623, decision criteria: age < 54.22388425729658, values: [1 4]
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 4],  outcome: yes
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |--- Entropy: 0.8739810481273578, decision criteria: age < 54.473373149034764, values: [ 5 12]
+|   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 54.354107892481636, values: [2 1]
+|   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: age < 54.273819908255554, values: [1 1]
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |--- Entropy: 0.74959525725948, decision criteria: age < 55.578770508962336, values: [ 3 11]
+|   |   |   |   |   |   |--- Entropy: 0.6500224216483541, decision criteria: age < 55.45589342499735, values: [ 2 10]
+|   |   |   |   |   |   |   |--- Entropy: 0.4394969869215134, decision criteria: age < 54.7552684500198, values: [ 1 10]
+|   |   |   |   |   |   |   |   |--- Entropy: 0.8112781244591328, decision criteria: age < 54.703283366913865, values: [1 3]
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 3],  outcome: yes
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 6],  outcome: yes
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: age < 55.7138176600309, values: [1 1]
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |--- Entropy: 0.4149643603429622, decision criteria: age < 75.36499099825522, values: [ 21 230]
+|   |   |   |   |--- Entropy: 0.42561889221732047, decision criteria: age < 74.46576010178269, values: [ 21 221]
+|   |   |   |   |   |--- Entropy: 0.41261951248202133, decision criteria: age < 72.0865557818748, values: [ 20 221]
+|   |   |   |   |   |   |--- Entropy: 0.42241914462916946, decision criteria: age < 71.31501544214596, values: [ 20 213]
+|   |   |   |   |   |   |   |--- Entropy: 0.40882680606062527, decision criteria: age < 69.66187564871439, values: [ 19 213]
+|   |   |   |   |   |   |   |   |--- Entropy: 0.4189440151199052, decision criteria: age < 69.54612808984048, values: [ 19 205]
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.4047022746979816, decision criteria: age < 68.88455609259765, values: [ 18 205]
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.4111664900021256, decision criteria: age < 68.77420791667535, values: [ 18 200]
+|   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.3963065031532318, decision criteria: age < 68.05689086158759, values: [ 17 200]
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.40688224959419483, decision criteria: age < 67.90030528307986, values: [ 17 192]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.39124356362925566, decision criteria: age < 62.86286319521288, values: [ 16 192]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.44812821878952414, decision criteria: age < 62.84523861558573, values: [ 13 126]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.4262286569981449, decision criteria: age < 60.6138169344686, values: [ 12 126]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.35335933502142136, decision criteria: age < 59.28230176328955, values: [ 6 84]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.40907313904382653, decision criteria: age < 59.2421619523549, values: [ 5 56]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.35335933502142136, decision criteria: age < 58.45984982243736, values: [ 4 56]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.41381685030363374, decision criteria: age < 58.43743543407696, values: [ 4 44]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.3424637724817959, decision criteria: age < 58.37010899984759, values: [ 3 44]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.3650551896402848, decision criteria: age < 58.343915553349674, values: [ 3 40]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.2761954276479391, decision criteria: age < 57.325034644814394, values: [ 2 40]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.41381685030363374, decision criteria: age < 57.222857126701754, values: [ 2 22]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.2580186686648155, decision criteria: age < 56.39134588893953, values: [ 1 22]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.35335933502142136, decision criteria: age < 56.326866280416766, values: [ 1 14]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 14],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 7],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 17],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 3],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 11],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.21639693245126462, decision criteria: age < 60.56920035709698, values: [ 1 28]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.222284830685688, decision criteria: age < 60.51242422861591, values: [ 1 27]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 27],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.5435644431995964, decision criteria: age < 60.648666643872616, values: [ 6 42]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: age < 60.63039490844805, values: [2 1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: age < 60.619702250051944, values: [1 1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.43275015878875406, decision criteria: age < 62.438476503872025, values: [ 4 41]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.4770713062193297, decision criteria: age < 62.429183377169664, values: [ 4 35]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.3984592740952357, decision criteria: age < 61.85552027360009, values: [ 3 35]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.5159469300074474, decision criteria: age < 61.7878371070467, values: [ 3 23]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.4021791902022728, decision criteria: age < 61.20178806151953, values: [ 2 23]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.6500224216483541, decision criteria: age < 61.08075064479434, values: [ 2 10]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.4689955935892812, decision criteria: age < 61.06184362670152, values: [1 9]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 9],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: age < 61.12411177331333, values: [1 1]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 13],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 11],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 5],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.2580186686648155, decision criteria: age < 66.63832140465337, values: [ 3 66]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.1485494904303482, decision criteria: age < 66.58948184848661, values: [ 1 46]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.15109697051711368, decision criteria: age < 66.51791579948954, values: [ 1 45]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 45],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.4394969869215134, decision criteria: age < 67.684440399441, values: [ 2 20]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.5435644431995964, decision criteria: age < 67.62070869725324, values: [ 2 14]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.35335933502142136, decision criteria: age < 67.26705441847446, values: [ 1 14]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.5916727785823275, decision criteria: age < 67.22341861809409, values: [1 6]
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 6],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 7],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 5],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 7],  outcome: yes
+|   |   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 4],  outcome: yes
+|   |   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 7],  outcome: yes
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 7],  outcome: yes
+|   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: no
+|   |   |   |   |--- Entropy: 0.0, values: [0, 8],  outcome: yes

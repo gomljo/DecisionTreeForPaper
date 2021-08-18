@@ -1,0 +1,45 @@
+digraph Tree {
+node [shape=box] ;0[label="mean concave points < 0.0501\nentropy = 0.9531269825479287\nsamples = 426\nvalue = [159 267]\nclass = 1"] ;
+1[label="worst area < 778.5\nentropy = 0.30081363556511626\nsamples = 262\nvalue = [ 14 248]\nclass = 1"] ;
+0 -> 1 ;
+
+2[label="entropy = 0.1260931686236865\nsamples = 231\nvalue = [  4 227]\nclass = 1"] ;
+1 -> 2 ;
+
+3[label="mean texture < 19.915\nentropy = 0.907165767573082\nsamples = 31\nvalue = [10 21]\nclass = 1"] ;
+1 -> 3 ;
+
+4[label="entropy = 0.2974722489192896\nsamples = 19\nvalue = [ 1 18]\nclass = 1"] ;
+3 -> 4 ;
+
+5[label="entropy = 0.8112781244591328\nsamples = 12\nvalue = [9 3]\nclass = 0"] ;
+3 -> 5 ;
+
+6[label="worst perimeter < 114.44999999999999\nentropy = 0.5173237070108054\nsamples = 164\nvalue = [145  19]\nclass = 0"] ;
+0 -> 6 ;
+
+7[label="worst texture < 25.655\nentropy = 0.9902246902198684\nsamples = 43\nvalue = [24 19]\nclass = 0"] ;
+6 -> 7 ;
+
+8[label="concave points error < 0.014190000000000001\nentropy = 0.7553754125614287\nsamples = 23\nvalue = [ 5 18]\nclass = 1"] ;
+7 -> 8 ;
+
+9[label="area error < 31.299999999999997\nentropy = 0.9798687566511528\nsamples = 12\nvalue = [5 7]\nclass = 1"] ;
+8 -> 9 ;
+
+10[label="entropy = 0.7642045065086203\nsamples = 9\nvalue = [2 7]\nclass = 1"] ;
+9 -> 10 ;
+
+11[label="entropy = 0.0\nsamples = 2\nvalue = [2, 0]\nclass = 0"] ;
+9 -> 11 ;
+
+12[label="entropy = 0.0\nsamples = 10\nvalue = [0, 10]\nclass = 1"] ;
+8 -> 12 ;
+
+13[label="entropy = 0.28639695711595625\nsamples = 20\nvalue = [19  1]\nclass = 0"] ;
+7 -> 13 ;
+
+14[label="entropy = 0.0\nsamples = 120\nvalue = [120, 0]\nclass = 0"] ;
+6 -> 14 ;
+
+}

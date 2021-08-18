@@ -1,6 +1,8 @@
-|--- Entropy: 0.7219280948873623, values: [1 4 0],  outcome: 1
-|--- Entropy: 0.9852281360342515, decision criteria: magnesium < 113.5, values: [4 0 3]
-|   |   |--- Entropy: 0.8112781244591328, decision criteria: ash < 2.42, values: [1 0 3]
-|   |   |   |--- Entropy: 0.0, values: [0, 0, 3],  outcome: 2
-|   |   |   |--- Entropy: 0.0, values: [1, 0, 0],  outcome: 0
-|   |   |--- Entropy: 0.0, values: [3, 0, 0],  outcome: 0
+|--- Entropy: 0.5916727785823275, decision criteria: mean area < 710.4, values: [ 2 12]
+|   |--- Entropy: 0.39124356362925566, decision criteria: mean area < 498.7, values: [ 1 12]
+|   |   |--- Entropy: 0.5435644431995964, decision criteria: mean area < 477.35, values: [1 7]
+|   |   |   |--- Entropy: 0.0, values: [0, 7],  outcome: 1
+|   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: 0
+|   |   |--- Entropy: 0.0, values: [0, 4],  outcome: 1
+|   |--- Entropy: 0.0, values: [1, 0],  outcome: 0
+|--- Entropy: 0.0, values: [7, 0],  outcome: 0

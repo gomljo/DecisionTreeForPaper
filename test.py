@@ -30,7 +30,7 @@ class test_result:
         for dn in self.data_names:
             d = self.data[dn].iloc[:, :-1]
             t = self.data[dn]['target']
-            train_x, test_x, train_y, test_y = train_test_split(d, t, random_state=10, shuffle=True)
+            train_x, test_x, train_y, test_y = train_test_split(d, t, random_state=0, shuffle=True)
 
             train_data = pd.merge(train_x, train_y, left_index=True, right_index=True)
 
@@ -39,10 +39,10 @@ class test_result:
             self.clf_own = DecisionTreeClassifier_OWN(DATA=train_data, outComeLabel='target')
             self.clf_own.build()
             self.clf_own.prune()
-            # print(self.clf_own.best_tree)
-            # print(len(self.clf_own.best_tree))
-            self.clf_own.traverse_tree(file_name='result\\my log file\\' + dn + '_result.txt')
-
+            # self.clf_own.check_tree(self.clf_own.best_tree)
+            self.clf_own.traverse_tree(file_name='result\\my log file\\' + dn + '_result.txt', is_prune=True)
+            self.clf_own.traverse_tree_make_graph_count(classifier=self.clf_own.best_tree)
+            self.clf_own.traverse_tree_make_graph(file_name='result\\my dot file\\' + dn + '_prune_result.dot', is_prune=True)
             self.clf_sklearn.fit(train_x, train_y)
             y_pred_own = self.clf_own.predict(test_x)
             print(y_pred_own)

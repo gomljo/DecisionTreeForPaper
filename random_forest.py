@@ -39,11 +39,11 @@ class Random_Forest:
         for iter in range(self.num_of_estimators):
             print(iter)
             self.classifiers[iter].build()
-            print(self.classifiers[iter].dtree)
-            self.classifiers[iter].prune()
-            print(self.classifiers[iter].best_tree)
-            self.classifiers[iter].traverse_tree(file_name='result\\my log file\\_result{}.txt'.format(iter), is_prune=True)
-            self.classifiers[iter].traverse_tree_make_graph_count(classifier=self.classifiers[iter].best_tree)
+            # print(self.classifiers[iter].dtree)
+            # self.classifiers[iter].prune()
+            # print(self.classifiers[iter].best_tree)
+            self.classifiers[iter].traverse_tree(file_name='result\\my log file\\_result{}.txt'.format(iter))
+            self.classifiers[iter].traverse_tree_make_graph_count(classifier=self.classifiers[iter].dtree)
             self.classifiers[iter].traverse_tree_make_graph(file_name='result\\my log file\\_result{}.dot'.format(iter))
 
         return 0

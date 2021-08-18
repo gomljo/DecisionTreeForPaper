@@ -1,0 +1,2031 @@
+digraph Tree {
+node [shape=box] ;0[label="cholesterol_level = Low\nentropy = 0.7349077262402425\nsamples = 1002\nvalue = [207 795]\nclass = yes"] ;
+1[label="age < 50.864924987484926\nentropy = 0.702907154232157\nsamples = 451\nvalue = [ 86 365]\nclass = yes"] ;
+0 -> 1 ;
+
+2[label="age < 43.640109397199154\nentropy = 0.9752464212926022\nsamples = 157\nvalue = [64 93]\nclass = yes"] ;
+1 -> 2 ;
+
+3[label="age < 41.34624352390837\nentropy = 0.9182958340544896\nsamples = 42\nvalue = [28 14]\nclass = no"] ;
+2 -> 3 ;
+
+4[label="age < 41.294759798375836\nentropy = 0.9975025463691153\nsamples = 17\nvalue = [9 8]\nclass = no"] ;
+3 -> 4 ;
+
+5[label="age < 41.23610118718088\nentropy = 0.9886994082884974\nsamples = 16\nvalue = [9 7]\nclass = no"] ;
+4 -> 5 ;
+
+6[label="age < 41.08039472095455\nentropy = 0.9967916319816366\nsamples = 15\nvalue = [8 7]\nclass = no"] ;
+5 -> 6 ;
+
+7[label="age < 40.935615700567865\nentropy = 0.9852281360342515\nsamples = 14\nvalue = [8 6]\nclass = no"] ;
+6 -> 7 ;
+
+8[label="age < 40.90436650881662\nentropy = 1.0\nsamples = 12\nvalue = [6 6]\nclass = no"] ;
+7 -> 8 ;
+
+9[label="age < 40.86703735978371\nentropy = 0.9940302114769565\nsamples = 11\nvalue = [5 6]\nclass = yes"] ;
+8 -> 9 ;
+
+10[label="age < 40.80601405964026\nentropy = 0.9910760598382222\nsamples = 9\nvalue = [5 4]\nclass = no"] ;
+9 -> 10 ;
+
+11[label="age < 40.756144357763645\nentropy = 0.954434002924965\nsamples = 8\nvalue = [5 3]\nclass = no"] ;
+10 -> 11 ;
+
+12[label="age < 40.736274100062865\nentropy = 0.9852281360342515\nsamples = 7\nvalue = [4 3]\nclass = no"] ;
+11 -> 12 ;
+
+13[label="age < 40.63548131113559\nentropy = 1.0\nsamples = 6\nvalue = [3 3]\nclass = no"] ;
+12 -> 13 ;
+
+14[label="age < 40.49911322570128\nentropy = 0.9709505944546686\nsamples = 5\nvalue = [3 2]\nclass = no"] ;
+13 -> 14 ;
+
+15[label="age < 40.22069409119478\nentropy = 0.8112781244591328\nsamples = 4\nvalue = [3 1]\nclass = no"] ;
+14 -> 15 ;
+
+16[label="age < 40.07660130446236\nentropy = 1.0\nsamples = 2\nvalue = [1 1]\nclass = no"] ;
+15 -> 16 ;
+
+17[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+16 -> 17 ;
+
+18[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+16 -> 18 ;
+
+19[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+15 -> 19 ;
+
+20[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+14 -> 20 ;
+
+21[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+13 -> 21 ;
+
+22[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+12 -> 22 ;
+
+23[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+11 -> 23 ;
+
+24[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+10 -> 24 ;
+
+25[label="entropy = 0.0\nsamples = 2\nvalue = [0, 2]\nclass = yes"] ;
+9 -> 25 ;
+
+26[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+8 -> 26 ;
+
+27[label="entropy = 0.0\nsamples = 2\nvalue = [2, 0]\nclass = no"] ;
+7 -> 27 ;
+
+28[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+6 -> 28 ;
+
+29[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+5 -> 29 ;
+
+30[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+4 -> 30 ;
+
+31[label="age < 43.50292193397503\nentropy = 0.7950402793845223\nsamples = 25\nvalue = [19  6]\nclass = no"] ;
+3 -> 31 ;
+
+32[label="age < 42.88206532331327\nentropy = 0.7382848661434506\nsamples = 24\nvalue = [19  5]\nclass = no"] ;
+31 -> 32 ;
+
+33[label="age < 41.92617547855618\nentropy = 0.5665095065529053\nsamples = 15\nvalue = [13  2]\nclass = no"] ;
+32 -> 33 ;
+
+34[label="age < 41.87657404724489\nentropy = 0.8112781244591328\nsamples = 4\nvalue = [3 1]\nclass = no"] ;
+33 -> 34 ;
+
+35[label="entropy = 0.0\nsamples = 3\nvalue = [3, 0]\nclass = no"] ;
+34 -> 35 ;
+
+36[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+34 -> 36 ;
+
+37[label="age < 42.82506446246653\nentropy = 0.4394969869215134\nsamples = 11\nvalue = [10  1]\nclass = no"] ;
+33 -> 37 ;
+
+38[label="age < 42.766140456574085\nentropy = 0.4689955935892812\nsamples = 10\nvalue = [9 1]\nclass = no"] ;
+37 -> 38 ;
+
+39[label="entropy = 0.0\nsamples = 9\nvalue = [9, 0]\nclass = no"] ;
+38 -> 39 ;
+
+40[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+38 -> 40 ;
+
+41[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+37 -> 41 ;
+
+42[label="age < 43.160476384181806\nentropy = 0.9182958340544896\nsamples = 9\nvalue = [6 3]\nclass = no"] ;
+32 -> 42 ;
+
+43[label="age < 43.08960552960738\nentropy = 0.9182958340544896\nsamples = 3\nvalue = [1 2]\nclass = yes"] ;
+42 -> 43 ;
+
+44[label="age < 42.969119623851284\nentropy = 1.0\nsamples = 2\nvalue = [1 1]\nclass = no"] ;
+43 -> 44 ;
+
+45[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+44 -> 45 ;
+
+46[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+44 -> 46 ;
+
+47[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+43 -> 47 ;
+
+48[label="age < 43.341824527729344\nentropy = 0.6500224216483541\nsamples = 6\nvalue = [5 1]\nclass = no"] ;
+42 -> 48 ;
+
+49[label="age < 43.29613323484473\nentropy = 0.8112781244591328\nsamples = 4\nvalue = [3 1]\nclass = no"] ;
+48 -> 49 ;
+
+50[label="entropy = 0.0\nsamples = 3\nvalue = [3, 0]\nclass = no"] ;
+49 -> 50 ;
+
+51[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+49 -> 51 ;
+
+52[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+48 -> 52 ;
+
+53[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+31 -> 53 ;
+
+54[label="age < 50.23307284836133\nentropy = 0.8966554495712067\nsamples = 115\nvalue = [36 79]\nclass = yes"] ;
+2 -> 54 ;
+
+55[label="age < 47.71648236234283\nentropy = 0.844099171796772\nsamples = 103\nvalue = [28 75]\nclass = yes"] ;
+54 -> 55 ;
+
+56[label="age < 44.55792614571553\nentropy = 0.9348490242345944\nsamples = 57\nvalue = [20 37]\nclass = yes"] ;
+55 -> 56 ;
+
+57[label="age < 44.39919473088703\nentropy = 0.4394969869215134\nsamples = 11\nvalue = [ 1 10]\nclass = yes"] ;
+56 -> 57 ;
+
+58[label="entropy = 0.0\nsamples = 10\nvalue = [0, 10]\nclass = yes"] ;
+57 -> 58 ;
+
+59[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+57 -> 59 ;
+
+60[label="age < 44.73230635984115\nentropy = 0.978070970973496\nsamples = 46\nvalue = [19 27]\nclass = yes"] ;
+56 -> 60 ;
+
+61[label="age < 44.655917269830894\nentropy = 0.8112781244591328\nsamples = 4\nvalue = [3 1]\nclass = no"] ;
+60 -> 61 ;
+
+62[label="entropy = 0.0\nsamples = 3\nvalue = [3, 0]\nclass = no"] ;
+61 -> 62 ;
+
+63[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+61 -> 63 ;
+
+64[label="age < 47.65051461749664\nentropy = 0.9587118829771318\nsamples = 42\nvalue = [16 26]\nclass = yes"] ;
+60 -> 64 ;
+
+65[label="age < 47.5682158090923\nentropy = 0.9649567669505685\nsamples = 41\nvalue = [16 25]\nclass = yes"] ;
+64 -> 65 ;
+
+66[label="age < 47.46259275202501\nentropy = 0.954434002924965\nsamples = 40\nvalue = [15 25]\nclass = yes"] ;
+65 -> 66 ;
+
+67[label="age < 47.23846840697019\nentropy = 0.9418285354475157\nsamples = 39\nvalue = [14 25]\nclass = yes"] ;
+66 -> 67 ;
+
+68[label="age < 47.209990898642445\nentropy = 0.9709505944546686\nsamples = 35\nvalue = [14 21]\nclass = yes"] ;
+67 -> 68 ;
+
+69[label="age < 47.20125254283431\nentropy = 0.9596868937742169\nsamples = 34\nvalue = [13 21]\nclass = yes"] ;
+68 -> 69 ;
+
+70[label="age < 47.18672388797519\nentropy = 0.9672947789468944\nsamples = 33\nvalue = [13 20]\nclass = yes"] ;
+69 -> 70 ;
+
+71[label="age < 47.150507179854\nentropy = 0.954434002924965\nsamples = 32\nvalue = [12 20]\nclass = yes"] ;
+70 -> 71 ;
+
+72[label="age < 45.80992232227702\nentropy = 0.9383153522334069\nsamples = 31\nvalue = [11 20]\nclass = yes"] ;
+71 -> 72 ;
+
+73[label="age < 45.572566906598865\nentropy = 0.9967916319816366\nsamples = 15\nvalue = [7 8]\nclass = yes"] ;
+72 -> 73 ;
+
+74[label="age < 45.440323037596215\nentropy = 0.9182958340544896\nsamples = 9\nvalue = [3 6]\nclass = yes"] ;
+73 -> 74 ;
+
+75[label="age < 44.97957807963416\nentropy = 0.8112781244591328\nsamples = 8\nvalue = [2 6]\nclass = yes"] ;
+74 -> 75 ;
+
+76[label="age < 44.93581527491531\nentropy = 1.0\nsamples = 4\nvalue = [2 2]\nclass = no"] ;
+75 -> 76 ;
+
+77[label="age < 44.904478963250796\nentropy = 0.9182958340544896\nsamples = 3\nvalue = [2 1]\nclass = no"] ;
+76 -> 77 ;
+
+78[label="age < 44.82582581537488\nentropy = 1.0\nsamples = 2\nvalue = [1 1]\nclass = no"] ;
+77 -> 78 ;
+
+79[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+78 -> 79 ;
+
+80[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+78 -> 80 ;
+
+81[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+77 -> 81 ;
+
+82[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+76 -> 82 ;
+
+83[label="entropy = 0.0\nsamples = 4\nvalue = [0, 4]\nclass = yes"] ;
+75 -> 83 ;
+
+84[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+74 -> 84 ;
+
+85[label="age < 45.77562558361335\nentropy = 0.9182958340544896\nsamples = 6\nvalue = [4 2]\nclass = no"] ;
+73 -> 85 ;
+
+86[label="age < 45.73842238064573\nentropy = 0.9709505944546686\nsamples = 5\nvalue = [3 2]\nclass = no"] ;
+85 -> 86 ;
+
+87[label="age < 45.67970739822571\nentropy = 0.8112781244591328\nsamples = 4\nvalue = [3 1]\nclass = no"] ;
+86 -> 87 ;
+
+88[label="entropy = 0.0\nsamples = 3\nvalue = [3, 0]\nclass = no"] ;
+87 -> 88 ;
+
+89[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+87 -> 89 ;
+
+90[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+86 -> 90 ;
+
+91[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+85 -> 91 ;
+
+92[label="age < 47.11845688613086\nentropy = 0.8112781244591328\nsamples = 16\nvalue = [ 4 12]\nclass = yes"] ;
+72 -> 92 ;
+
+93[label="age < 47.074877023612274\nentropy = 0.8366407419411672\nsamples = 15\nvalue = [ 4 11]\nclass = yes"] ;
+92 -> 93 ;
+
+94[label="age < 46.98750539116231\nentropy = 0.863120568566631\nsamples = 14\nvalue = [ 4 10]\nclass = yes"] ;
+93 -> 94 ;
+
+95[label="age < 46.922533826942036\nentropy = 0.7793498372920851\nsamples = 13\nvalue = [ 3 10]\nclass = yes"] ;
+94 -> 95 ;
+
+96[label="age < 46.321954826901816\nentropy = 0.6500224216483541\nsamples = 12\nvalue = [ 2 10]\nclass = yes"] ;
+95 -> 96 ;
+
+97[label="age < 46.22864972945515\nentropy = 0.863120568566631\nsamples = 7\nvalue = [2 5]\nclass = yes"] ;
+96 -> 97 ;
+
+98[label="age < 46.14025506857895\nentropy = 0.6500224216483541\nsamples = 6\nvalue = [1 5]\nclass = yes"] ;
+97 -> 98 ;
+
+99[label="age < 46.12392312138056\nentropy = 0.7219280948873623\nsamples = 5\nvalue = [1 4]\nclass = yes"] ;
+98 -> 99 ;
+
+100[label="entropy = 0.0\nsamples = 4\nvalue = [0, 4]\nclass = yes"] ;
+99 -> 100 ;
+
+101[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+99 -> 101 ;
+
+102[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+98 -> 102 ;
+
+103[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+97 -> 103 ;
+
+104[label="entropy = 0.0\nsamples = 4\nvalue = [0, 4]\nclass = yes"] ;
+96 -> 104 ;
+
+105[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+95 -> 105 ;
+
+106[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+94 -> 106 ;
+
+107[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+93 -> 107 ;
+
+108[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+92 -> 108 ;
+
+109[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+71 -> 109 ;
+
+110[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+70 -> 110 ;
+
+111[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+69 -> 111 ;
+
+112[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+68 -> 112 ;
+
+113[label="entropy = 0.0\nsamples = 3\nvalue = [0, 3]\nclass = yes"] ;
+67 -> 113 ;
+
+114[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+66 -> 114 ;
+
+115[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+65 -> 115 ;
+
+116[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+64 -> 116 ;
+
+117[label="age < 50.16987014368463\nentropy = 0.6665783579949205\nsamples = 46\nvalue = [ 8 38]\nclass = yes"] ;
+55 -> 117 ;
+
+118[label="age < 49.57185347528775\nentropy = 0.6235702082127974\nsamples = 45\nvalue = [ 7 38]\nclass = yes"] ;
+117 -> 118 ;
+
+119[label="age < 49.54922585551829\nentropy = 0.6997722217733069\nsamples = 37\nvalue = [ 7 30]\nclass = yes"] ;
+118 -> 119 ;
+
+120[label="age < 48.574707466777596\nentropy = 0.6500224216483541\nsamples = 36\nvalue = [ 6 30]\nclass = yes"] ;
+119 -> 120 ;
+
+121[label="age < 48.46333517902234\nentropy = 0.4537163391869448\nsamples = 21\nvalue = [ 2 19]\nclass = yes"] ;
+120 -> 121 ;
+
+122[label="age < 48.4187250864199\nentropy = 0.4689955935892812\nsamples = 20\nvalue = [ 2 18]\nclass = yes"] ;
+121 -> 122 ;
+
+123[label="age < 47.92721023138014\nentropy = 0.2974722489192896\nsamples = 19\nvalue = [ 1 18]\nclass = yes"] ;
+122 -> 123 ;
+
+124[label="age < 47.92461249680676\nentropy = 0.41381685030363374\nsamples = 12\nvalue = [ 1 11]\nclass = yes"] ;
+123 -> 124 ;
+
+125[label="entropy = 0.0\nsamples = 11\nvalue = [0, 11]\nclass = yes"] ;
+124 -> 125 ;
+
+126[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+124 -> 126 ;
+
+127[label="entropy = 0.0\nsamples = 6\nvalue = [0, 6]\nclass = yes"] ;
+123 -> 127 ;
+
+128[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+122 -> 128 ;
+
+129[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+121 -> 129 ;
+
+130[label="age < 49.3116599198686\nentropy = 0.8366407419411672\nsamples = 15\nvalue = [ 4 11]\nclass = yes"] ;
+120 -> 130 ;
+
+131[label="age < 49.23418454213902\nentropy = 0.9182958340544896\nsamples = 12\nvalue = [4 8]\nclass = yes"] ;
+130 -> 131 ;
+
+132[label="age < 48.68059583531078\nentropy = 0.7642045065086203\nsamples = 9\nvalue = [2 7]\nclass = yes"] ;
+131 -> 132 ;
+
+133[label="age < 48.66083432757952\nentropy = 1.0\nsamples = 2\nvalue = [1 1]\nclass = no"] ;
+132 -> 133 ;
+
+134[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+133 -> 134 ;
+
+135[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+133 -> 135 ;
+
+136[label="age < 49.19577791859583\nentropy = 0.5916727785823275\nsamples = 7\nvalue = [1 6]\nclass = yes"] ;
+132 -> 136 ;
+
+137[label="age < 49.12017710259033\nentropy = 0.6500224216483541\nsamples = 6\nvalue = [1 5]\nclass = yes"] ;
+136 -> 137 ;
+
+138[label="entropy = 0.0\nsamples = 5\nvalue = [0, 5]\nclass = yes"] ;
+137 -> 138 ;
+
+139[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+137 -> 139 ;
+
+140[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+136 -> 140 ;
+
+141[label="age < 49.28066942160402\nentropy = 0.9182958340544896\nsamples = 3\nvalue = [2 1]\nclass = no"] ;
+131 -> 141 ;
+
+142[label="entropy = 0.0\nsamples = 2\nvalue = [2, 0]\nclass = no"] ;
+141 -> 142 ;
+
+143[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+141 -> 143 ;
+
+144[label="entropy = 0.0\nsamples = 3\nvalue = [0, 3]\nclass = yes"] ;
+130 -> 144 ;
+
+145[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+119 -> 145 ;
+
+146[label="entropy = 0.0\nsamples = 7\nvalue = [0, 7]\nclass = yes"] ;
+118 -> 146 ;
+
+147[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+117 -> 147 ;
+
+148[label="age < 50.84430405599353\nentropy = 0.9182958340544896\nsamples = 12\nvalue = [8 4]\nclass = no"] ;
+54 -> 148 ;
+
+149[label="age < 50.722479907069925\nentropy = 0.8453509366224364\nsamples = 11\nvalue = [8 3]\nclass = no"] ;
+148 -> 149 ;
+
+150[label="age < 50.6734130495537\nentropy = 0.954434002924965\nsamples = 8\nvalue = [5 3]\nclass = no"] ;
+149 -> 150 ;
+
+151[label="age < 50.615803689628336\nentropy = 0.863120568566631\nsamples = 7\nvalue = [5 2]\nclass = no"] ;
+150 -> 151 ;
+
+152[label="age < 50.52708637914225\nentropy = 0.9182958340544896\nsamples = 6\nvalue = [4 2]\nclass = no"] ;
+151 -> 152 ;
+
+153[label="age < 50.458766973467014\nentropy = 0.9709505944546686\nsamples = 5\nvalue = [3 2]\nclass = no"] ;
+152 -> 153 ;
+
+154[label="age < 50.40788215325187\nentropy = 0.8112781244591328\nsamples = 4\nvalue = [3 1]\nclass = no"] ;
+153 -> 154 ;
+
+155[label="entropy = 0.0\nsamples = 3\nvalue = [3, 0]\nclass = no"] ;
+154 -> 155 ;
+
+156[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+154 -> 156 ;
+
+157[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+153 -> 157 ;
+
+158[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+152 -> 158 ;
+
+159[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+151 -> 159 ;
+
+160[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+150 -> 160 ;
+
+161[label="entropy = 0.0\nsamples = 2\nvalue = [2, 0]\nclass = no"] ;
+149 -> 161 ;
+
+162[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+148 -> 162 ;
+
+163[label="age < 66.90561404399372\nentropy = 0.38369483316931385\nsamples = 294\nvalue = [ 22 272]\nclass = yes"] ;
+1 -> 163 ;
+
+164[label="age < 66.67978602131214\nentropy = 0.42276234377915156\nsamples = 256\nvalue = [ 22 234]\nclass = yes"] ;
+163 -> 164 ;
+
+165[label="age < 65.53209877527121\nentropy = 0.41041614171818885\nsamples = 255\nvalue = [ 21 234]\nclass = yes"] ;
+164 -> 165 ;
+
+166[label="age < 65.4029366959689\nentropy = 0.4231990442818129\nsamples = 244\nvalue = [ 21 223]\nclass = yes"] ;
+165 -> 166 ;
+
+167[label="age < 63.89776844638128\nentropy = 0.41024773167172657\nsamples = 243\nvalue = [ 20 223]\nclass = yes"] ;
+166 -> 167 ;
+
+168[label="age < 63.738029638070344\nentropy = 0.43275015878875406\nsamples = 225\nvalue = [ 20 205]\nclass = yes"] ;
+167 -> 168 ;
+
+169[label="age < 62.829047167555885\nentropy = 0.4189440151199052\nsamples = 224\nvalue = [ 19 205]\nclass = yes"] ;
+168 -> 169 ;
+
+170[label="age < 62.768376490724016\nentropy = 0.4394969869215134\nsamples = 209\nvalue = [ 19 190]\nclass = yes"] ;
+169 -> 170 ;
+
+171[label="age < 55.97975752602445\nentropy = 0.42480887386781474\nsamples = 208\nvalue = [ 18 190]\nclass = yes"] ;
+170 -> 171 ;
+
+172[label="age < 51.427962372820154\nentropy = 0.31599713297842463\nsamples = 105\nvalue = [ 6 99]\nclass = yes"] ;
+171 -> 172 ;
+
+173[label="age < 51.35050364342271\nentropy = 0.6193821946787638\nsamples = 13\nvalue = [ 2 11]\nclass = yes"] ;
+172 -> 173 ;
+
+174[label="age < 51.000500788725596\nentropy = 0.41381685030363374\nsamples = 12\nvalue = [ 1 11]\nclass = yes"] ;
+173 -> 174 ;
+
+175[label="age < 50.905126163587035\nentropy = 0.6500224216483541\nsamples = 6\nvalue = [1 5]\nclass = yes"] ;
+174 -> 175 ;
+
+176[label="entropy = 0.0\nsamples = 5\nvalue = [0, 5]\nclass = yes"] ;
+175 -> 176 ;
+
+177[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+175 -> 177 ;
+
+178[label="entropy = 0.0\nsamples = 5\nvalue = [0, 5]\nclass = yes"] ;
+174 -> 178 ;
+
+179[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+173 -> 179 ;
+
+180[label="age < 53.757212236704156\nentropy = 0.2580186686648155\nsamples = 92\nvalue = [ 4 88]\nclass = yes"] ;
+172 -> 180 ;
+
+181[label="age < 53.74452170742586\nentropy = 0.16866093149667025\nsamples = 40\nvalue = [ 1 39]\nclass = yes"] ;
+180 -> 181 ;
+
+182[label="age < 53.72280251348809\nentropy = 0.17203694935311378\nsamples = 39\nvalue = [ 1 38]\nclass = yes"] ;
+181 -> 182 ;
+
+183[label="entropy = 0.0\nsamples = 38\nvalue = [0, 38]\nclass = yes"] ;
+182 -> 183 ;
+
+184[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+182 -> 184 ;
+
+185[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+181 -> 185 ;
+
+186[label="age < 53.93345514058066\nentropy = 0.31821529768323314\nsamples = 52\nvalue = [ 3 49]\nclass = yes"] ;
+180 -> 186 ;
+
+187[label="age < 53.793677052559445\nentropy = 1.0\nsamples = 2\nvalue = [1 1]\nclass = no"] ;
+186 -> 187 ;
+
+188[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+187 -> 188 ;
+
+189[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+187 -> 189 ;
+
+190[label="age < 55.494034311545406\nentropy = 0.24229218908241482\nsamples = 50\nvalue = [ 2 48]\nclass = yes"] ;
+186 -> 190 ;
+
+191[label="age < 55.438651733836835\nentropy = 0.19590927087360493\nsamples = 33\nvalue = [ 1 32]\nclass = yes"] ;
+190 -> 191 ;
+
+192[label="age < 55.40224949112563\nentropy = 0.20062232431271465\nsamples = 32\nvalue = [ 1 31]\nclass = yes"] ;
+191 -> 192 ;
+
+193[label="entropy = 0.0\nsamples = 31\nvalue = [0, 31]\nclass = yes"] ;
+192 -> 193 ;
+
+194[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+192 -> 194 ;
+
+195[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+191 -> 195 ;
+
+196[label="age < 55.950201442913155\nentropy = 0.3227569588973982\nsamples = 17\nvalue = [ 1 16]\nclass = yes"] ;
+190 -> 196 ;
+
+197[label="age < 55.925362243426676\nentropy = 0.3372900666170139\nsamples = 16\nvalue = [ 1 15]\nclass = yes"] ;
+196 -> 197 ;
+
+198[label="entropy = 0.0\nsamples = 15\nvalue = [0, 15]\nclass = yes"] ;
+197 -> 198 ;
+
+199[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+197 -> 199 ;
+
+200[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+196 -> 200 ;
+
+201[label="age < 58.201249913700806\nentropy = 0.5192300197391869\nsamples = 103\nvalue = [12 91]\nclass = yes"] ;
+171 -> 201 ;
+
+202[label="age < 58.05920151683297\nentropy = 0.7355085815538398\nsamples = 29\nvalue = [ 6 23]\nclass = yes"] ;
+201 -> 202 ;
+
+203[label="age < 57.857645062340104\nentropy = 0.676941869780886\nsamples = 28\nvalue = [ 5 23]\nclass = yes"] ;
+202 -> 203 ;
+
+204[label="age < 57.83486173859842\nentropy = 0.7219280948873623\nsamples = 25\nvalue = [ 5 20]\nclass = yes"] ;
+203 -> 204 ;
+
+205[label="age < 57.21022018504786\nentropy = 0.6500224216483541\nsamples = 24\nvalue = [ 4 20]\nclass = yes"] ;
+204 -> 205 ;
+
+206[label="age < 57.19127995091736\nentropy = 0.7642045065086203\nsamples = 18\nvalue = [ 4 14]\nclass = yes"] ;
+205 -> 206 ;
+
+207[label="age < 56.883019680990856\nentropy = 0.6722948170756379\nsamples = 17\nvalue = [ 3 14]\nclass = yes"] ;
+206 -> 207 ;
+
+208[label="age < 56.7590051249925\nentropy = 0.7793498372920851\nsamples = 13\nvalue = [ 3 10]\nclass = yes"] ;
+207 -> 208 ;
+
+209[label="age < 56.43023417368603\nentropy = 0.6500224216483541\nsamples = 12\nvalue = [ 2 10]\nclass = yes"] ;
+208 -> 209 ;
+
+210[label="age < 56.331963260016295\nentropy = 0.8112781244591328\nsamples = 8\nvalue = [2 6]\nclass = yes"] ;
+209 -> 210 ;
+
+211[label="age < 56.28668898045687\nentropy = 0.5916727785823275\nsamples = 7\nvalue = [1 6]\nclass = yes"] ;
+210 -> 211 ;
+
+212[label="age < 56.15969251771821\nentropy = 0.8112781244591328\nsamples = 4\nvalue = [1 3]\nclass = yes"] ;
+211 -> 212 ;
+
+213[label="entropy = 0.0\nsamples = 3\nvalue = [0, 3]\nclass = yes"] ;
+212 -> 213 ;
+
+214[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+212 -> 214 ;
+
+215[label="entropy = 0.0\nsamples = 2\nvalue = [0, 2]\nclass = yes"] ;
+211 -> 215 ;
+
+216[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+210 -> 216 ;
+
+217[label="entropy = 0.0\nsamples = 3\nvalue = [0, 3]\nclass = yes"] ;
+209 -> 217 ;
+
+218[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+208 -> 218 ;
+
+219[label="entropy = 0.0\nsamples = 3\nvalue = [0, 3]\nclass = yes"] ;
+207 -> 219 ;
+
+220[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+206 -> 220 ;
+
+221[label="entropy = 0.0\nsamples = 5\nvalue = [0, 5]\nclass = yes"] ;
+205 -> 221 ;
+
+222[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+204 -> 222 ;
+
+223[label="entropy = 0.0\nsamples = 2\nvalue = [0, 2]\nclass = yes"] ;
+203 -> 223 ;
+
+224[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+202 -> 224 ;
+
+225[label="age < 62.08708455876646\nentropy = 0.4059770384755711\nsamples = 74\nvalue = [ 6 68]\nclass = yes"] ;
+201 -> 225 ;
+
+226[label="age < 62.08144478567308\nentropy = 0.4349734800747426\nsamples = 67\nvalue = [ 6 61]\nclass = yes"] ;
+225 -> 226 ;
+
+227[label="age < 61.42535489436923\nentropy = 0.38705142139219784\nsamples = 66\nvalue = [ 5 61]\nclass = yes"] ;
+226 -> 227 ;
+
+228[label="age < 61.204117217301814\nentropy = 0.44506485705083865\nsamples = 54\nvalue = [ 5 49]\nclass = yes"] ;
+227 -> 228 ;
+
+229[label="age < 59.534219691640956\nentropy = 0.3322866302216151\nsamples = 49\nvalue = [ 3 46]\nclass = yes"] ;
+228 -> 229 ;
+
+230[label="age < 59.523290045262115\nentropy = 0.39124356362925566\nsamples = 26\nvalue = [ 2 24]\nclass = yes"] ;
+229 -> 230 ;
+
+231[label="age < 59.20116163154281\nentropy = 0.24229218908241482\nsamples = 25\nvalue = [ 1 24]\nclass = yes"] ;
+230 -> 231 ;
+
+232[label="age < 59.15457086400965\nentropy = 0.28639695711595625\nsamples = 20\nvalue = [ 1 19]\nclass = yes"] ;
+231 -> 232 ;
+
+233[label="entropy = 0.0\nsamples = 19\nvalue = [0, 19]\nclass = yes"] ;
+232 -> 233 ;
+
+234[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+232 -> 234 ;
+
+235[label="entropy = 0.0\nsamples = 4\nvalue = [0, 4]\nclass = yes"] ;
+231 -> 235 ;
+
+236[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+230 -> 236 ;
+
+237[label="age < 61.11577586047473\nentropy = 0.2580186686648155\nsamples = 23\nvalue = [ 1 22]\nclass = yes"] ;
+229 -> 237 ;
+
+238[label="age < 61.00859993568567\nentropy = 0.26676498780302604\nsamples = 22\nvalue = [ 1 21]\nclass = yes"] ;
+237 -> 238 ;
+
+239[label="entropy = 0.0\nsamples = 21\nvalue = [0, 21]\nclass = yes"] ;
+238 -> 239 ;
+
+240[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+238 -> 240 ;
+
+241[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+237 -> 241 ;
+
+242[label="age < 61.36989939976907\nentropy = 0.9709505944546686\nsamples = 5\nvalue = [2 3]\nclass = yes"] ;
+228 -> 242 ;
+
+243[label="age < 61.313987632617014\nentropy = 1.0\nsamples = 4\nvalue = [2 2]\nclass = no"] ;
+242 -> 243 ;
+
+244[label="age < 61.284783997704366\nentropy = 0.9182958340544896\nsamples = 3\nvalue = [1 2]\nclass = yes"] ;
+243 -> 244 ;
+
+245[label="entropy = 0.0\nsamples = 2\nvalue = [0, 2]\nclass = yes"] ;
+244 -> 245 ;
+
+246[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+244 -> 246 ;
+
+247[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+243 -> 247 ;
+
+248[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+242 -> 248 ;
+
+249[label="entropy = 0.0\nsamples = 12\nvalue = [0, 12]\nclass = yes"] ;
+227 -> 249 ;
+
+250[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+226 -> 250 ;
+
+251[label="entropy = 0.0\nsamples = 6\nvalue = [0, 6]\nclass = yes"] ;
+225 -> 251 ;
+
+252[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+170 -> 252 ;
+
+253[label="entropy = 0.0\nsamples = 14\nvalue = [0, 14]\nclass = yes"] ;
+169 -> 253 ;
+
+254[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+168 -> 254 ;
+
+255[label="entropy = 0.0\nsamples = 17\nvalue = [0, 17]\nclass = yes"] ;
+167 -> 255 ;
+
+256[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+166 -> 256 ;
+
+257[label="entropy = 0.0\nsamples = 10\nvalue = [0, 10]\nclass = yes"] ;
+165 -> 257 ;
+
+258[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+164 -> 258 ;
+
+259[label="entropy = 0.0\nsamples = 37\nvalue = [0, 37]\nclass = yes"] ;
+163 -> 259 ;
+
+260[label="age < 53.512490373931385\nentropy = 0.7594377698530199\nsamples = 551\nvalue = [121 430]\nclass = yes"] ;
+0 -> 260 ;
+
+261[label="age < 45.00422788550157\nentropy = 0.9360814319397586\nsamples = 264\nvalue = [ 93 171]\nclass = yes"] ;
+260 -> 261 ;
+
+262[label="age < 43.298955263315136\nentropy = 0.9988455359952018\nsamples = 75\nvalue = [39 36]\nclass = no"] ;
+261 -> 262 ;
+
+263[label="age < 41.365074632901326\nentropy = 0.9949848281859701\nsamples = 48\nvalue = [22 26]\nclass = yes"] ;
+262 -> 263 ;
+
+264[label="age < 40.347233414849384\nentropy = 0.9709505944546686\nsamples = 15\nvalue = [9 6]\nclass = no"] ;
+263 -> 264 ;
+
+265[label="age < 40.31959425045635\nentropy = 0.9182958340544896\nsamples = 3\nvalue = [1 2]\nclass = yes"] ;
+264 -> 265 ;
+
+266[label="age < 40.26532952300032\nentropy = 1.0\nsamples = 2\nvalue = [1 1]\nclass = no"] ;
+265 -> 266 ;
+
+267[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+266 -> 267 ;
+
+268[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+266 -> 268 ;
+
+269[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+265 -> 269 ;
+
+270[label="age < 41.31381251713162\nentropy = 0.9182958340544896\nsamples = 12\nvalue = [8 4]\nclass = no"] ;
+264 -> 270 ;
+
+271[label="age < 41.22093806941138\nentropy = 0.9456603046006401\nsamples = 11\nvalue = [7 4]\nclass = no"] ;
+270 -> 271 ;
+
+272[label="age < 41.11767100748689\nentropy = 0.8812908992306927\nsamples = 10\nvalue = [7 3]\nclass = no"] ;
+271 -> 272 ;
+
+273[label="age < 40.952965124464825\nentropy = 0.954434002924965\nsamples = 8\nvalue = [5 3]\nclass = no"] ;
+272 -> 273 ;
+
+274[label="age < 40.80271482084372\nentropy = 0.863120568566631\nsamples = 7\nvalue = [5 2]\nclass = no"] ;
+273 -> 274 ;
+
+275[label="age < 40.72051256848443\nentropy = 0.9182958340544896\nsamples = 6\nvalue = [4 2]\nclass = no"] ;
+274 -> 275 ;
+
+276[label="age < 40.63408545470716\nentropy = 0.9709505944546686\nsamples = 5\nvalue = [3 2]\nclass = no"] ;
+275 -> 276 ;
+
+277[label="age < 40.565146072001326\nentropy = 0.8112781244591328\nsamples = 4\nvalue = [3 1]\nclass = no"] ;
+276 -> 277 ;
+
+278[label="entropy = 0.0\nsamples = 3\nvalue = [3, 0]\nclass = no"] ;
+277 -> 278 ;
+
+279[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+277 -> 279 ;
+
+280[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+276 -> 280 ;
+
+281[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+275 -> 281 ;
+
+282[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+274 -> 282 ;
+
+283[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+273 -> 283 ;
+
+284[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+272 -> 284 ;
+
+285[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+271 -> 285 ;
+
+286[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+270 -> 286 ;
+
+287[label="age < 43.19060192411374\nentropy = 0.9672947789468944\nsamples = 33\nvalue = [13 20]\nclass = yes"] ;
+263 -> 287 ;
+
+288[label="age < 43.0435094595166\nentropy = 0.954434002924965\nsamples = 32\nvalue = [12 20]\nclass = yes"] ;
+287 -> 288 ;
+
+289[label="age < 42.97864829596439\nentropy = 0.9709505944546686\nsamples = 30\nvalue = [12 18]\nclass = yes"] ;
+288 -> 289 ;
+
+290[label="age < 42.913481961845996\nentropy = 0.9575534837147482\nsamples = 29\nvalue = [11 18]\nclass = yes"] ;
+289 -> 290 ;
+
+291[label="age < 42.875484094398516\nentropy = 0.9666186325481028\nsamples = 28\nvalue = [11 17]\nclass = yes"] ;
+290 -> 291 ;
+
+292[label="age < 42.84337897144802\nentropy = 0.9509560484549725\nsamples = 27\nvalue = [10 17]\nclass = yes"] ;
+291 -> 292 ;
+
+293[label="age < 42.773210651535095\nentropy = 0.9305861291319928\nsamples = 26\nvalue = [ 9 17]\nclass = yes"] ;
+292 -> 293 ;
+
+294[label="age < 42.59685616372772\nentropy = 0.954434002924965\nsamples = 24\nvalue = [ 9 15]\nclass = yes"] ;
+293 -> 294 ;
+
+295[label="age < 42.54311131505664\nentropy = 0.8997437586982626\nsamples = 19\nvalue = [ 6 13]\nclass = yes"] ;
+294 -> 295 ;
+
+296[label="age < 42.439183050198196\nentropy = 0.8524051786494786\nsamples = 18\nvalue = [ 5 13]\nclass = yes"] ;
+295 -> 296 ;
+
+297[label="age < 42.40945411048462\nentropy = 0.9182958340544896\nsamples = 15\nvalue = [ 5 10]\nclass = yes"] ;
+296 -> 297 ;
+
+298[label="age < 42.390970040396596\nentropy = 0.9402859586706311\nsamples = 14\nvalue = [5 9]\nclass = yes"] ;
+297 -> 298 ;
+
+299[label="age < 42.350671587452055\nentropy = 0.8904916402194913\nsamples = 13\nvalue = [4 9]\nclass = yes"] ;
+298 -> 299 ;
+
+300[label="age < 41.89233686252361\nentropy = 0.8112781244591328\nsamples = 12\nvalue = [3 9]\nclass = yes"] ;
+299 -> 300 ;
+
+301[label="age < 41.824119864090974\nentropy = 0.954434002924965\nsamples = 8\nvalue = [3 5]\nclass = yes"] ;
+300 -> 301 ;
+
+302[label="age < 41.744460561169184\nentropy = 0.863120568566631\nsamples = 7\nvalue = [2 5]\nclass = yes"] ;
+301 -> 302 ;
+
+303[label="age < 41.70960184236222\nentropy = 0.9709505944546686\nsamples = 5\nvalue = [2 3]\nclass = yes"] ;
+302 -> 303 ;
+
+304[label="age < 41.669411311426884\nentropy = 0.8112781244591328\nsamples = 4\nvalue = [1 3]\nclass = yes"] ;
+303 -> 304 ;
+
+305[label="age < 41.63598299035349\nentropy = 0.9182958340544896\nsamples = 3\nvalue = [1 2]\nclass = yes"] ;
+304 -> 305 ;
+
+306[label="entropy = 0.0\nsamples = 2\nvalue = [0, 2]\nclass = yes"] ;
+305 -> 306 ;
+
+307[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+305 -> 307 ;
+
+308[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+304 -> 308 ;
+
+309[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+303 -> 309 ;
+
+310[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+302 -> 310 ;
+
+311[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+301 -> 311 ;
+
+312[label="entropy = 0.0\nsamples = 3\nvalue = [0, 3]\nclass = yes"] ;
+300 -> 312 ;
+
+313[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+299 -> 313 ;
+
+314[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+298 -> 314 ;
+
+315[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+297 -> 315 ;
+
+316[label="entropy = 0.0\nsamples = 3\nvalue = [0, 3]\nclass = yes"] ;
+296 -> 316 ;
+
+317[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+295 -> 317 ;
+
+318[label="age < 42.75891488400741\nentropy = 0.9709505944546686\nsamples = 5\nvalue = [3 2]\nclass = no"] ;
+294 -> 318 ;
+
+319[label="age < 42.73242275185679\nentropy = 0.8112781244591328\nsamples = 4\nvalue = [3 1]\nclass = no"] ;
+318 -> 319 ;
+
+320[label="age < 42.67907805406303\nentropy = 1.0\nsamples = 2\nvalue = [1 1]\nclass = no"] ;
+319 -> 320 ;
+
+321[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+320 -> 321 ;
+
+322[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+320 -> 322 ;
+
+323[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+319 -> 323 ;
+
+324[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+318 -> 324 ;
+
+325[label="entropy = 0.0\nsamples = 2\nvalue = [0, 2]\nclass = yes"] ;
+293 -> 325 ;
+
+326[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+292 -> 326 ;
+
+327[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+291 -> 327 ;
+
+328[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+290 -> 328 ;
+
+329[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+289 -> 329 ;
+
+330[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+288 -> 330 ;
+
+331[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+287 -> 331 ;
+
+332[label="age < 44.20947025495388\nentropy = 0.9509560484549725\nsamples = 27\nvalue = [17 10]\nclass = no"] ;
+262 -> 332 ;
+
+333[label="age < 44.08719621017103\nentropy = 0.7793498372920851\nsamples = 13\nvalue = [10  3]\nclass = no"] ;
+332 -> 333 ;
+
+334[label="age < 43.93870528868314\nentropy = 0.6500224216483541\nsamples = 12\nvalue = [10  2]\nclass = no"] ;
+333 -> 334 ;
+
+335[label="age < 43.885434741455704\nentropy = 0.8112781244591328\nsamples = 8\nvalue = [6 2]\nclass = no"] ;
+334 -> 335 ;
+
+336[label="age < 43.71367236692882\nentropy = 0.5916727785823275\nsamples = 7\nvalue = [6 1]\nclass = no"] ;
+335 -> 336 ;
+
+337[label="age < 43.671666810208734\nentropy = 0.8112781244591328\nsamples = 4\nvalue = [3 1]\nclass = no"] ;
+336 -> 337 ;
+
+338[label="entropy = 0.0\nsamples = 3\nvalue = [3, 0]\nclass = no"] ;
+337 -> 338 ;
+
+339[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+337 -> 339 ;
+
+340[label="entropy = 0.0\nsamples = 2\nvalue = [2, 0]\nclass = no"] ;
+336 -> 340 ;
+
+341[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+335 -> 341 ;
+
+342[label="entropy = 0.0\nsamples = 3\nvalue = [3, 0]\nclass = no"] ;
+334 -> 342 ;
+
+343[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+333 -> 343 ;
+
+344[label="age < 44.92630505703181\nentropy = 1.0\nsamples = 14\nvalue = [7 7]\nclass = no"] ;
+332 -> 344 ;
+
+345[label="age < 44.850426836337604\nentropy = 0.9957274520849255\nsamples = 13\nvalue = [7 6]\nclass = no"] ;
+344 -> 345 ;
+
+346[label="age < 44.63202270535754\nentropy = 0.9709505944546686\nsamples = 10\nvalue = [4 6]\nclass = yes"] ;
+345 -> 346 ;
+
+347[label="age < 44.507163997479324\nentropy = 0.9709505944546686\nsamples = 5\nvalue = [3 2]\nclass = no"] ;
+346 -> 347 ;
+
+348[label="age < 44.47417821221689\nentropy = 1.0\nsamples = 4\nvalue = [2 2]\nclass = no"] ;
+347 -> 348 ;
+
+349[label="age < 44.404934515804534\nentropy = 0.9182958340544896\nsamples = 3\nvalue = [2 1]\nclass = no"] ;
+348 -> 349 ;
+
+350[label="age < 44.32453079644006\nentropy = 1.0\nsamples = 2\nvalue = [1 1]\nclass = no"] ;
+349 -> 350 ;
+
+351[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+350 -> 351 ;
+
+352[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+350 -> 352 ;
+
+353[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+349 -> 353 ;
+
+354[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+348 -> 354 ;
+
+355[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+347 -> 355 ;
+
+356[label="age < 44.83561067362452\nentropy = 0.7219280948873623\nsamples = 5\nvalue = [1 4]\nclass = yes"] ;
+346 -> 356 ;
+
+357[label="age < 44.82277376939744\nentropy = 0.8112781244591328\nsamples = 4\nvalue = [1 3]\nclass = yes"] ;
+356 -> 357 ;
+
+358[label="entropy = 0.0\nsamples = 3\nvalue = [0, 3]\nclass = yes"] ;
+357 -> 358 ;
+
+359[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+357 -> 359 ;
+
+360[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+356 -> 360 ;
+
+361[label="entropy = 0.0\nsamples = 2\nvalue = [2, 0]\nclass = no"] ;
+345 -> 361 ;
+
+362[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+344 -> 362 ;
+
+363[label="age < 53.407879292723294\nentropy = 0.863120568566631\nsamples = 189\nvalue = [ 54 135]\nclass = yes"] ;
+261 -> 363 ;
+
+364[label="age < 53.372171918956546\nentropy = 0.854864096781804\nsamples = 186\nvalue = [ 52 134]\nclass = yes"] ;
+363 -> 364 ;
+
+365[label="age < 53.13985063052359\nentropy = 0.8494914931547565\nsamples = 185\nvalue = [ 51 134]\nclass = yes"] ;
+364 -> 365 ;
+
+366[label="age < 53.06870632532858\nentropy = 0.8620633055293611\nsamples = 179\nvalue = [ 51 128]\nclass = yes"] ;
+365 -> 366 ;
+
+367[label="age < 52.32946859606982\nentropy = 0.8566727035015875\nsamples = 178\nvalue = [ 50 128]\nclass = yes"] ;
+366 -> 367 ;
+
+368[label="age < 52.30755639072039\nentropy = 0.8730895488432588\nsamples = 167\nvalue = [ 49 118]\nclass = yes"] ;
+367 -> 368 ;
+
+369[label="age < 47.94679847365505\nentropy = 0.8676293117125106\nsamples = 166\nvalue = [ 48 118]\nclass = yes"] ;
+368 -> 369 ;
+
+370[label="age < 46.38820545540146\nentropy = 0.9348490242345944\nsamples = 57\nvalue = [20 37]\nclass = yes"] ;
+369 -> 370 ;
+
+371[label="age < 46.32475467493781\nentropy = 0.7024665512903903\nsamples = 21\nvalue = [ 4 17]\nclass = yes"] ;
+370 -> 371 ;
+
+372[label="age < 46.27642302087682\nentropy = 0.7219280948873623\nsamples = 20\nvalue = [ 4 16]\nclass = yes"] ;
+371 -> 372 ;
+
+373[label="age < 45.99114324898944\nentropy = 0.6292492238560345\nsamples = 19\nvalue = [ 3 16]\nclass = yes"] ;
+372 -> 373 ;
+
+374[label="age < 45.89077982209622\nentropy = 0.7793498372920851\nsamples = 13\nvalue = [ 3 10]\nclass = yes"] ;
+373 -> 374 ;
+
+375[label="age < 45.70232631722834\nentropy = 0.6500224216483541\nsamples = 12\nvalue = [ 2 10]\nclass = yes"] ;
+374 -> 375 ;
+
+376[label="age < 45.652813329166406\nentropy = 0.7219280948873623\nsamples = 10\nvalue = [2 8]\nclass = yes"] ;
+375 -> 376 ;
+
+377[label="age < 45.24919788075255\nentropy = 0.5032583347756457\nsamples = 9\nvalue = [1 8]\nclass = yes"] ;
+376 -> 377 ;
+
+378[label="age < 45.208245534912294\nentropy = 0.7219280948873623\nsamples = 5\nvalue = [1 4]\nclass = yes"] ;
+377 -> 378 ;
+
+379[label="entropy = 0.0\nsamples = 4\nvalue = [0, 4]\nclass = yes"] ;
+378 -> 379 ;
+
+380[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+378 -> 380 ;
+
+381[label="entropy = 0.0\nsamples = 3\nvalue = [0, 3]\nclass = yes"] ;
+377 -> 381 ;
+
+382[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+376 -> 382 ;
+
+383[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+375 -> 383 ;
+
+384[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+374 -> 384 ;
+
+385[label="entropy = 0.0\nsamples = 5\nvalue = [0, 5]\nclass = yes"] ;
+373 -> 385 ;
+
+386[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+372 -> 386 ;
+
+387[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+371 -> 387 ;
+
+388[label="age < 46.77119635994054\nentropy = 0.9910760598382222\nsamples = 36\nvalue = [16 20]\nclass = yes"] ;
+370 -> 388 ;
+
+389[label="age < 46.747576050737656\nentropy = 0.9182958340544896\nsamples = 9\nvalue = [6 3]\nclass = no"] ;
+388 -> 389 ;
+
+390[label="age < 46.6346275681983\nentropy = 0.8112781244591328\nsamples = 8\nvalue = [6 2]\nclass = no"] ;
+389 -> 390 ;
+
+391[label="age < 46.58673028127451\nentropy = 0.9709505944546686\nsamples = 5\nvalue = [3 2]\nclass = no"] ;
+390 -> 391 ;
+
+392[label="age < 46.53471589157131\nentropy = 0.8112781244591328\nsamples = 4\nvalue = [3 1]\nclass = no"] ;
+391 -> 392 ;
+
+393[label="age < 46.45807235077689\nentropy = 0.9182958340544896\nsamples = 3\nvalue = [2 1]\nclass = no"] ;
+392 -> 393 ;
+
+394[label="entropy = 0.0\nsamples = 2\nvalue = [2, 0]\nclass = no"] ;
+393 -> 394 ;
+
+395[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+393 -> 395 ;
+
+396[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+392 -> 396 ;
+
+397[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+391 -> 397 ;
+
+398[label="entropy = 0.0\nsamples = 2\nvalue = [2, 0]\nclass = no"] ;
+390 -> 398 ;
+
+399[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+389 -> 399 ;
+
+400[label="age < 47.604856965601726\nentropy = 0.9509560484549725\nsamples = 27\nvalue = [10 17]\nclass = yes"] ;
+388 -> 400 ;
+
+401[label="age < 47.53822324177035\nentropy = 0.8524051786494786\nsamples = 18\nvalue = [ 5 13]\nclass = yes"] ;
+400 -> 401 ;
+
+402[label="age < 47.48560172809016\nentropy = 0.8739810481273578\nsamples = 17\nvalue = [ 5 12]\nclass = yes"] ;
+401 -> 402 ;
+
+403[label="age < 47.450251985789365\nentropy = 0.8112781244591328\nsamples = 16\nvalue = [ 4 12]\nclass = yes"] ;
+402 -> 403 ;
+
+404[label="age < 47.41843346220766\nentropy = 0.8904916402194913\nsamples = 13\nvalue = [4 9]\nclass = yes"] ;
+403 -> 404 ;
+
+405[label="age < 47.361287311295335\nentropy = 0.9182958340544896\nsamples = 12\nvalue = [4 8]\nclass = yes"] ;
+404 -> 405 ;
+
+406[label="age < 47.315850302396015\nentropy = 0.8453509366224364\nsamples = 11\nvalue = [3 8]\nclass = yes"] ;
+405 -> 406 ;
+
+407[label="age < 47.00847483890408\nentropy = 0.7219280948873623\nsamples = 10\nvalue = [2 8]\nclass = yes"] ;
+406 -> 407 ;
+
+408[label="age < 46.982818742065064\nentropy = 0.863120568566631\nsamples = 7\nvalue = [2 5]\nclass = yes"] ;
+407 -> 408 ;
+
+409[label="age < 46.96603227087165\nentropy = 0.9182958340544896\nsamples = 6\nvalue = [2 4]\nclass = yes"] ;
+408 -> 409 ;
+
+410[label="age < 46.92863106721201\nentropy = 0.7219280948873623\nsamples = 5\nvalue = [1 4]\nclass = yes"] ;
+409 -> 410 ;
+
+411[label="entropy = 0.0\nsamples = 4\nvalue = [0, 4]\nclass = yes"] ;
+410 -> 411 ;
+
+412[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+410 -> 412 ;
+
+413[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+409 -> 413 ;
+
+414[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+408 -> 414 ;
+
+415[label="entropy = 0.0\nsamples = 3\nvalue = [0, 3]\nclass = yes"] ;
+407 -> 415 ;
+
+416[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+406 -> 416 ;
+
+417[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+405 -> 417 ;
+
+418[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+404 -> 418 ;
+
+419[label="entropy = 0.0\nsamples = 3\nvalue = [0, 3]\nclass = yes"] ;
+403 -> 419 ;
+
+420[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+402 -> 420 ;
+
+421[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+401 -> 421 ;
+
+422[label="age < 47.90639144561241\nentropy = 0.9910760598382222\nsamples = 9\nvalue = [5 4]\nclass = no"] ;
+400 -> 422 ;
+
+423[label="age < 47.813174430964764\nentropy = 0.954434002924965\nsamples = 8\nvalue = [5 3]\nclass = no"] ;
+422 -> 423 ;
+
+424[label="age < 47.7872839092156\nentropy = 1.0\nsamples = 6\nvalue = [3 3]\nclass = no"] ;
+423 -> 424 ;
+
+425[label="age < 47.75322068260188\nentropy = 0.9709505944546686\nsamples = 5\nvalue = [2 3]\nclass = yes"] ;
+424 -> 425 ;
+
+426[label="age < 47.67644658666569\nentropy = 0.9182958340544896\nsamples = 3\nvalue = [2 1]\nclass = no"] ;
+425 -> 426 ;
+
+427[label="entropy = 0.0\nsamples = 2\nvalue = [2, 0]\nclass = no"] ;
+426 -> 427 ;
+
+428[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+426 -> 428 ;
+
+429[label="entropy = 0.0\nsamples = 2\nvalue = [0, 2]\nclass = yes"] ;
+425 -> 429 ;
+
+430[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+424 -> 430 ;
+
+431[label="entropy = 0.0\nsamples = 2\nvalue = [2, 0]\nclass = no"] ;
+423 -> 431 ;
+
+432[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+422 -> 432 ;
+
+433[label="age < 48.28739129473867\nentropy = 0.8220027830221786\nsamples = 109\nvalue = [28 81]\nclass = yes"] ;
+369 -> 433 ;
+
+434[label="age < 48.27193962651445\nentropy = 0.35335933502142136\nsamples = 15\nvalue = [ 1 14]\nclass = yes"] ;
+433 -> 434 ;
+
+435[label="age < 48.25799568098981\nentropy = 0.37123232664087563\nsamples = 14\nvalue = [ 1 13]\nclass = yes"] ;
+434 -> 435 ;
+
+436[label="entropy = 0.0\nsamples = 13\nvalue = [0, 13]\nclass = yes"] ;
+435 -> 436 ;
+
+437[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+435 -> 437 ;
+
+438[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+434 -> 438 ;
+
+439[label="age < 50.224555826823696\nentropy = 0.8651214227512076\nsamples = 94\nvalue = [27 67]\nclass = yes"] ;
+433 -> 439 ;
+
+440[label="age < 48.81113997764717\nentropy = 0.9321115676166747\nsamples = 46\nvalue = [16 30]\nclass = yes"] ;
+439 -> 440 ;
+
+441[label="age < 48.50935414790571\nentropy = 0.7793498372920851\nsamples = 13\nvalue = [ 3 10]\nclass = yes"] ;
+440 -> 441 ;
+
+442[label="age < 48.452663942316406\nentropy = 0.9182958340544896\nsamples = 6\nvalue = [2 4]\nclass = yes"] ;
+441 -> 442 ;
+
+443[label="age < 48.420850545318956\nentropy = 0.7219280948873623\nsamples = 5\nvalue = [1 4]\nclass = yes"] ;
+442 -> 443 ;
+
+444[label="age < 48.409821725566204\nentropy = 0.9182958340544896\nsamples = 3\nvalue = [1 2]\nclass = yes"] ;
+443 -> 444 ;
+
+445[label="entropy = 0.0\nsamples = 2\nvalue = [0, 2]\nclass = yes"] ;
+444 -> 445 ;
+
+446[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+444 -> 446 ;
+
+447[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+443 -> 447 ;
+
+448[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+442 -> 448 ;
+
+449[label="age < 48.77820106154592\nentropy = 0.5916727785823275\nsamples = 7\nvalue = [1 6]\nclass = yes"] ;
+441 -> 449 ;
+
+450[label="age < 48.70238771283192\nentropy = 0.6500224216483541\nsamples = 6\nvalue = [1 5]\nclass = yes"] ;
+449 -> 450 ;
+
+451[label="entropy = 0.0\nsamples = 5\nvalue = [0, 5]\nclass = yes"] ;
+450 -> 451 ;
+
+452[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+450 -> 452 ;
+
+453[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+449 -> 453 ;
+
+454[label="age < 49.04393343779781\nentropy = 0.9672947789468944\nsamples = 33\nvalue = [13 20]\nclass = yes"] ;
+440 -> 454 ;
+
+455[label="age < 48.92480036195144\nentropy = 0.9852281360342515\nsamples = 7\nvalue = [4 3]\nclass = no"] ;
+454 -> 455 ;
+
+456[label="age < 48.887002996375415\nentropy = 0.9182958340544896\nsamples = 3\nvalue = [1 2]\nclass = yes"] ;
+455 -> 456 ;
+
+457[label="age < 48.84014776723335\nentropy = 1.0\nsamples = 2\nvalue = [1 1]\nclass = no"] ;
+456 -> 457 ;
+
+458[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+457 -> 458 ;
+
+459[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+457 -> 459 ;
+
+460[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+456 -> 460 ;
+
+461[label="age < 49.00618173284177\nentropy = 0.8112781244591328\nsamples = 4\nvalue = [3 1]\nclass = no"] ;
+455 -> 461 ;
+
+462[label="age < 48.99104726283945\nentropy = 0.9182958340544896\nsamples = 3\nvalue = [2 1]\nclass = no"] ;
+461 -> 462 ;
+
+463[label="entropy = 0.0\nsamples = 2\nvalue = [2, 0]\nclass = no"] ;
+462 -> 463 ;
+
+464[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+462 -> 464 ;
+
+465[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+461 -> 465 ;
+
+466[label="age < 49.35643974056046\nentropy = 0.9305861291319928\nsamples = 26\nvalue = [ 9 17]\nclass = yes"] ;
+454 -> 466 ;
+
+467[label="age < 49.285860253399164\nentropy = 0.5916727785823275\nsamples = 7\nvalue = [1 6]\nclass = yes"] ;
+466 -> 467 ;
+
+468[label="age < 49.221991753211356\nentropy = 0.6500224216483541\nsamples = 6\nvalue = [1 5]\nclass = yes"] ;
+467 -> 468 ;
+
+469[label="entropy = 0.0\nsamples = 5\nvalue = [0, 5]\nclass = yes"] ;
+468 -> 469 ;
+
+470[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+468 -> 470 ;
+
+471[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+467 -> 471 ;
+
+472[label="age < 50.12005256216085\nentropy = 0.9819407868640977\nsamples = 19\nvalue = [ 8 11]\nclass = yes"] ;
+466 -> 472 ;
+
+473[label="age < 50.011047772279674\nentropy = 0.9910760598382222\nsamples = 18\nvalue = [ 8 10]\nclass = yes"] ;
+472 -> 473 ;
+
+474[label="age < 49.95519711955211\nentropy = 0.9774178175281716\nsamples = 17\nvalue = [ 7 10]\nclass = yes"] ;
+473 -> 474 ;
+
+475[label="age < 49.796597047749145\nentropy = 0.954434002924965\nsamples = 16\nvalue = [ 6 10]\nclass = yes"] ;
+474 -> 475 ;
+
+476[label="age < 49.78300719558359\nentropy = 0.9957274520849255\nsamples = 13\nvalue = [6 7]\nclass = yes"] ;
+475 -> 476 ;
+
+477[label="age < 49.77582225763386\nentropy = 0.9798687566511528\nsamples = 12\nvalue = [5 7]\nclass = yes"] ;
+476 -> 477 ;
+
+478[label="age < 49.76160100738217\nentropy = 0.9940302114769565\nsamples = 11\nvalue = [5 6]\nclass = yes"] ;
+477 -> 478 ;
+
+479[label="age < 49.73754163289188\nentropy = 1.0\nsamples = 10\nvalue = [5 5]\nclass = no"] ;
+478 -> 479 ;
+
+480[label="age < 49.71929488438742\nentropy = 0.9910760598382222\nsamples = 9\nvalue = [4 5]\nclass = yes"] ;
+479 -> 480 ;
+
+481[label="age < 49.61778225063744\nentropy = 0.954434002924965\nsamples = 8\nvalue = [3 5]\nclass = yes"] ;
+480 -> 481 ;
+
+482[label="age < 49.61229936508515\nentropy = 1.0\nsamples = 6\nvalue = [3 3]\nclass = no"] ;
+481 -> 482 ;
+
+483[label="age < 49.50340017467177\nentropy = 0.9709505944546686\nsamples = 5\nvalue = [2 3]\nclass = yes"] ;
+482 -> 483 ;
+
+484[label="age < 49.45000099395886\nentropy = 0.9182958340544896\nsamples = 3\nvalue = [2 1]\nclass = no"] ;
+483 -> 484 ;
+
+485[label="age < 49.417664442201534\nentropy = 1.0\nsamples = 2\nvalue = [1 1]\nclass = no"] ;
+484 -> 485 ;
+
+486[label="None\nentropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+485 -> 486 ;
+
+487[label="None\nentropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+485 -> 487 ;
+
+488[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+484 -> 488 ;
+
+489[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+483 -> 489 ;
+
+490[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+482 -> 490 ;
+
+491[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+481 -> 491 ;
+
+492[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+480 -> 492 ;
+
+493[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+479 -> 493 ;
+
+494[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+478 -> 494 ;
+
+495[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+477 -> 495 ;
+
+496[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+476 -> 496 ;
+
+497[label="entropy = 0.0\nsamples = 2\nvalue = [0, 2]\nclass = yes"] ;
+475 -> 497 ;
+
+498[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+474 -> 498 ;
+
+499[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+473 -> 499 ;
+
+500[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+472 -> 500 ;
+
+501[label="age < 50.79766285974896\nentropy = 0.77655578544446\nsamples = 48\nvalue = [11 37]\nclass = yes"] ;
+439 -> 501 ;
+
+502[label="age < 50.73766337171814\nentropy = 0.4394969869215134\nsamples = 11\nvalue = [ 1 10]\nclass = yes"] ;
+501 -> 502 ;
+
+503[label="age < 50.65919307478545\nentropy = 0.4689955935892812\nsamples = 10\nvalue = [1 9]\nclass = yes"] ;
+502 -> 503 ;
+
+504[label="entropy = 0.0\nsamples = 9\nvalue = [0, 9]\nclass = yes"] ;
+503 -> 504 ;
+
+505[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+503 -> 505 ;
+
+506[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+502 -> 506 ;
+
+507[label="age < 52.28352770121286\nentropy = 0.8418521897563207\nsamples = 37\nvalue = [10 27]\nclass = yes"] ;
+501 -> 507 ;
+
+508[label="age < 52.24782245326654\nentropy = 0.863120568566631\nsamples = 35\nvalue = [10 25]\nclass = yes"] ;
+507 -> 508 ;
+
+509[label="age < 52.11235604052327\nentropy = 0.833764907210665\nsamples = 34\nvalue = [ 9 25]\nclass = yes"] ;
+508 -> 509 ;
+
+510[label="age < 52.07716764556173\nentropy = 0.8812908992306927\nsamples = 30\nvalue = [ 9 21]\nclass = yes"] ;
+509 -> 510 ;
+
+511[label="age < 51.906905626224884\nentropy = 0.8497511372532974\nsamples = 29\nvalue = [ 8 21]\nclass = yes"] ;
+510 -> 511 ;
+
+512[label="age < 51.896316216720464\nentropy = 0.9043814577244937\nsamples = 25\nvalue = [ 8 17]\nclass = yes"] ;
+511 -> 512 ;
+
+513[label="age < 51.87020484769607\nentropy = 0.9182958340544896\nsamples = 24\nvalue = [ 8 16]\nclass = yes"] ;
+512 -> 513 ;
+
+514[label="age < 51.83967433905846\nentropy = 0.8865408928220899\nsamples = 23\nvalue = [ 7 16]\nclass = yes"] ;
+513 -> 514 ;
+
+515[label="age < 51.735590705099796\nentropy = 0.8453509366224364\nsamples = 22\nvalue = [ 6 16]\nclass = yes"] ;
+514 -> 515 ;
+
+516[label="age < 50.94599894530948\nentropy = 0.8812908992306927\nsamples = 20\nvalue = [ 6 14]\nclass = yes"] ;
+515 -> 516 ;
+
+517[label="age < 50.92099867525418\nentropy = 1.0\nsamples = 4\nvalue = [2 2]\nclass = no"] ;
+516 -> 517 ;
+
+518[label="age < 50.90538070170619\nentropy = 0.9182958340544896\nsamples = 3\nvalue = [1 2]\nclass = yes"] ;
+517 -> 518 ;
+
+519[label="age < 50.85680581627404\nentropy = 1.0\nsamples = 2\nvalue = [1 1]\nclass = no"] ;
+518 -> 519 ;
+
+520[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+519 -> 520 ;
+
+521[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+519 -> 521 ;
+
+522[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+518 -> 522 ;
+
+523[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+517 -> 523 ;
+
+524[label="age < 51.37736165180411\nentropy = 0.8112781244591328\nsamples = 16\nvalue = [ 4 12]\nclass = yes"] ;
+516 -> 524 ;
+
+525[label="age < 51.31716926058245\nentropy = 0.5916727785823275\nsamples = 7\nvalue = [1 6]\nclass = yes"] ;
+524 -> 525 ;
+
+526[label="entropy = 0.0\nsamples = 6\nvalue = [0, 6]\nclass = yes"] ;
+525 -> 526 ;
+
+527[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+525 -> 527 ;
+
+528[label="age < 51.64605403841715\nentropy = 0.9182958340544896\nsamples = 9\nvalue = [3 6]\nclass = yes"] ;
+524 -> 528 ;
+
+529[label="age < 51.613250836862136\nentropy = 0.954434002924965\nsamples = 8\nvalue = [3 5]\nclass = yes"] ;
+528 -> 529 ;
+
+530[label="age < 51.59610184218751\nentropy = 0.863120568566631\nsamples = 7\nvalue = [2 5]\nclass = yes"] ;
+529 -> 530 ;
+
+531[label="age < 51.43508828308636\nentropy = 0.6500224216483541\nsamples = 6\nvalue = [1 5]\nclass = yes"] ;
+530 -> 531 ;
+
+532[label="age < 51.410008586236756\nentropy = 1.0\nsamples = 2\nvalue = [1 1]\nclass = no"] ;
+531 -> 532 ;
+
+533[label="None\nentropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+532 -> 533 ;
+
+534[label="None\nentropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+532 -> 534 ;
+
+535[label="entropy = 0.0\nsamples = 4\nvalue = [0, 4]\nclass = yes"] ;
+531 -> 535 ;
+
+536[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+530 -> 536 ;
+
+537[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+529 -> 537 ;
+
+538[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+528 -> 538 ;
+
+539[label="entropy = 0.0\nsamples = 2\nvalue = [0, 2]\nclass = yes"] ;
+515 -> 539 ;
+
+540[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+514 -> 540 ;
+
+541[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+513 -> 541 ;
+
+542[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+512 -> 542 ;
+
+543[label="entropy = 0.0\nsamples = 4\nvalue = [0, 4]\nclass = yes"] ;
+511 -> 543 ;
+
+544[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+510 -> 544 ;
+
+545[label="entropy = 0.0\nsamples = 3\nvalue = [0, 3]\nclass = yes"] ;
+509 -> 545 ;
+
+546[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+508 -> 546 ;
+
+547[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+507 -> 547 ;
+
+548[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+368 -> 548 ;
+
+549[label="age < 52.97155523765517\nentropy = 0.4394969869215134\nsamples = 11\nvalue = [ 1 10]\nclass = yes"] ;
+367 -> 549 ;
+
+550[label="age < 52.89066776437579\nentropy = 0.4689955935892812\nsamples = 10\nvalue = [1 9]\nclass = yes"] ;
+549 -> 550 ;
+
+551[label="entropy = 0.0\nsamples = 9\nvalue = [0, 9]\nclass = yes"] ;
+550 -> 551 ;
+
+552[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+550 -> 552 ;
+
+553[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+549 -> 553 ;
+
+554[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+366 -> 554 ;
+
+555[label="entropy = 0.0\nsamples = 5\nvalue = [0, 5]\nclass = yes"] ;
+365 -> 555 ;
+
+556[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+364 -> 556 ;
+
+557[label="age < 53.493462544332836\nentropy = 0.9182958340544896\nsamples = 3\nvalue = [2 1]\nclass = no"] ;
+363 -> 557 ;
+
+558[label="entropy = 0.0\nsamples = 2\nvalue = [2, 0]\nclass = no"] ;
+557 -> 558 ;
+
+559[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+557 -> 559 ;
+
+560[label="age < 55.73934039309117\nentropy = 0.46121604051390946\nsamples = 287\nvalue = [ 28 259]\nclass = yes"] ;
+260 -> 560 ;
+
+561[label="age < 54.24958591553326\nentropy = 0.710676853856123\nsamples = 36\nvalue = [ 7 29]\nclass = yes"] ;
+560 -> 561 ;
+
+562[label="age < 54.14479164084857\nentropy = 0.4854607607459134\nsamples = 19\nvalue = [ 2 17]\nclass = yes"] ;
+561 -> 562 ;
+
+563[label="age < 54.06172143741823\nentropy = 0.39124356362925566\nsamples = 13\nvalue = [ 1 12]\nclass = yes"] ;
+562 -> 563 ;
+
+564[label="age < 53.96983366071183\nentropy = 0.41381685030363374\nsamples = 12\nvalue = [ 1 11]\nclass = yes"] ;
+563 -> 564 ;
+
+565[label="entropy = 0.0\nsamples = 11\nvalue = [0, 11]\nclass = yes"] ;
+564 -> 565 ;
+
+566[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+564 -> 566 ;
+
+567[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+563 -> 567 ;
+
+568[label="age < 54.23841253669908\nentropy = 0.6500224216483541\nsamples = 6\nvalue = [1 5]\nclass = yes"] ;
+562 -> 568 ;
+
+569[label="age < 54.22388425729658\nentropy = 0.7219280948873623\nsamples = 5\nvalue = [1 4]\nclass = yes"] ;
+568 -> 569 ;
+
+570[label="entropy = 0.0\nsamples = 4\nvalue = [0, 4]\nclass = yes"] ;
+569 -> 570 ;
+
+571[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+569 -> 571 ;
+
+572[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+568 -> 572 ;
+
+573[label="age < 54.473373149034764\nentropy = 0.8739810481273578\nsamples = 17\nvalue = [ 5 12]\nclass = yes"] ;
+561 -> 573 ;
+
+574[label="age < 54.354107892481636\nentropy = 0.9182958340544896\nsamples = 3\nvalue = [2 1]\nclass = no"] ;
+573 -> 574 ;
+
+575[label="age < 54.273819908255554\nentropy = 1.0\nsamples = 2\nvalue = [1 1]\nclass = no"] ;
+574 -> 575 ;
+
+576[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+575 -> 576 ;
+
+577[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+575 -> 577 ;
+
+578[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+574 -> 578 ;
+
+579[label="age < 55.578770508962336\nentropy = 0.74959525725948\nsamples = 14\nvalue = [ 3 11]\nclass = yes"] ;
+573 -> 579 ;
+
+580[label="age < 55.45589342499735\nentropy = 0.6500224216483541\nsamples = 12\nvalue = [ 2 10]\nclass = yes"] ;
+579 -> 580 ;
+
+581[label="age < 54.7552684500198\nentropy = 0.4394969869215134\nsamples = 11\nvalue = [ 1 10]\nclass = yes"] ;
+580 -> 581 ;
+
+582[label="age < 54.703283366913865\nentropy = 0.8112781244591328\nsamples = 4\nvalue = [1 3]\nclass = yes"] ;
+581 -> 582 ;
+
+583[label="entropy = 0.0\nsamples = 3\nvalue = [0, 3]\nclass = yes"] ;
+582 -> 583 ;
+
+584[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+582 -> 584 ;
+
+585[label="entropy = 0.0\nsamples = 6\nvalue = [0, 6]\nclass = yes"] ;
+581 -> 585 ;
+
+586[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+580 -> 586 ;
+
+587[label="age < 55.7138176600309\nentropy = 1.0\nsamples = 2\nvalue = [1 1]\nclass = no"] ;
+579 -> 587 ;
+
+588[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+587 -> 588 ;
+
+589[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+587 -> 589 ;
+
+590[label="age < 75.36499099825522\nentropy = 0.4149643603429622\nsamples = 251\nvalue = [ 21 230]\nclass = yes"] ;
+560 -> 590 ;
+
+591[label="age < 74.46576010178269\nentropy = 0.42561889221732047\nsamples = 242\nvalue = [ 21 221]\nclass = yes"] ;
+590 -> 591 ;
+
+592[label="age < 72.0865557818748\nentropy = 0.41261951248202133\nsamples = 241\nvalue = [ 20 221]\nclass = yes"] ;
+591 -> 592 ;
+
+593[label="age < 71.31501544214596\nentropy = 0.42241914462916946\nsamples = 233\nvalue = [ 20 213]\nclass = yes"] ;
+592 -> 593 ;
+
+594[label="age < 69.66187564871439\nentropy = 0.40882680606062527\nsamples = 232\nvalue = [ 19 213]\nclass = yes"] ;
+593 -> 594 ;
+
+595[label="age < 69.54612808984048\nentropy = 0.4189440151199052\nsamples = 224\nvalue = [ 19 205]\nclass = yes"] ;
+594 -> 595 ;
+
+596[label="age < 68.88455609259765\nentropy = 0.4047022746979816\nsamples = 223\nvalue = [ 18 205]\nclass = yes"] ;
+595 -> 596 ;
+
+597[label="age < 68.77420791667535\nentropy = 0.4111664900021256\nsamples = 218\nvalue = [ 18 200]\nclass = yes"] ;
+596 -> 597 ;
+
+598[label="age < 68.05689086158759\nentropy = 0.3963065031532318\nsamples = 217\nvalue = [ 17 200]\nclass = yes"] ;
+597 -> 598 ;
+
+599[label="age < 67.90030528307986\nentropy = 0.40688224959419483\nsamples = 209\nvalue = [ 17 192]\nclass = yes"] ;
+598 -> 599 ;
+
+600[label="age < 62.86286319521288\nentropy = 0.39124356362925566\nsamples = 208\nvalue = [ 16 192]\nclass = yes"] ;
+599 -> 600 ;
+
+601[label="age < 62.84523861558573\nentropy = 0.44812821878952414\nsamples = 139\nvalue = [ 13 126]\nclass = yes"] ;
+600 -> 601 ;
+
+602[label="age < 60.6138169344686\nentropy = 0.4262286569981449\nsamples = 138\nvalue = [ 12 126]\nclass = yes"] ;
+601 -> 602 ;
+
+603[label="age < 59.28230176328955\nentropy = 0.35335933502142136\nsamples = 90\nvalue = [ 6 84]\nclass = yes"] ;
+602 -> 603 ;
+
+604[label="age < 59.2421619523549\nentropy = 0.40907313904382653\nsamples = 61\nvalue = [ 5 56]\nclass = yes"] ;
+603 -> 604 ;
+
+605[label="age < 58.45984982243736\nentropy = 0.35335933502142136\nsamples = 60\nvalue = [ 4 56]\nclass = yes"] ;
+604 -> 605 ;
+
+606[label="age < 58.43743543407696\nentropy = 0.41381685030363374\nsamples = 48\nvalue = [ 4 44]\nclass = yes"] ;
+605 -> 606 ;
+
+607[label="age < 58.37010899984759\nentropy = 0.3424637724817959\nsamples = 47\nvalue = [ 3 44]\nclass = yes"] ;
+606 -> 607 ;
+
+608[label="age < 58.343915553349674\nentropy = 0.3650551896402848\nsamples = 43\nvalue = [ 3 40]\nclass = yes"] ;
+607 -> 608 ;
+
+609[label="age < 57.325034644814394\nentropy = 0.2761954276479391\nsamples = 42\nvalue = [ 2 40]\nclass = yes"] ;
+608 -> 609 ;
+
+610[label="age < 57.222857126701754\nentropy = 0.41381685030363374\nsamples = 24\nvalue = [ 2 22]\nclass = yes"] ;
+609 -> 610 ;
+
+611[label="age < 56.39134588893953\nentropy = 0.2580186686648155\nsamples = 23\nvalue = [ 1 22]\nclass = yes"] ;
+610 -> 611 ;
+
+612[label="age < 56.326866280416766\nentropy = 0.35335933502142136\nsamples = 15\nvalue = [ 1 14]\nclass = yes"] ;
+611 -> 612 ;
+
+613[label="entropy = 0.0\nsamples = 14\nvalue = [0, 14]\nclass = yes"] ;
+612 -> 613 ;
+
+614[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+612 -> 614 ;
+
+615[label="entropy = 0.0\nsamples = 7\nvalue = [0, 7]\nclass = yes"] ;
+611 -> 615 ;
+
+616[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+610 -> 616 ;
+
+617[label="entropy = 0.0\nsamples = 17\nvalue = [0, 17]\nclass = yes"] ;
+609 -> 617 ;
+
+618[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+608 -> 618 ;
+
+619[label="entropy = 0.0\nsamples = 3\nvalue = [0, 3]\nclass = yes"] ;
+607 -> 619 ;
+
+620[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+606 -> 620 ;
+
+621[label="entropy = 0.0\nsamples = 11\nvalue = [0, 11]\nclass = yes"] ;
+605 -> 621 ;
+
+622[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+604 -> 622 ;
+
+623[label="age < 60.56920035709698\nentropy = 0.21639693245126462\nsamples = 29\nvalue = [ 1 28]\nclass = yes"] ;
+603 -> 623 ;
+
+624[label="age < 60.51242422861591\nentropy = 0.222284830685688\nsamples = 28\nvalue = [ 1 27]\nclass = yes"] ;
+623 -> 624 ;
+
+625[label="entropy = 0.0\nsamples = 27\nvalue = [0, 27]\nclass = yes"] ;
+624 -> 625 ;
+
+626[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+624 -> 626 ;
+
+627[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+623 -> 627 ;
+
+628[label="age < 60.648666643872616\nentropy = 0.5435644431995964\nsamples = 48\nvalue = [ 6 42]\nclass = yes"] ;
+602 -> 628 ;
+
+629[label="age < 60.63039490844805\nentropy = 0.9182958340544896\nsamples = 3\nvalue = [2 1]\nclass = no"] ;
+628 -> 629 ;
+
+630[label="age < 60.619702250051944\nentropy = 1.0\nsamples = 2\nvalue = [1 1]\nclass = no"] ;
+629 -> 630 ;
+
+631[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+630 -> 631 ;
+
+632[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+630 -> 632 ;
+
+633[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+629 -> 633 ;
+
+634[label="age < 62.438476503872025\nentropy = 0.43275015878875406\nsamples = 45\nvalue = [ 4 41]\nclass = yes"] ;
+628 -> 634 ;
+
+635[label="age < 62.429183377169664\nentropy = 0.4770713062193297\nsamples = 39\nvalue = [ 4 35]\nclass = yes"] ;
+634 -> 635 ;
+
+636[label="age < 61.85552027360009\nentropy = 0.3984592740952357\nsamples = 38\nvalue = [ 3 35]\nclass = yes"] ;
+635 -> 636 ;
+
+637[label="age < 61.7878371070467\nentropy = 0.5159469300074474\nsamples = 26\nvalue = [ 3 23]\nclass = yes"] ;
+636 -> 637 ;
+
+638[label="age < 61.20178806151953\nentropy = 0.4021791902022728\nsamples = 25\nvalue = [ 2 23]\nclass = yes"] ;
+637 -> 638 ;
+
+639[label="age < 61.08075064479434\nentropy = 0.6500224216483541\nsamples = 12\nvalue = [ 2 10]\nclass = yes"] ;
+638 -> 639 ;
+
+640[label="age < 61.06184362670152\nentropy = 0.4689955935892812\nsamples = 10\nvalue = [1 9]\nclass = yes"] ;
+639 -> 640 ;
+
+641[label="entropy = 0.0\nsamples = 9\nvalue = [0, 9]\nclass = yes"] ;
+640 -> 641 ;
+
+642[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+640 -> 642 ;
+
+643[label="age < 61.12411177331333\nentropy = 1.0\nsamples = 2\nvalue = [1 1]\nclass = no"] ;
+639 -> 643 ;
+
+644[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+643 -> 644 ;
+
+645[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+643 -> 645 ;
+
+646[label="entropy = 0.0\nsamples = 13\nvalue = [0, 13]\nclass = yes"] ;
+638 -> 646 ;
+
+647[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+637 -> 647 ;
+
+648[label="entropy = 0.0\nsamples = 11\nvalue = [0, 11]\nclass = yes"] ;
+636 -> 648 ;
+
+649[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+635 -> 649 ;
+
+650[label="entropy = 0.0\nsamples = 5\nvalue = [0, 5]\nclass = yes"] ;
+634 -> 650 ;
+
+651[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+601 -> 651 ;
+
+652[label="age < 66.63832140465337\nentropy = 0.2580186686648155\nsamples = 69\nvalue = [ 3 66]\nclass = yes"] ;
+600 -> 652 ;
+
+653[label="age < 66.58948184848661\nentropy = 0.1485494904303482\nsamples = 47\nvalue = [ 1 46]\nclass = yes"] ;
+652 -> 653 ;
+
+654[label="age < 66.51791579948954\nentropy = 0.15109697051711368\nsamples = 46\nvalue = [ 1 45]\nclass = yes"] ;
+653 -> 654 ;
+
+655[label="entropy = 0.0\nsamples = 45\nvalue = [0, 45]\nclass = yes"] ;
+654 -> 655 ;
+
+656[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+654 -> 656 ;
+
+657[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = yes"] ;
+653 -> 657 ;
+
+658[label="age < 67.684440399441\nentropy = 0.4394969869215134\nsamples = 22\nvalue = [ 2 20]\nclass = yes"] ;
+652 -> 658 ;
+
+659[label="age < 67.62070869725324\nentropy = 0.5435644431995964\nsamples = 16\nvalue = [ 2 14]\nclass = yes"] ;
+658 -> 659 ;
+
+660[label="age < 67.26705441847446\nentropy = 0.35335933502142136\nsamples = 15\nvalue = [ 1 14]\nclass = yes"] ;
+659 -> 660 ;
+
+661[label="age < 67.22341861809409\nentropy = 0.5916727785823275\nsamples = 7\nvalue = [1 6]\nclass = yes"] ;
+660 -> 661 ;
+
+662[label="entropy = 0.0\nsamples = 6\nvalue = [0, 6]\nclass = yes"] ;
+661 -> 662 ;
+
+663[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+661 -> 663 ;
+
+664[label="entropy = 0.0\nsamples = 7\nvalue = [0, 7]\nclass = yes"] ;
+660 -> 664 ;
+
+665[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+659 -> 665 ;
+
+666[label="entropy = 0.0\nsamples = 5\nvalue = [0, 5]\nclass = yes"] ;
+658 -> 666 ;
+
+667[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+599 -> 667 ;
+
+668[label="entropy = 0.0\nsamples = 7\nvalue = [0, 7]\nclass = yes"] ;
+598 -> 668 ;
+
+669[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+597 -> 669 ;
+
+670[label="entropy = 0.0\nsamples = 4\nvalue = [0, 4]\nclass = yes"] ;
+596 -> 670 ;
+
+671[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+595 -> 671 ;
+
+672[label="entropy = 0.0\nsamples = 7\nvalue = [0, 7]\nclass = yes"] ;
+594 -> 672 ;
+
+673[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+593 -> 673 ;
+
+674[label="entropy = 0.0\nsamples = 7\nvalue = [0, 7]\nclass = yes"] ;
+592 -> 674 ;
+
+675[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = no"] ;
+591 -> 675 ;
+
+676[label="entropy = 0.0\nsamples = 8\nvalue = [0, 8]\nclass = yes"] ;
+590 -> 676 ;
+
+}

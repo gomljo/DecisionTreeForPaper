@@ -1,8 +1,0 @@
-|--- Entropy: 0.5435644431995964, decision criteria: mean radius < 17.555, values: [ 2 14]
-|   |--- Entropy: 0.35335933502142136, decision criteria: smoothness error < 0.005763000000000001, values: [ 1 14]
-|   |   |--- Entropy: 0.9182958340544896, decision criteria: area error < 20.97, values: [1 2]
-|   |   |   |--- Entropy: 0.0, values: [0, 2],  outcome: 1
-|   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: 0
-|   |   |--- Entropy: 0.0, values: [0, 11],  outcome: 1
-|   |--- Entropy: 0.0, values: [1, 0],  outcome: 0
-|--- Entropy: 0.0, values: [4, 0],  outcome: 0

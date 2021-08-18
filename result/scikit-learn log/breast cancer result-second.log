@@ -1,34 +1,37 @@
-|--- worst perimeter <= 117.45
-|   |--- worst concave points <= 0.11
-|   |   |--- mean area <= 694.50
-|   |   |   |--- area error <= 48.98
-|   |   |   |   |--- worst texture <= 33.35
-|   |   |   |   |   |--- class: 1
-|   |   |   |   |--- worst texture >  33.35
-|   |   |   |   |   |--- class: 1
-|   |   |   |--- area error >  48.98
+|--- mean concave points <= 0.05
+|   |--- worst radius <= 16.82
+|   |   |--- area error <= 46.32
+|   |   |   |--- worst texture <= 30.15
 |   |   |   |   |--- class: 1
-|   |   |--- mean area >  694.50
-|   |   |   |--- mean texture <= 18.84
+|   |   |   |--- worst texture >  30.15
+|   |   |   |   |--- worst radius <= 14.43
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- worst radius >  14.43
+|   |   |   |   |   |--- class: 1
+|   |   |--- area error >  46.32
+|   |   |   |--- class: 0
+|   |--- worst radius >  16.82
+|   |   |--- mean texture <= 18.96
+|   |   |   |--- class: 1
+|   |   |--- mean texture >  18.96
+|   |   |   |--- class: 0
+|--- mean concave points >  0.05
+|   |--- worst perimeter <= 114.45
+|   |   |--- worst texture <= 23.74
+|   |   |   |--- worst radius <= 16.21
 |   |   |   |   |--- class: 1
-|   |   |   |--- mean texture >  18.84
-|   |   |   |   |--- class: 0
-|   |--- worst concave points >  0.11
-|   |   |--- worst texture <= 29.46
-|   |   |   |--- worst concave points <= 0.17
-|   |   |   |   |--- worst fractal dimension <= 0.07
-|   |   |   |   |   |--- class: 0
-|   |   |   |   |--- worst fractal dimension >  0.07
+|   |   |   |--- worst radius >  16.21
+|   |   |   |   |--- compactness error <= 0.02
 |   |   |   |   |   |--- class: 1
-|   |   |   |--- worst concave points >  0.17
-|   |   |   |   |--- class: 0
-|   |   |--- worst texture >  29.46
-|   |   |   |--- worst smoothness <= 0.14
-|   |   |   |   |--- mean symmetry <= 0.18
+|   |   |   |   |--- compactness error >  0.02
 |   |   |   |   |   |--- class: 0
-|   |   |   |   |--- mean symmetry >  0.18
+|   |   |--- worst texture >  23.74
+|   |   |   |--- worst symmetry <= 0.27
+|   |   |   |   |--- worst radius <= 16.22
 |   |   |   |   |   |--- class: 1
-|   |   |   |--- worst smoothness >  0.14
+|   |   |   |   |--- worst radius >  16.22
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- worst symmetry >  0.27
 |   |   |   |   |--- class: 0
-|--- worst perimeter >  117.45
-|   |--- class: 0
+|   |--- worst perimeter >  114.45
+|   |   |--- class: 0

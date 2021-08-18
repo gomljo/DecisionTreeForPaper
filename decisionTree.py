@@ -54,6 +54,7 @@ class DecisionTreeClassifier_OWN:
 
         # data
         self.data = self.raw_data[self.raw_data.columns.difference([outComeLabel])]
+        print(self.data)
         self.data_cols = list(self.data.columns)
 
         # for cross validation set
@@ -65,7 +66,7 @@ class DecisionTreeClassifier_OWN:
         self.sum_of_leaves_R_t = 0
         self.best_tree = None
         self.effective_alpha = 0
-        self.effective_alpha_index = None
+        self.effective_alphas = list()
 
     def calc_entropy(self, data):
         """이 함수는 엔트로피를 구하는 함수입니다."""
@@ -269,7 +270,7 @@ class DecisionTreeClassifier_OWN:
         return part_col, child_decision_criteria, part_index, child_values
 
     def partition(self, node=None):
-
+        print('partition')
         total_rows = self.workQueue.pop()
 
         target_label = self.target.loc[node.match_index][self.target_col]
@@ -315,15 +316,19 @@ class DecisionTreeClassifier_OWN:
         self.dtree.append(Node(match_index=list(self.data.index)))
         iter = 0
         while len(self.workQueue) > 0:
-
+            print(len(self.workQueue))
             for idx in range(2**level-1, 2**(level+1)-1):
 
-                if (self.dtree[idx].entropy == 0.0) or (self.dtree[idx].match_index is None):
+                if self.dtree[idx] is None:
+                    for _ in range(2):
+                        self.dtree.append(None)
+
+                elif (self.dtree[idx].entropy == 0.0) or (self.dtree[idx].match_index is None):
                     if self.dtree[idx].classes is not None:
 
                         self.dtree[idx].target = self.target_col_value[np.argmax(self.dtree[idx].classes)]
                     for _ in range(2):
-                        self.dtree.append(Node())
+                        self.dtree.append(None)
                 else:
                     self.partition(self.dtree[idx])
 
@@ -388,7 +393,9 @@ class DecisionTreeClassifier_OWN:
 
         if node_index != 0:
             level = int(np.floor(np.log2(node_index-eps)))
-            if tree[node_index].classes is not None:
+            if tree[node_index] is None:
+                return 0
+            elif tree[node_index].classes is not None:
                 contents = str('|   ' * level + '|--- {}'.format(tree[node_index]))
                 f = open(file, 'a')
                 f.write(contents + '\n')
@@ -433,12 +440,12 @@ class DecisionTreeClassifier_OWN:
 
                 cnt += 1
                 if (2 * tree.index(current_node) + 2) < len(tree):
-
-                    stack, top = self.push(stack, tree[2 * tree.index(current_node) + 2], top)
+                    if tree[2*tree.index(current_node) + 2] is not None:
+                        stack, top = self.push(stack, tree[2 * tree.index(current_node) + 2], top)
 
                 if (2 * tree.index(current_node) + 1) < len(tree):
-
-                    stack, top = self.push(stack, tree[2 * tree.index(current_node) + 1], top)
+                    if tree[2 * tree.index(current_node) + 1] is not None:
+                        stack, top = self.push(stack, tree[2 * tree.index(current_node) + 1], top)
 
     def traverse_tree_make_graph(self, file_name=None, node_index=0, parent=0, is_prune=False, is_finished=0):
         prune = None
@@ -463,38 +470,42 @@ class DecisionTreeClassifier_OWN:
         left_node_index = 2 * node_index + 1
         right_node_index = 2 * node_index + 2
         if node_index != 0:
-            if tree[node_index].classes is not None:
-                # if is_left:
-                if not self.is_leaf(tree[node_index]):
-                    contents = str(
-                    '{}[label=\"{}\\nentropy = {}\\nsamples = {}\\nvalue = {}\\nclass = {}\"] ;\n'.format(tree[node_index].cnt,
-                                                                                             tree[
-                                                                                                 node_index].dcs_criteria,
-                                                                                             tree[
-                                                                                                 node_index].entropy,
-                                                                                             np.sum(tree[
-                                                                                                        node_index].classes),
-                                                                                             tree[
-                                                                                                 node_index].classes, tree[node_index].target))
-                else:
-                    contents = str(
-                        '{}[label=\"entropy = {}\\nsamples = {}\\nvalue = {}\\nclass = {}\"] ;\n'.format(
-                            tree[node_index].cnt,
-                            tree[
-                                node_index].entropy,
-                            np.sum(tree[
-                                       node_index].classes),
-                            tree[
-                                node_index].classes, tree[node_index].target))
-                contents += str('{} -> {} ;\n'.format(parent, tree[node_index].cnt))
-                f = open(file, 'a')
-                f.write(contents + '\n')
-                f.close()
+            if tree[node_index] is not None:
+                print(tree[node_index])
+                if tree[node_index].classes is not None:
+
+                    if not self.is_leaf(tree[node_index], is_prune=prune):
+                        contents = str(
+                        '{}[label=\"{}\\nentropy = {}\\nsamples = {}\\nvalue = {}\\nclass = {}\"] ;\n'.format(tree[node_index].cnt,
+                                                                                                 tree[
+                                                                                                     node_index].dcs_criteria,
+                                                                                                 tree[
+                                                                                                     node_index].entropy,
+                                                                                                 np.sum(tree[
+                                                                                                            node_index].classes),
+                                                                                                 tree[
+                                                                                                     node_index].classes, tree[node_index].target))
+                    else:
+                        contents = str(
+                            '{}[label=\"entropy = {}\\nsamples = {}\\nvalue = {}\\nclass = {}\"] ;\n'.format(
+                                tree[node_index].cnt,
+                                tree[
+                                    node_index].entropy,
+                                np.sum(tree[
+                                           node_index].classes),
+                                tree[
+                                    node_index].classes, tree[node_index].target))
+                    contents += str('{} -> {} ;\n'.format(parent, tree[node_index].cnt))
+                    f = open(file, 'a')
+                    f.write(contents + '\n')
+                    f.close()
         if (left_node_index > len(tree)) or (right_node_index > len(tree)):
 
             return 0
-        self.traverse_tree_make_graph(node_index=left_node_index, file_name=file, parent=tree[node_index].cnt,is_prune=prune, is_finished=finished+1)
-        self.traverse_tree_make_graph(node_index=right_node_index, file_name=file, parent=tree[node_index].cnt, is_prune=prune, is_finished=finished+2)
+        if tree[left_node_index] is not None:
+            self.traverse_tree_make_graph(node_index=left_node_index, file_name=file, parent=tree[node_index].cnt,is_prune=prune, is_finished=finished+1)
+        if tree[right_node_index] is not None:
+            self.traverse_tree_make_graph(node_index=right_node_index, file_name=file, parent=tree[node_index].cnt, is_prune=prune, is_finished=finished+2)
         if finished ==0:
             f = open(file, 'a')
             f.write('}' + '\n')
@@ -508,26 +519,31 @@ class DecisionTreeClassifier_OWN:
         if (left_node_index > len(self.dtree)) or (right_node_index > len(self.dtree)):
             return 0
         if node_index != 0:
-
-            if self.is_leaf(self.dtree[node_index]):
-                r_of_t = 1 - (np.max(self.dtree[node_index].classes) / np.sum(self.dtree[node_index].classes))
-                p_of_t = np.sum(self.dtree[node_index].classes) / len(self.data)
-                self.sum_of_leaves_R_t += r_of_t * p_of_t
-
-        self.traverse_subtree(node_index=left_node_index)
-        self.traverse_subtree(node_index=right_node_index)
+            if self.dtree[node_index] is None:
+                if self.is_leaf(self.dtree[node_index]):
+                    r_of_t = 1 - (np.max(self.dtree[node_index].classes) / np.sum(self.dtree[node_index].classes))
+                    p_of_t = np.sum(self.dtree[node_index].classes) / len(self.data)
+                    self.sum_of_leaves_R_t += r_of_t * p_of_t
+        if self.dtree[left_node_index] is not None:
+            self.traverse_subtree(node_index=left_node_index)
+        if self.dtree[right_node_index] is not None:
+            self.traverse_subtree(node_index=right_node_index)
 
         return 0
 
-    def is_leaf(self, Node):
+    def is_leaf(self, Node, is_prune=False):
         """This method need when calculate Cost Complexity Pruning."""
-        left_node_index = self.dtree.index(Node)*2 + 1
-        right_node_index = self.dtree.index(Node)*2 + 2
+        if is_prune:
+            tree = self.best_tree
+        else:
+            tree = self.dtree
+        left_node_index = tree.index(Node)*2 + 1
+        right_node_index = tree.index(Node)*2 + 2
 
-        if (left_node_index > len(self.dtree)) or (right_node_index > len(self.dtree)):
+        if (left_node_index > len(tree)) or (right_node_index > len(tree)):
             return 0
 
-        if (self.dtree[self.dtree.index(Node)*2 + 1].entropy is None) and (self.dtree[self.dtree.index(Node)*2 + 2].entropy is None):
+        if (tree[tree.index(Node)*2 + 1] is None) and (tree[tree.index(Node)*2 + 2] is None):
 
             if Node.classes is not None:
                 # if node instances have not decision criteria and have values then leaf node
@@ -580,9 +596,9 @@ class DecisionTreeClassifier_OWN:
         else:
             return np.inf
 
-    def check_tree(self):
+    def check_tree(self, clf):
 
-        for idx, node in enumerate(self.dtree):
+        for idx, node in enumerate(clf):
 
             if node.classes is not None:
                 print(idx, node)
@@ -602,13 +618,12 @@ class DecisionTreeClassifier_OWN:
         self.delete_subtree(node_index=right_node_index)
 
     def prune(self, node_index=0):
+        # effective_alpha_temp = np.finfo(np.float64).max
         self.effective_alpha = np.finfo(np.float64).max
-
-        prune_idx = 0
-        self.effective_pruned_tree_index = 0
-        # self.check_tree()
-
+        alpha = 0
         while (self.dtree[1].classes is not None) or (self.dtree[2].classes is not None):
+
+            effective_alpha_temp = np.finfo(np.float64).max
 
             min_alpha = list()
 
@@ -616,7 +631,9 @@ class DecisionTreeClassifier_OWN:
             alpha_n = np.inf
 
             for node_index, node in enumerate(self.dtree):
-                alpha = self.g_of_t(node)
+                print(node[node_index])
+                if node[node_index] is not None:
+                    alpha = self.g_of_t(node)
                 # print(alpha)
                 self.sum_of_leaves_R_t = 0
                 if alpha < alpha_n:
@@ -641,8 +658,12 @@ class DecisionTreeClassifier_OWN:
 
             # delete node by cost complexity pruning
 
-            if self.effective_alpha > alpha_final[0].alpha:
+            if np.round(alpha_final[0].alpha,3):
+                self.best_tree = self.dtree.copy()
+                break
+            elif effective_alpha_temp > alpha_final[0].alpha:
 
+                effective_alpha_temp = alpha_final[0].alpha
                 if alpha_final[0].alpha == -np.inf:
                     break
                 for m_alp in min_alpha:
@@ -650,31 +671,37 @@ class DecisionTreeClassifier_OWN:
                     self.dtree[m_alp.node_idx].dcs_criteria = None
                     self.delete_subtree(m_alp.node_idx * 2 + 1)
                     self.delete_subtree(m_alp.node_idx * 2 + 2)
-                self.effective_alpha = alpha_final[0].alpha
-                self.best_tree = self.dtree.copy()
-                self.effective_alpha_index = min_alpha
+
+                if self.effective_alpha > effective_alpha_temp:
+
+                    self.effective_alpha = effective_alpha_temp
+                    self.best_tree = self.dtree.copy()
+                    self.effective_alpha_index = min_alpha
 
             else:
                 break
 
-            # self.check_tree()
-            prune_idx += 1
+
+
 
         # print(self.effective_alpha)
 
 
 if __name__ == '__main__':
-    dt = DecisionTreeClassifier_OWN(DATA_PATH='data/census.csv', outComeLabel='Born')
+    print(pd.read_spss(r'G:\내 드라이브\DECISIONTREE\ECode_ML_medicine_overview\decisiontreebinary.sav'))
+    data = pd.read_spss(r'G:\내 드라이브\DECISIONTREE\ECode_ML_medicine_overview\decisiontreebinary.sav')
+    data = data[data['smoking'] != 2]
+    dt = DecisionTreeClassifier_OWN(DATA=data, outComeLabel='infarct_rating')
 
     dt.build()
 
     # X, Y = dt.make_cross_validation_dataset()
 
     dt.prune()
-    # dt.traverse_tree(file_name='result\\my log file\\1st result.txt')
-
-    dt.traverse_tree_make_graph_count(classifier=dt.best_tree)
-    dt.traverse_tree_make_graph(file_name='tree.dot')
+    # dt.traverse_tree(file_name='result\\my log file\\Medicine result.txt')
+    #
+    # dt.traverse_tree_make_graph_count(classifier=dt.dtree)
+    # dt.traverse_tree_make_graph(file_name='Medicine_tree.dot')
     # for idx, node in enumerate(dt.best_tree):
     #
     #     if node.classes is not None:

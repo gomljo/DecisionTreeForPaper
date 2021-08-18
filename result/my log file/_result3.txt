@@ -1,4 +1,8 @@
-|--- Entropy: 0.7219280948873623, values: [0 1 4],  outcome: 2
-|--- Entropy: 0.9182958340544896, decision criteria: alcohol < 13.865, values: [2 4 0]
-|   |   |--- Entropy: 0.7219280948873623, values: [1 4 0],  outcome: 1
-|   |   |--- Entropy: 0.0, values: [1, 0, 0],  outcome: 0
+|--- Entropy: 0.41381685030363374, decision criteria: worst area < 817.65, values: [ 1 11]
+|   |--- Entropy: 0.0, values: [0, 11],  outcome: 1
+|   |--- Entropy: 0.0, values: [1, 0],  outcome: 0
+|--- Entropy: 0.5435644431995964, decision criteria: compactness error < 0.0159495, values: [7 1]
+|   |   |--- Entropy: 1.0, decision criteria: compactness error < 0.0087715, values: [1 1]
+|   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: 1
+|   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: 0
+|   |   |--- Entropy: 0.0, values: [6, 0],  outcome: 0
