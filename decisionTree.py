@@ -270,7 +270,7 @@ class DecisionTreeClassifier_OWN:
         return part_col, child_decision_criteria, part_index, child_values
 
     def partition(self, node=None):
-        print('partition')
+        # print('partition')
         total_rows = self.workQueue.pop()
 
         target_label = self.target.loc[node.match_index][self.target_col]
@@ -282,9 +282,10 @@ class DecisionTreeClassifier_OWN:
         # calculate Information Gain
         partition_column, decision_criteria, match_index, values = self.calc_information_gain(node)
 
-        if (str(type(decision_criteria)) == '<class \'numpy.float64\'>') or (str(type(decision_criteria)) =='<class \'numpy.int64\'>'):
+        if (str(type(decision_criteria)) == '<class \'numpy.float64\'>') or (str(type(decision_criteria)) =='<class \'numpy.int64\'>') or (str(type(decision_criteria)) =='<class \'numpy.int32\'>'):
 
             node.dcs_criteria_val = decision_criteria
+            node.dcs_criteria_col = partition_column
             decision_criteria = partition_column + ' < ' + str(decision_criteria)
             node.dcs_criteria_type = 'numeric'
             node.Attribute_name = partition_column
@@ -292,6 +293,7 @@ class DecisionTreeClassifier_OWN:
 
         else:
             node.dcs_criteria_val = decision_criteria
+            node.dcs_criteria_col = partition_column
             decision_criteria = partition_column + ' = ' + decision_criteria
             node.dcs_criteria_type = 'categorical'
             node.Attribute_name = partition_column
@@ -316,7 +318,7 @@ class DecisionTreeClassifier_OWN:
         self.dtree.append(Node(match_index=list(self.data.index)))
         iter = 0
         while len(self.workQueue) > 0:
-            print(len(self.workQueue))
+
             for idx in range(2**level-1, 2**(level+1)-1):
 
                 if self.dtree[idx] is None:
@@ -519,7 +521,7 @@ class DecisionTreeClassifier_OWN:
         if (left_node_index > len(self.dtree)) or (right_node_index > len(self.dtree)):
             return 0
         if node_index != 0:
-            if self.dtree[node_index] is None:
+            if self.dtree[node_index] is not None:
                 if self.is_leaf(self.dtree[node_index]):
                     r_of_t = 1 - (np.max(self.dtree[node_index].classes) / np.sum(self.dtree[node_index].classes))
                     p_of_t = np.sum(self.dtree[node_index].classes) / len(self.data)
@@ -570,11 +572,11 @@ class DecisionTreeClassifier_OWN:
         leaf_cnt = 0
         node_cnt = 0
         for node in self.dtree:
-
-            if self.is_leaf(node):
-                leaf_cnt += 1
-            if node.entropy is not None:
-                node_cnt += 1
+            if node is not None:
+                if self.is_leaf(node):
+                    leaf_cnt += 1
+                if node.entropy is not None:
+                    node_cnt += 1
 
         return leaf_cnt, node_cnt
 
@@ -605,11 +607,12 @@ class DecisionTreeClassifier_OWN:
 
     def delete_subtree(self, node_index):
 
+        cnt = 1
         left_node_index = 2 * node_index + 1
         right_node_index = 2 * node_index + 2
 
         if node_index != 0:
-            self.dtree[node_index] = Node()
+            self.dtree[node_index] = None
 
         if (left_node_index > len(self.dtree)) or (right_node_index > len(self.dtree)):
             return 0
@@ -621,8 +624,9 @@ class DecisionTreeClassifier_OWN:
         # effective_alpha_temp = np.finfo(np.float64).max
         self.effective_alpha = np.finfo(np.float64).max
         alpha = 0
+        cnt = 0
         while (self.dtree[1].classes is not None) or (self.dtree[2].classes is not None):
-
+            print(cnt)
             effective_alpha_temp = np.finfo(np.float64).max
 
             min_alpha = list()
@@ -631,21 +635,21 @@ class DecisionTreeClassifier_OWN:
             alpha_n = np.inf
 
             for node_index, node in enumerate(self.dtree):
-                print(node[node_index])
-                if node[node_index] is not None:
+
+                if node is not None:
+
                     alpha = self.g_of_t(node)
-                # print(alpha)
+
                 self.sum_of_leaves_R_t = 0
                 if alpha < alpha_n:
 
                     temp_alpha.append(ccp(node_index, alpha))
+                    alpha_n = alpha
 
             alpha_final = sorted(temp_alpha, key=lambda n: n.alpha)
-            # print(alpha_final[0].alpha, alpha_final[0].node_idx)
             min_alpha.append(alpha_final[0])
 
             iter = 1
-
             if len(alpha_final) > 1:
 
                 while iter < len(alpha_final):
@@ -657,8 +661,11 @@ class DecisionTreeClassifier_OWN:
                     iter += 1
 
             # delete node by cost complexity pruning
-
-            if np.round(alpha_final[0].alpha,3):
+            # for m_alp in min_alpha:
+            #     print(m_alp)
+            # print(np.round(min_alpha[0].alpha, 2))
+            # print(self.dtree[min_alpha[0].node_idx])
+            if np.round(min_alpha[0].alpha, 2) == 0.0:
                 self.best_tree = self.dtree.copy()
                 break
             elif effective_alpha_temp > alpha_final[0].alpha:
@@ -667,7 +674,7 @@ class DecisionTreeClassifier_OWN:
                 if alpha_final[0].alpha == -np.inf:
                     break
                 for m_alp in min_alpha:
-                    # print('A ', m_alp.node_idx, m_alp.alpha)
+
                     self.dtree[m_alp.node_idx].dcs_criteria = None
                     self.delete_subtree(m_alp.node_idx * 2 + 1)
                     self.delete_subtree(m_alp.node_idx * 2 + 2)
@@ -680,29 +687,49 @@ class DecisionTreeClassifier_OWN:
 
             else:
                 break
+            cnt += 1
 
+    def feature_importance(self, is_prune=False):
 
+        # tree = None
+        f_i = np.zeros(len(self.data_cols))
+        total = 0
+        if is_prune:
+            tree = self.best_tree
+        else:
+            tree = self.dtree
 
+        for idx, node in enumerate(tree):
+            child_entropy=0
 
-        # print(self.effective_alpha)
+            if node is not None:
+                if node.dcs_criteria is not None:
+
+                    if tree[2*idx+1] is not None:
+                        child_entropy += (tree[2*idx+1].entropy * (np.sum(tree[2*idx+1].classes, axis=0))/ np.sum(node.classes, axis=0))
+                        child_entropy += (tree[2 * idx + 2].entropy * (
+                                    np.sum(tree[2*idx+2].classes, axis=0))/ np.sum(node.classes, axis=0))
+                    IG = node.entropy - child_entropy
+
+                    f_i[self.data_cols.index(node.dcs_criteria_col)] += IG
+
+            else:
+                continue
+
+        f_i = f_i / np.sum(f_i)
+
+        return f_i
 
 
 if __name__ == '__main__':
-    print(pd.read_spss(r'G:\내 드라이브\DECISIONTREE\ECode_ML_medicine_overview\decisiontreebinary.sav'))
     data = pd.read_spss(r'G:\내 드라이브\DECISIONTREE\ECode_ML_medicine_overview\decisiontreebinary.sav')
     data = data[data['smoking'] != 2]
+
     dt = DecisionTreeClassifier_OWN(DATA=data, outComeLabel='infarct_rating')
 
     dt.build()
 
-    # X, Y = dt.make_cross_validation_dataset()
-
     dt.prune()
-    # dt.traverse_tree(file_name='result\\my log file\\Medicine result.txt')
-    #
-    # dt.traverse_tree_make_graph_count(classifier=dt.dtree)
-    # dt.traverse_tree_make_graph(file_name='Medicine_tree.dot')
-    # for idx, node in enumerate(dt.best_tree):
-    #
-    #     if node.classes is not None:
-        # print(idx, node)
+    dt.traverse_tree(file_name='result\\my log file\\Medicine result.txt', is_prune=True)
+    dt.traverse_tree_make_graph_count(classifier=dt.best_tree)
+    dt.traverse_tree_make_graph(file_name='Medicine_tree.dot', is_prune=True)

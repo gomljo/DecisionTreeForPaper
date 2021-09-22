@@ -4,27 +4,27 @@
 |   |   |   |--- worst texture <= 30.15
 |   |   |   |   |--- class: 1
 |   |   |   |--- worst texture >  30.15
-|   |   |   |   |--- worst radius <= 14.43
+|   |   |   |   |--- worst area <= 641.60
 |   |   |   |   |   |--- class: 1
-|   |   |   |   |--- worst radius >  14.43
+|   |   |   |   |--- worst area >  641.60
 |   |   |   |   |   |--- class: 1
 |   |   |--- area error >  46.32
 |   |   |   |--- class: 0
 |   |--- worst radius >  16.82
-|   |   |--- mean texture <= 18.96
+|   |   |--- worst texture <= 26.01
 |   |   |   |--- class: 1
-|   |   |--- mean texture >  18.96
+|   |   |--- worst texture >  26.01
 |   |   |   |--- class: 0
 |--- mean concave points >  0.05
 |   |--- worst perimeter <= 114.45
 |   |   |--- worst texture <= 23.74
-|   |   |   |--- worst radius <= 16.21
+|   |   |   |--- worst area <= 789.85
 |   |   |   |   |--- class: 1
-|   |   |   |--- worst radius >  16.21
-|   |   |   |   |--- compactness error <= 0.02
-|   |   |   |   |   |--- class: 1
-|   |   |   |   |--- compactness error >  0.02
+|   |   |   |--- worst area >  789.85
+|   |   |   |   |--- worst area <= 840.75
 |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- worst area >  840.75
+|   |   |   |   |   |--- class: 1
 |   |   |--- worst texture >  23.74
 |   |   |   |--- worst symmetry <= 0.27
 |   |   |   |   |--- worst radius <= 16.22

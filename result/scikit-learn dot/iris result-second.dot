@@ -1,6 +1,6 @@
 digraph Tree {
 node [shape=box] ;
-0 [label="petal width (cm) <= 0.8\nentropy = 1.581\nsamples = 112\nvalue = [37, 34, 41]"] ;
+0 [label="petal length (cm) <= 2.35\nentropy = 1.581\nsamples = 112\nvalue = [37, 34, 41]"] ;
 1 [label="entropy = 0.0\nsamples = 37\nvalue = [37, 0, 0]"] ;
 0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
 2 [label="petal length (cm) <= 4.95\nentropy = 0.994\nsamples = 75\nvalue = [0, 34, 41]"] ;

@@ -1,14 +1,44 @@
 |--- Entropy: 0.30081363556511626, decision criteria: worst area < 778.5, values: [ 14 248]
-|   |--- Entropy: 0.1260931686236865, values: [  4 227],  outcome: 1
+|   |--- Entropy: 0.1260931686236865, decision criteria: area error < 34.7, values: [  4 227]
+|   |   |--- Entropy: 0.07387539038888603, decision criteria: worst compactness < 0.45355, values: [  2 221]
+|   |   |   |--- Entropy: 0.04159394911809519, decision criteria: perimeter error < 1.4615, values: [  1 221]
+|   |   |   |   |--- Entropy: 0.11467550533614673, decision criteria: area error < 19.475, values: [ 1 64]
+|   |   |   |   |   |--- Entropy: 0.0, values: [0, 64],  outcome: 1
+|   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: 0
+|   |   |   |   |--- Entropy: 0.0, values: [0, 156],  outcome: 1
+|   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: 0
+|   |   |--- Entropy: 0.8112781244591328, decision criteria: compactness error < 0.01466, values: [2 6]
+|   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: compactness error < 0.011179999999999999, values: [2 1]
+|   |   |   |   |   |--- Entropy: 0.0, values: [2, 0],  outcome: 0
+|   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: 1
+|   |   |   |   |--- Entropy: 0.0, values: [0, 5],  outcome: 1
 |   |--- Entropy: 0.907165767573082, decision criteria: mean texture < 19.915, values: [10 21]
-|   |   |   |--- Entropy: 0.2974722489192896, values: [ 1 18],  outcome: 1
-|   |   |   |--- Entropy: 0.8112781244591328, values: [9 3],  outcome: 0
+|   |   |   |--- Entropy: 0.2974722489192896, decision criteria: mean texture < 19.485, values: [ 1 18]
+|   |   |   |   |--- Entropy: 0.0, values: [0, 18],  outcome: 1
+|   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: 0
+|   |   |   |--- Entropy: 0.8112781244591328, decision criteria: worst area < 838.6, values: [9 3]
+|   |   |   |   |--- Entropy: 0.9709505944546686, decision criteria: compactness error < 0.031355, values: [2 3]
+|   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: mean area < 664.55, values: [2 1]
+|   |   |   |   |   |   |--- Entropy: 0.0, values: [2, 0],  outcome: 0
+|   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: 1
+|   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: 1
+|   |   |   |   |--- Entropy: 0.0, values: [6, 0],  outcome: 0
 |--- Entropy: 0.5173237070108054, decision criteria: worst perimeter < 114.44999999999999, values: [145  19]
 |   |   |--- Entropy: 0.9902246902198684, decision criteria: worst texture < 25.655, values: [24 19]
 |   |   |   |--- Entropy: 0.7553754125614287, decision criteria: concave points error < 0.014190000000000001, values: [ 5 18]
 |   |   |   |   |--- Entropy: 0.9798687566511528, decision criteria: area error < 31.299999999999997, values: [5 7]
-|   |   |   |   |   |--- Entropy: 0.7642045065086203, values: [2 7],  outcome: 1
+|   |   |   |   |   |--- Entropy: 0.7642045065086203, decision criteria: mean area < 612.4000000000001, values: [2 7]
+|   |   |   |   |   |   |--- Entropy: 1.0, decision criteria: area error < 25.270000000000003, values: [2 2]
+|   |   |   |   |   |   |   |--- Entropy: 0.9182958340544896, decision criteria: area error < 20.875, values: [1 2]
+|   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 2],  outcome: 1
+|   |   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: 0
+|   |   |   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: 0
+|   |   |   |   |   |   |--- Entropy: 0.0, values: [0, 4],  outcome: 1
 |   |   |   |   |   |--- Entropy: 0.0, values: [2, 0],  outcome: 0
 |   |   |   |   |--- Entropy: 0.0, values: [0, 10],  outcome: 1
-|   |   |   |--- Entropy: 0.28639695711595625, values: [19  1],  outcome: 0
+|   |   |   |--- Entropy: 0.28639695711595625, decision criteria: mean concavity < 0.08973, values: [19  1]
+|   |   |   |   |--- Entropy: 1.0, decision criteria: area error < 16.89, values: [1 1]
+|   |   |   |   |   |--- Entropy: 0.0, values: [1, 0],  outcome: 0
+|   |   |   |   |   |--- Entropy: 0.0, values: [0, 1],  outcome: 1
+|   |   |   |   |--- Entropy: 0.0, values: [17, 0],  outcome: 0
 |   |   |--- Entropy: 0.0, values: [120, 0],  outcome: 0

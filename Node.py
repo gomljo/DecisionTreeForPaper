@@ -1,7 +1,7 @@
 class Node:
 
     def __init__(self, Entropy=None, decision_criteria=None, match_index=None, samples=None, Values=None,
-                 decision_criteria_type=None, attribute=None, most_target_value=None, decision_criteria_value=None):
+                 decision_criteria_type=None, attribute=None, most_target_value=None, decision_criteria_value=None, decision_criteria_col=None):
         """
         디시전 트리의 각 노드들의 자료구조입니다.
         각 노드들이 가지는 정보는 아래와 같습니다.
@@ -21,6 +21,7 @@ class Node:
         # for prediction
         self.dcs_criteria_val = decision_criteria_value
         self.dcs_criteria_type = decision_criteria_type
+        self.dcs_criteria_col = decision_criteria_col
         self.Attribute_name = attribute
         self.target = most_target_value
         # graphviz

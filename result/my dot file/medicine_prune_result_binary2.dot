@@ -1,0 +1,795 @@
+digraph Tree {
+node [shape=box] ;0[label="Weight < 99.365129\nentropy = 2.801903387988731\nsamples = 1583\nvalue = [194 218 265 224 236 222 224]\nclass = Obesity_Type_I"] ;
+1[label="Weight < 61.3193265\nentropy = 2.3319959585521444\nsamples = 1032\nvalue = [194 218 176   2   0 222 220]\nclass = Overweight_Level_I"] ;
+0 -> 1 ;
+
+2[label="Height < 1.6602229999999998\nentropy = 1.1199910222439555\nsamples = 307\nvalue = [191 107   0   0   0   8   1]\nclass = Insufficient_Weight"] ;
+1 -> 2 ;
+
+3[label="Weight < 47.5\nentropy = 1.2649485437328245\nsamples = 169\nvalue = [71 89  0  0  0  8  1]\nclass = Normal_Weight"] ;
+2 -> 3 ;
+
+4[label="CAEC = Frequently\nentropy = 0.4178642624458584\nsamples = 71\nvalue = [65  6  0  0  0  0  0]\nclass = Insufficient_Weight"] ;
+3 -> 4 ;
+
+5[label="entropy = 0.0\nsamples = 42\nvalue = [42, 0, 0, 0, 0, 0, 0]\nclass = Insufficient_Weight"] ;
+4 -> 5 ;
+
+6[label="CAEC = Frequently\nentropy = 0.4220005168831531\nsamples = 70\nvalue = [64  6  0  0  0  0  0]\nclass = Insufficient_Weight"] ;
+4 -> 6 ;
+
+7[label="Age < 19.5\nentropy = 0.691289869405789\nsamples = 27\nvalue = [22  5  0  0  0  0  0]\nclass = Insufficient_Weight"] ;
+6 -> 7 ;
+
+8[label="FAF < 2.5\nentropy = 0.28639695711595625\nsamples = 20\nvalue = [19  1  0  0  0  0  0]\nclass = Insufficient_Weight"] ;
+7 -> 8 ;
+
+9[label="entropy = 0.0\nsamples = 19\nvalue = [19, 0, 0, 0, 0, 0, 0]\nclass = Insufficient_Weight"] ;
+8 -> 9 ;
+
+10[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+8 -> 10 ;
+
+11[label="CH2O < 2.5\nentropy = 0.9852281360342515\nsamples = 7\nvalue = [3 4 0 0 0 0 0]\nclass = Normal_Weight"] ;
+7 -> 11 ;
+
+12[label="Weight < 43.15\nentropy = 0.9182958340544896\nsamples = 6\nvalue = [2 4 0 0 0 0 0]\nclass = Normal_Weight"] ;
+11 -> 12 ;
+
+13[label="Age < 20.5\nentropy = 0.9182958340544896\nsamples = 3\nvalue = [2 1 0 0 0 0 0]\nclass = Insufficient_Weight"] ;
+12 -> 13 ;
+
+14[label="entropy = 0.0\nsamples = 2\nvalue = [2, 0, 0, 0, 0, 0, 0]\nclass = Insufficient_Weight"] ;
+13 -> 14 ;
+
+15[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+13 -> 15 ;
+
+16[label="entropy = 0.0\nsamples = 3\nvalue = [0, 3, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+12 -> 16 ;
+
+17[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0, 0, 0, 0, 0, 0]\nclass = Insufficient_Weight"] ;
+11 -> 17 ;
+
+18[label="FAF < 1.5\nentropy = 0.15935006268563445\nsamples = 43\nvalue = [42  1  0  0  0  0  0]\nclass = Insufficient_Weight"] ;
+6 -> 18 ;
+
+19[label="entropy = 0.0\nsamples = 42\nvalue = [42, 0, 0, 0, 0, 0, 0]\nclass = Insufficient_Weight"] ;
+18 -> 19 ;
+
+20[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+18 -> 20 ;
+
+21[label="Height < 1.5350000000000001\nentropy = 0.8122807848690685\nsamples = 98\nvalue = [ 6 83  0  0  0  8  1]\nclass = Normal_Weight"] ;
+3 -> 21 ;
+
+22[label="Weight < 55.2617405\nentropy = 1.2957378005380122\nsamples = 13\nvalue = [0 5 0 0 0 7 1]\nclass = Overweight_Level_I"] ;
+21 -> 22 ;
+
+23[label="CALC = Frequently\nentropy = 0.863120568566631\nsamples = 7\nvalue = [0 5 0 0 0 2 0]\nclass = Normal_Weight"] ;
+22 -> 23 ;
+
+24[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 1, 0]\nclass = Overweight_Level_I"] ;
+23 -> 24 ;
+
+25[label="Age < 18.5\nentropy = 0.9709505944546686\nsamples = 5\nvalue = [0 3 0 0 0 2 0]\nclass = Normal_Weight"] ;
+23 -> 25 ;
+
+26[label="FCVC < 2.5\nentropy = 0.9182958340544896\nsamples = 3\nvalue = [0 1 0 0 0 2 0]\nclass = Overweight_Level_I"] ;
+25 -> 26 ;
+
+27[label="entropy = 0.0\nsamples = 2\nvalue = [0, 0, 0, 0, 0, 2, 0]\nclass = Overweight_Level_I"] ;
+26 -> 27 ;
+
+28[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+26 -> 28 ;
+
+29[label="entropy = 0.0\nsamples = 2\nvalue = [0, 2, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+25 -> 29 ;
+
+30[label="Age < 21.0\nentropy = 0.6500224216483541\nsamples = 6\nvalue = [0 0 0 0 0 5 1]\nclass = Overweight_Level_I"] ;
+22 -> 30 ;
+
+31[label="entropy = 0.0\nsamples = 5\nvalue = [0, 0, 0, 0, 0, 5, 0]\nclass = Overweight_Level_I"] ;
+30 -> 31 ;
+
+32[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 0, 1]\nclass = Overweight_Level_II"] ;
+30 -> 32 ;
+
+33[label="Weight < 50.7123305\nentropy = 0.4591421352484981\nsamples = 85\nvalue = [ 6 78  0  0  0  1  0]\nclass = Normal_Weight"] ;
+21 -> 33 ;
+
+34[label="Height < 1.6284465\nentropy = 0.8453509366224364\nsamples = 22\nvalue = [ 6 16  0  0  0  0  0]\nclass = Normal_Weight"] ;
+33 -> 34 ;
+
+35[label="Height < 1.6054315\nentropy = 0.3227569588973982\nsamples = 17\nvalue = [ 1 16  0  0  0  0  0]\nclass = Normal_Weight"] ;
+34 -> 35 ;
+
+36[label="entropy = 0.0\nsamples = 16\nvalue = [0, 16, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+35 -> 36 ;
+
+37[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0, 0, 0, 0, 0, 0]\nclass = Insufficient_Weight"] ;
+35 -> 37 ;
+
+38[label="entropy = 0.0\nsamples = 5\nvalue = [5, 0, 0, 0, 0, 0, 0]\nclass = Insufficient_Weight"] ;
+34 -> 38 ;
+
+39[label="Age < 16.5\nentropy = 0.11759466565886476\nsamples = 63\nvalue = [ 0 62  0  0  0  1  0]\nclass = Normal_Weight"] ;
+33 -> 39 ;
+
+40[label="CH2O < 1.5\nentropy = 0.8112781244591328\nsamples = 4\nvalue = [0 3 0 0 0 1 0]\nclass = Normal_Weight"] ;
+39 -> 40 ;
+
+41[label="entropy = 0.0\nsamples = 3\nvalue = [0, 3, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+40 -> 41 ;
+
+42[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 1, 0]\nclass = Overweight_Level_I"] ;
+40 -> 42 ;
+
+43[label="entropy = 0.0\nsamples = 59\nvalue = [0, 59, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+39 -> 43 ;
+
+44[label="Weight < 55.1517085\nentropy = 0.5586293734521992\nsamples = 138\nvalue = [120  18   0   0   0   0   0]\nclass = Insufficient_Weight"] ;
+2 -> 44 ;
+
+45[label="CAEC = Always\nentropy = 0.2690553027246507\nsamples = 87\nvalue = [83  4  0  0  0  0  0]\nclass = Insufficient_Weight"] ;
+44 -> 45 ;
+
+46[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+45 -> 46 ;
+
+47[label="CAEC = Always\nentropy = 0.27138958750811115\nsamples = 86\nvalue = [82  4  0  0  0  0  0]\nclass = Insufficient_Weight"] ;
+45 -> 47 ;
+
+48[label="Age < 21.0\nentropy = 0.23868451135100135\nsamples = 51\nvalue = [49  2  0  0  0  0  0]\nclass = Insufficient_Weight"] ;
+47 -> 48 ;
+
+49[label="NCP < 3.5\nentropy = 0.14144054254182067\nsamples = 50\nvalue = [49  1  0  0  0  0  0]\nclass = Insufficient_Weight"] ;
+48 -> 49 ;
+
+50[label="entropy = 0.0\nsamples = 47\nvalue = [47, 0, 0, 0, 0, 0, 0]\nclass = Insufficient_Weight"] ;
+49 -> 50 ;
+
+51[label="Age < 19.0\nentropy = 0.9182958340544896\nsamples = 3\nvalue = [2 1 0 0 0 0 0]\nclass = Insufficient_Weight"] ;
+49 -> 51 ;
+
+52[label="Age < 17.5\nentropy = 1.0\nsamples = 2\nvalue = [1 1 0 0 0 0 0]\nclass = Insufficient_Weight"] ;
+51 -> 52 ;
+
+53[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0, 0, 0, 0, 0, 0]\nclass = Insufficient_Weight"] ;
+52 -> 53 ;
+
+54[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+52 -> 54 ;
+
+55[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0, 0, 0, 0, 0, 0]\nclass = Insufficient_Weight"] ;
+51 -> 55 ;
+
+56[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+48 -> 56 ;
+
+57[label="Weight < 54.99387\nentropy = 0.31599713297842463\nsamples = 35\nvalue = [33  2  0  0  0  0  0]\nclass = Insufficient_Weight"] ;
+47 -> 57 ;
+
+58[label="entropy = 0.0\nsamples = 33\nvalue = [33, 0, 0, 0, 0, 0, 0]\nclass = Insufficient_Weight"] ;
+57 -> 58 ;
+
+59[label="entropy = 0.0\nsamples = 2\nvalue = [0, 2, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+57 -> 59 ;
+
+60[label="Height < 1.7570449999999997\nentropy = 0.8478617451660525\nsamples = 51\nvalue = [37 14  0  0  0  0  0]\nclass = Insufficient_Weight"] ;
+44 -> 60 ;
+
+61[label="Height < 1.7518799999999999\nentropy = 0.41381685030363374\nsamples = 12\nvalue = [ 1 11  0  0  0  0  0]\nclass = Normal_Weight"] ;
+60 -> 61 ;
+
+62[label="entropy = 0.0\nsamples = 11\nvalue = [0, 11, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+61 -> 62 ;
+
+63[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0, 0, 0, 0, 0, 0]\nclass = Insufficient_Weight"] ;
+61 -> 63 ;
+
+64[label="FAF < 1.5\nentropy = 0.39124356362925566\nsamples = 39\nvalue = [36  3  0  0  0  0  0]\nclass = Insufficient_Weight"] ;
+60 -> 64 ;
+
+65[label="MTRANS = Automobile\nentropy = 1.0\nsamples = 6\nvalue = [3 3 0 0 0 0 0]\nclass = Insufficient_Weight"] ;
+64 -> 65 ;
+
+66[label="entropy = 0.0\nsamples = 3\nvalue = [3, 0, 0, 0, 0, 0, 0]\nclass = Insufficient_Weight"] ;
+65 -> 66 ;
+
+67[label="CH2O < 1.5\nentropy = 0.8112781244591328\nsamples = 4\nvalue = [3 1 0 0 0 0 0]\nclass = Insufficient_Weight"] ;
+65 -> 67 ;
+
+68[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+67 -> 68 ;
+
+69[label="entropy = 0.0\nsamples = 3\nvalue = [3, 0, 0, 0, 0, 0, 0]\nclass = Insufficient_Weight"] ;
+67 -> 69 ;
+
+70[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0, 0, 0, 0, 0, 0]\nclass = Insufficient_Weight"] ;
+64 -> 70 ;
+
+71[label="Weight < 76.063056\nentropy = 2.0078408887785835\nsamples = 725\nvalue = [  3 111 176   2   0 214 219]\nclass = Overweight_Level_II"] ;
+1 -> 71 ;
+
+72[label="Height < 1.6567155\nentropy = 1.5581973936797853\nsamples = 270\nvalue = [  3  95   3   0   0 134  35]\nclass = Overweight_Level_I"] ;
+71 -> 72 ;
+
+73[label="Height < 1.5999995\nentropy = 1.3160610758176203\nsamples = 139\nvalue = [ 0 11  3  0  0 90 35]\nclass = Overweight_Level_I"] ;
+72 -> 73 ;
+
+74[label="MTRANS = Public_Transportation\nentropy = 1.2280251232330124\nsamples = 56\nvalue = [ 0  0  3  0  0 22 31]\nclass = Overweight_Level_II"] ;
+73 -> 74 ;
+
+75[label="Weight < 66.4979045\nentropy = 0.8541802051521676\nsamples = 43\nvalue = [ 0  0  0  0  0 12 31]\nclass = Overweight_Level_II"] ;
+74 -> 75 ;
+
+76[label="Height < 1.5416835\nentropy = 0.9910760598382222\nsamples = 27\nvalue = [ 0  0  0  0  0 12 15]\nclass = Overweight_Level_II"] ;
+75 -> 76 ;
+
+77[label="Age < 20.5\nentropy = 0.5665095065529053\nsamples = 15\nvalue = [ 0  0  0  0  0  2 13]\nclass = Overweight_Level_II"] ;
+76 -> 77 ;
+
+78[label="Age < 19.5\nentropy = 1.0\nsamples = 4\nvalue = [0 0 0 0 0 2 2]\nclass = Overweight_Level_I"] ;
+77 -> 78 ;
+
+79[label="entropy = 0.0\nsamples = 2\nvalue = [0, 0, 0, 0, 0, 2, 0]\nclass = Overweight_Level_I"] ;
+78 -> 79 ;
+
+80[label="entropy = 0.0\nsamples = 2\nvalue = [0, 0, 0, 0, 0, 0, 2]\nclass = Overweight_Level_II"] ;
+78 -> 80 ;
+
+81[label="entropy = 0.0\nsamples = 11\nvalue = [0, 0, 0, 0, 0, 0, 11]\nclass = Overweight_Level_II"] ;
+77 -> 81 ;
+
+82[label="Height < 1.580482\nentropy = 0.6500224216483541\nsamples = 12\nvalue = [ 0  0  0  0  0 10  2]\nclass = Overweight_Level_I"] ;
+76 -> 82 ;
+
+83[label="Weight < 65.07090300000002\nentropy = 0.863120568566631\nsamples = 7\nvalue = [0 0 0 0 0 5 2]\nclass = Overweight_Level_I"] ;
+82 -> 83 ;
+
+84[label="Weight < 64.35241\nentropy = 0.6500224216483541\nsamples = 6\nvalue = [0 0 0 0 0 5 1]\nclass = Overweight_Level_I"] ;
+83 -> 84 ;
+
+85[label="None\nentropy = 0.0\nsamples = 5\nvalue = [0, 0, 0, 0, 0, 5, 0]\nclass = Overweight_Level_I"] ;
+84 -> 85 ;
+
+86[label="None\nentropy = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 0, 1]\nclass = Overweight_Level_II"] ;
+84 -> 86 ;
+
+87[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 0, 1]\nclass = Overweight_Level_II"] ;
+83 -> 87 ;
+
+88[label="entropy = 0.0\nsamples = 5\nvalue = [0, 0, 0, 0, 0, 5, 0]\nclass = Overweight_Level_I"] ;
+82 -> 88 ;
+
+89[label="entropy = 0.0\nsamples = 16\nvalue = [0, 0, 0, 0, 0, 0, 16]\nclass = Overweight_Level_II"] ;
+75 -> 89 ;
+
+90[label="CH2O < 1.5\nentropy = 0.7793498372920851\nsamples = 13\nvalue = [ 0  0  3  0  0 10  0]\nclass = Overweight_Level_I"] ;
+74 -> 90 ;
+
+91[label="Height < 1.538236\nentropy = 0.8112781244591328\nsamples = 4\nvalue = [0 0 3 0 0 1 0]\nclass = Obesity_Type_I"] ;
+90 -> 91 ;
+
+92[label="entropy = 0.0\nsamples = 3\nvalue = [0, 0, 3, 0, 0, 0, 0]\nclass = Obesity_Type_I"] ;
+91 -> 92 ;
+
+93[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 1, 0]\nclass = Overweight_Level_I"] ;
+91 -> 93 ;
+
+94[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 1, 0]\nclass = Overweight_Level_I"] ;
+90 -> 94 ;
+
+95[label="Weight < 67.0701835\nentropy = 0.8328560456838723\nsamples = 83\nvalue = [ 0 11  0  0  0 68  4]\nclass = Overweight_Level_I"] ;
+73 -> 95 ;
+
+96[label="Height < 1.6169605\nentropy = 0.9927744539878083\nsamples = 20\nvalue = [ 0 11  0  0  0  9  0]\nclass = Normal_Weight"] ;
+95 -> 96 ;
+
+97[label="CAEC = Sometimes\nentropy = 0.8112781244591328\nsamples = 12\nvalue = [0 3 0 0 0 9 0]\nclass = Overweight_Level_I"] ;
+96 -> 97 ;
+
+98[label="entropy = 0.0\nsamples = 9\nvalue = [0, 0, 0, 0, 0, 9, 0]\nclass = Overweight_Level_I"] ;
+97 -> 98 ;
+
+99[label="entropy = 0.0\nsamples = 3\nvalue = [0, 3, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+97 -> 99 ;
+
+100[label="entropy = 0.0\nsamples = 7\nvalue = [0, 7, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+96 -> 100 ;
+
+101[label="Weight < 74.9015785\nentropy = 0.3411538931451762\nsamples = 63\nvalue = [ 0  0  0  0  0 59  4]\nclass = Overweight_Level_I"] ;
+95 -> 101 ;
+
+102[label="FAF < 1.5\nentropy = 0.1222915970693747\nsamples = 60\nvalue = [ 0  0  0  0  0 59  1]\nclass = Overweight_Level_I"] ;
+101 -> 102 ;
+
+103[label="entropy = 0.0\nsamples = 59\nvalue = [0, 0, 0, 0, 0, 59, 0]\nclass = Overweight_Level_I"] ;
+102 -> 103 ;
+
+104[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 0, 1]\nclass = Overweight_Level_II"] ;
+102 -> 104 ;
+
+105[label="entropy = 0.0\nsamples = 2\nvalue = [0, 0, 0, 0, 0, 0, 2]\nclass = Overweight_Level_II"] ;
+101 -> 105 ;
+
+106[label="Weight < 72.37445149999999\nentropy = 1.064533366151035\nsamples = 131\nvalue = [ 3 84  0  0  0 44  0]\nclass = Normal_Weight"] ;
+72 -> 106 ;
+
+107[label="MTRANS = Automobile\nentropy = 0.49715018363696706\nsamples = 72\nvalue = [ 3 66  0  0  0  3  0]\nclass = Normal_Weight"] ;
+106 -> 107 ;
+
+108[label="entropy = 0.0\nsamples = 13\nvalue = [2, 8, 0, 0, 0, 3, 0]\nclass = Normal_Weight"] ;
+107 -> 108 ;
+
+109[label="MTRANS = Automobile\nentropy = 0.5426144887230294\nsamples = 64\nvalue = [ 3 58  0  0  0  3  0]\nclass = Normal_Weight"] ;
+107 -> 109 ;
+
+110[label="Height < 1.87\nentropy = 0.1485494904303482\nsamples = 47\nvalue = [ 1 46  0  0  0  0  0]\nclass = Normal_Weight"] ;
+109 -> 110 ;
+
+111[label="entropy = 0.0\nsamples = 46\nvalue = [0, 46, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+110 -> 111 ;
+
+112[label="entropy = 0.0\nsamples = 1\nvalue = [1, 0, 0, 0, 0, 0, 0]\nclass = Insufficient_Weight"] ;
+110 -> 112 ;
+
+113[label="CH2O < 1.5\nentropy = 1.1595547523787308\nsamples = 17\nvalue = [ 2 12  0  0  0  3  0]\nclass = Normal_Weight"] ;
+109 -> 113 ;
+
+114[label="Age < 30.0\nentropy = 0.9709505944546686\nsamples = 5\nvalue = [0 2 0 0 0 3 0]\nclass = Overweight_Level_I"] ;
+113 -> 114 ;
+
+115[label="Age < 25.5\nentropy = 0.9182958340544896\nsamples = 3\nvalue = [0 2 0 0 0 1 0]\nclass = Normal_Weight"] ;
+114 -> 115 ;
+
+116[label="entropy = 0.0\nsamples = 2\nvalue = [0, 2, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+115 -> 116 ;
+
+117[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 1, 0]\nclass = Overweight_Level_I"] ;
+115 -> 117 ;
+
+118[label="entropy = 0.0\nsamples = 2\nvalue = [0, 0, 0, 0, 0, 2, 0]\nclass = Overweight_Level_I"] ;
+114 -> 118 ;
+
+119[label="Weight < 65.75\nentropy = 0.6500224216483541\nsamples = 12\nvalue = [ 2 10  0  0  0  0  0]\nclass = Normal_Weight"] ;
+113 -> 119 ;
+
+120[label="TUE < 0.5\nentropy = 1.0\nsamples = 4\nvalue = [2 2 0 0 0 0 0]\nclass = Insufficient_Weight"] ;
+119 -> 120 ;
+
+121[label="entropy = 0.0\nsamples = 2\nvalue = [2, 0, 0, 0, 0, 0, 0]\nclass = Insufficient_Weight"] ;
+120 -> 121 ;
+
+122[label="entropy = 0.0\nsamples = 2\nvalue = [0, 2, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+120 -> 122 ;
+
+123[label="entropy = 0.0\nsamples = 8\nvalue = [0, 8, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+119 -> 123 ;
+
+124[label="Height < 1.745\nentropy = 0.887417927068569\nsamples = 59\nvalue = [ 0 18  0  0  0 41  0]\nclass = Overweight_Level_I"] ;
+106 -> 124 ;
+
+125[label="Height < 1.734998\nentropy = 0.3591016256485496\nsamples = 44\nvalue = [ 0  3  0  0  0 41  0]\nclass = Overweight_Level_I"] ;
+124 -> 125 ;
+
+126[label="entropy = 0.0\nsamples = 40\nvalue = [0, 0, 0, 0, 0, 40, 0]\nclass = Overweight_Level_I"] ;
+125 -> 126 ;
+
+127[label="Age < 27.5\nentropy = 0.8112781244591328\nsamples = 4\nvalue = [0 3 0 0 0 1 0]\nclass = Normal_Weight"] ;
+125 -> 127 ;
+
+128[label="entropy = 0.0\nsamples = 3\nvalue = [0, 3, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+127 -> 128 ;
+
+129[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 1, 0]\nclass = Overweight_Level_I"] ;
+127 -> 129 ;
+
+130[label="entropy = 0.0\nsamples = 15\nvalue = [0, 15, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+124 -> 130 ;
+
+131[label="Height < 1.7295885\nentropy = 1.7038318979725802\nsamples = 455\nvalue = [  0  16 173   2   0  80 184]\nclass = Overweight_Level_II"] ;
+71 -> 131 ;
+
+132[label="Height < 1.6500059999999999\nentropy = 1.0755622431566685\nsamples = 266\nvalue = [  0   0 149   2   0   1 114]\nclass = Obesity_Type_I"] ;
+131 -> 132 ;
+
+133[label="TUE < 1.5\nentropy = 0.5153777743249658\nsamples = 107\nvalue = [ 0  0 97  2  0  0  8]\nclass = Obesity_Type_I"] ;
+132 -> 133 ;
+
+134[label="Weight < 78.0151915\nentropy = 0.33757642250525227\nsamples = 99\nvalue = [ 0  0 94  2  0  0  3]\nclass = Obesity_Type_I"] ;
+133 -> 134 ;
+
+135[label="Height < 1.631897\nentropy = 0.6500224216483541\nsamples = 18\nvalue = [ 0  0 15  0  0  0  3]\nclass = Obesity_Type_I"] ;
+134 -> 135 ;
+
+136[label="Age < 44.0\nentropy = 0.3372900666170139\nsamples = 16\nvalue = [ 0  0 15  0  0  0  1]\nclass = Obesity_Type_I"] ;
+135 -> 136 ;
+
+137[label="entropy = 0.0\nsamples = 15\nvalue = [0, 0, 15, 0, 0, 0, 0]\nclass = Obesity_Type_I"] ;
+136 -> 137 ;
+
+138[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 0, 1]\nclass = Overweight_Level_II"] ;
+136 -> 138 ;
+
+139[label="entropy = 0.0\nsamples = 2\nvalue = [0, 0, 0, 0, 0, 0, 2]\nclass = Overweight_Level_II"] ;
+135 -> 139 ;
+
+140[label="NCP < 3.5\nentropy = 0.16702680404522807\nsamples = 81\nvalue = [ 0  0 79  2  0  0  0]\nclass = Obesity_Type_I"] ;
+134 -> 140 ;
+
+141[label="Weight < 96.29147950000001\nentropy = 0.09694460606247315\nsamples = 80\nvalue = [ 0  0 79  1  0  0  0]\nclass = Obesity_Type_I"] ;
+140 -> 141 ;
+
+142[label="entropy = 0.0\nsamples = 79\nvalue = [0, 0, 79, 0, 0, 0, 0]\nclass = Obesity_Type_I"] ;
+141 -> 142 ;
+
+143[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0, 0, 0]\nclass = Obesity_Type_II"] ;
+141 -> 143 ;
+
+144[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 0, 1, 0, 0, 0]\nclass = Obesity_Type_II"] ;
+140 -> 144 ;
+
+145[label="Height < 1.627831\nentropy = 0.954434002924965\nsamples = 8\nvalue = [0 0 3 0 0 0 5]\nclass = Overweight_Level_II"] ;
+133 -> 145 ;
+
+146[label="entropy = 0.0\nsamples = 2\nvalue = [0, 0, 2, 0, 0, 0, 0]\nclass = Obesity_Type_I"] ;
+145 -> 146 ;
+
+147[label="FCVC < 2.5\nentropy = 0.6500224216483541\nsamples = 6\nvalue = [0 0 1 0 0 0 5]\nclass = Overweight_Level_II"] ;
+145 -> 147 ;
+
+148[label="entropy = 0.0\nsamples = 5\nvalue = [0, 0, 0, 0, 0, 0, 5]\nclass = Overweight_Level_II"] ;
+147 -> 148 ;
+
+149[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0, 0, 0]\nclass = Obesity_Type_I"] ;
+147 -> 149 ;
+
+150[label="Weight < 85.53419249999999\nentropy = 0.9633079016551988\nsamples = 159\nvalue = [  0   0  52   0   0   1 106]\nclass = Overweight_Level_II"] ;
+132 -> 150 ;
+
+151[label="Height < 1.6710504999999998\nentropy = 0.3105729559759087\nsamples = 105\nvalue = [  0   0   4   0   0   1 100]\nclass = Overweight_Level_II"] ;
+150 -> 151 ;
+
+152[label="Weight < 82.5297765\nentropy = 0.7024665512903903\nsamples = 21\nvalue = [ 0  0  4  0  0  0 17]\nclass = Overweight_Level_II"] ;
+151 -> 152 ;
+
+153[label="Weight < 81.7285665\nentropy = 0.3095434291503252\nsamples = 18\nvalue = [ 0  0  1  0  0  0 17]\nclass = Overweight_Level_II"] ;
+152 -> 153 ;
+
+154[label="entropy = 0.0\nsamples = 17\nvalue = [0, 0, 0, 0, 0, 0, 17]\nclass = Overweight_Level_II"] ;
+153 -> 154 ;
+
+155[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0, 0, 0]\nclass = Obesity_Type_I"] ;
+153 -> 155 ;
+
+156[label="entropy = 0.0\nsamples = 3\nvalue = [0, 0, 3, 0, 0, 0, 0]\nclass = Obesity_Type_I"] ;
+152 -> 156 ;
+
+157[label="FAF < 2.5\nentropy = 0.09317131799548933\nsamples = 84\nvalue = [ 0  0  0  0  0  1 83]\nclass = Overweight_Level_II"] ;
+151 -> 157 ;
+
+158[label="entropy = 0.0\nsamples = 81\nvalue = [0, 0, 0, 0, 0, 0, 81]\nclass = Overweight_Level_II"] ;
+157 -> 158 ;
+
+159[label="Age < 37.0\nentropy = 0.9182958340544896\nsamples = 3\nvalue = [0 0 0 0 0 1 2]\nclass = Overweight_Level_II"] ;
+157 -> 159 ;
+
+160[label="entropy = 0.0\nsamples = 2\nvalue = [0, 0, 0, 0, 0, 0, 2]\nclass = Overweight_Level_II"] ;
+159 -> 160 ;
+
+161[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 1, 0]\nclass = Overweight_Level_I"] ;
+159 -> 161 ;
+
+162[label="Weight < 89.838743\nentropy = 0.5032583347756457\nsamples = 54\nvalue = [ 0  0 48  0  0  0  6]\nclass = Obesity_Type_I"] ;
+150 -> 162 ;
+
+163[label="Height < 1.7031745\nentropy = 0.9852281360342515\nsamples = 14\nvalue = [0 0 8 0 0 0 6]\nclass = Obesity_Type_I"] ;
+162 -> 163 ;
+
+164[label="Height < 1.6949999999999998\nentropy = 0.5032583347756457\nsamples = 9\nvalue = [0 0 8 0 0 0 1]\nclass = Obesity_Type_I"] ;
+163 -> 164 ;
+
+165[label="entropy = 0.0\nsamples = 8\nvalue = [0, 0, 8, 0, 0, 0, 0]\nclass = Obesity_Type_I"] ;
+164 -> 165 ;
+
+166[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 0, 1]\nclass = Overweight_Level_II"] ;
+164 -> 166 ;
+
+167[label="entropy = 0.0\nsamples = 5\nvalue = [0, 0, 0, 0, 0, 0, 5]\nclass = Overweight_Level_II"] ;
+163 -> 167 ;
+
+168[label="entropy = 0.0\nsamples = 40\nvalue = [0, 0, 40, 0, 0, 0, 0]\nclass = Obesity_Type_I"] ;
+162 -> 168 ;
+
+169[label="Weight < 91.0297975\nentropy = 1.7363821580335248\nsamples = 189\nvalue = [ 0 16 24  0  0 79 70]\nclass = Overweight_Level_I"] ;
+131 -> 169 ;
+
+170[label="Height < 1.806203\nentropy = 1.3551379162147068\nsamples = 143\nvalue = [ 0 16  0  0  0 79 48]\nclass = Overweight_Level_I"] ;
+169 -> 170 ;
+
+171[label="Weight < 82.9789045\nentropy = 1.2076705084698351\nsamples = 95\nvalue = [ 0  4  0  0  0 43 48]\nclass = Overweight_Level_II"] ;
+170 -> 171 ;
+
+172[label="Height < 1.79\nentropy = 0.8414307588625516\nsamples = 40\nvalue = [ 0  4  0  0  0 33  3]\nclass = Overweight_Level_I"] ;
+171 -> 172 ;
+
+173[label="Age < 27.0\nentropy = 0.5818886780345598\nsamples = 37\nvalue = [ 0  1  0  0  0 33  3]\nclass = Overweight_Level_I"] ;
+172 -> 173 ;
+
+174[label="Height < 1.779941\nentropy = 0.20062232431271465\nsamples = 32\nvalue = [ 0  1  0  0  0 31  0]\nclass = Overweight_Level_I"] ;
+173 -> 174 ;
+
+175[label="entropy = 0.0\nsamples = 30\nvalue = [0, 0, 0, 0, 0, 30, 0]\nclass = Overweight_Level_I"] ;
+174 -> 175 ;
+
+176[label="Age < 22.0\nentropy = 1.0\nsamples = 2\nvalue = [0 1 0 0 0 1 0]\nclass = Normal_Weight"] ;
+174 -> 176 ;
+
+177[label="None\nentropy = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 1, 0]\nclass = Overweight_Level_I"] ;
+176 -> 177 ;
+
+178[label="None\nentropy = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+176 -> 178 ;
+
+179[label="Age < 44.5\nentropy = 0.9709505944546686\nsamples = 5\nvalue = [0 0 0 0 0 2 3]\nclass = Overweight_Level_II"] ;
+173 -> 179 ;
+
+180[label="Weight < 82.28407899999999\nentropy = 0.9182958340544896\nsamples = 3\nvalue = [0 0 0 0 0 2 1]\nclass = Overweight_Level_I"] ;
+179 -> 180 ;
+
+181[label="None\nentropy = 0.0\nsamples = 2\nvalue = [0, 0, 0, 0, 0, 2, 0]\nclass = Overweight_Level_I"] ;
+180 -> 181 ;
+
+182[label="None\nentropy = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 0, 1]\nclass = Overweight_Level_II"] ;
+180 -> 182 ;
+
+183[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 0, 1]\nclass = Overweight_Level_II"] ;
+179 -> 183 ;
+
+184[label="entropy = 0.0\nsamples = 3\nvalue = [0, 3, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+172 -> 184 ;
+
+185[label="Height < 1.7921509999999998\nentropy = 0.6840384356390417\nsamples = 55\nvalue = [ 0  0  0  0  0 10 45]\nclass = Overweight_Level_II"] ;
+171 -> 185 ;
+
+186[label="Weight < 83.3099765\nentropy = 0.2811937964320427\nsamples = 41\nvalue = [ 0  0  0  0  0  2 39]\nclass = Overweight_Level_II"] ;
+185 -> 186 ;
+
+187[label="Age < 31.5\nentropy = 1.0\nsamples = 2\nvalue = [0 0 0 0 0 1 1]\nclass = Overweight_Level_I"] ;
+186 -> 187 ;
+
+188[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 1, 0]\nclass = Overweight_Level_I"] ;
+187 -> 188 ;
+
+189[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 0, 1]\nclass = Overweight_Level_II"] ;
+187 -> 189 ;
+
+190[label="Height < 1.7397565\nentropy = 0.17203694935311378\nsamples = 39\nvalue = [ 0  0  0  0  0  1 38]\nclass = Overweight_Level_II"] ;
+186 -> 190 ;
+
+191[label="Height < 1.7368320000000002\nentropy = 0.5916727785823275\nsamples = 7\nvalue = [0 0 0 0 0 1 6]\nclass = Overweight_Level_II"] ;
+190 -> 191 ;
+
+192[label="None\nentropy = 0.0\nsamples = 6\nvalue = [0, 0, 0, 0, 0, 0, 6]\nclass = Overweight_Level_II"] ;
+191 -> 192 ;
+
+193[label="None\nentropy = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 1, 0]\nclass = Overweight_Level_I"] ;
+191 -> 193 ;
+
+194[label="entropy = 0.0\nsamples = 31\nvalue = [0, 0, 0, 0, 0, 0, 31]\nclass = Overweight_Level_II"] ;
+190 -> 194 ;
+
+195[label="FAF < 0.5\nentropy = 0.9852281360342515\nsamples = 14\nvalue = [0 0 0 0 0 8 6]\nclass = Overweight_Level_I"] ;
+185 -> 195 ;
+
+196[label="NCP < 2.5\nentropy = 0.5916727785823275\nsamples = 7\nvalue = [0 0 0 0 0 1 6]\nclass = Overweight_Level_II"] ;
+195 -> 196 ;
+
+197[label="entropy = 0.0\nsamples = 5\nvalue = [0, 0, 0, 0, 0, 0, 5]\nclass = Overweight_Level_II"] ;
+196 -> 197 ;
+
+198[label="Age < 28.0\nentropy = 1.0\nsamples = 2\nvalue = [0 0 0 0 0 1 1]\nclass = Overweight_Level_I"] ;
+196 -> 198 ;
+
+199[label="None\nentropy = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 1, 0]\nclass = Overweight_Level_I"] ;
+198 -> 199 ;
+
+200[label="None\nentropy = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 0, 1]\nclass = Overweight_Level_II"] ;
+198 -> 200 ;
+
+201[label="entropy = 0.0\nsamples = 4\nvalue = [0, 0, 0, 0, 0, 4, 0]\nclass = Overweight_Level_I"] ;
+195 -> 201 ;
+
+202[label="CAEC = Sometimes\nentropy = 0.8112781244591328\nsamples = 48\nvalue = [ 0 12  0  0  0 36  0]\nclass = Overweight_Level_I"] ;
+170 -> 202 ;
+
+203[label="entropy = 0.0\nsamples = 38\nvalue = [0, 3, 0, 0, 0, 35, 0]\nclass = Overweight_Level_I"] ;
+202 -> 203 ;
+
+204[label="CAEC = Sometimes\nentropy = 0.7849920887641584\nsamples = 47\nvalue = [ 0 11  0  0  0 36  0]\nclass = Overweight_Level_I"] ;
+202 -> 204 ;
+
+205[label="Weight < 85.0397945\nentropy = 0.3984592740952357\nsamples = 38\nvalue = [ 0  3  0  0  0 35  0]\nclass = Overweight_Level_I"] ;
+204 -> 205 ;
+
+206[label="Weight < 84.5\nentropy = 1.0\nsamples = 6\nvalue = [0 3 0 0 0 3 0]\nclass = Normal_Weight"] ;
+205 -> 206 ;
+
+207[label="entropy = 0.0\nsamples = 3\nvalue = [0, 3, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+206 -> 207 ;
+
+208[label="entropy = 0.0\nsamples = 3\nvalue = [0, 0, 0, 0, 0, 3, 0]\nclass = Overweight_Level_I"] ;
+206 -> 208 ;
+
+209[label="entropy = 0.0\nsamples = 32\nvalue = [0, 0, 0, 0, 0, 32, 0]\nclass = Overweight_Level_I"] ;
+205 -> 209 ;
+
+210[label="NCP < 2.0\nentropy = 0.5032583347756457\nsamples = 9\nvalue = [0 8 0 0 0 1 0]\nclass = Normal_Weight"] ;
+204 -> 210 ;
+
+211[label="Age < 22.5\nentropy = 1.0\nsamples = 2\nvalue = [0 1 0 0 0 1 0]\nclass = Normal_Weight"] ;
+210 -> 211 ;
+
+212[label="entropy = 0.0\nsamples = 1\nvalue = [0, 1, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+211 -> 212 ;
+
+213[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 1, 0]\nclass = Overweight_Level_I"] ;
+211 -> 213 ;
+
+214[label="entropy = 0.0\nsamples = 7\nvalue = [0, 7, 0, 0, 0, 0, 0]\nclass = Normal_Weight"] ;
+210 -> 214 ;
+
+215[label="Height < 1.804135\nentropy = 0.9986359641585718\nsamples = 46\nvalue = [ 0  0 24  0  0  0 22]\nclass = Obesity_Type_I"] ;
+169 -> 215 ;
+
+216[label="CALC = Sometimes\nentropy = 0.5032583347756457\nsamples = 27\nvalue = [ 0  0 24  0  0  0  3]\nclass = Obesity_Type_I"] ;
+215 -> 216 ;
+
+217[label="entropy = 0.0\nsamples = 8\nvalue = [0, 0, 5, 0, 0, 0, 3]\nclass = Obesity_Type_I"] ;
+216 -> 217 ;
+
+218[label="CH2O < 2.5\nentropy = 0.8453509366224364\nsamples = 11\nvalue = [0 0 8 0 0 0 3]\nclass = Obesity_Type_I"] ;
+216 -> 218 ;
+
+219[label="entropy = 0.0\nsamples = 7\nvalue = [0, 0, 7, 0, 0, 0, 0]\nclass = Obesity_Type_I"] ;
+218 -> 219 ;
+
+220[label="Height < 1.793145\nentropy = 0.8112781244591328\nsamples = 4\nvalue = [0 0 1 0 0 0 3]\nclass = Overweight_Level_II"] ;
+218 -> 220 ;
+
+221[label="Age < 28.0\nentropy = 1.0\nsamples = 2\nvalue = [0 0 1 0 0 0 1]\nclass = Obesity_Type_I"] ;
+220 -> 221 ;
+
+222[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 0, 1]\nclass = Overweight_Level_II"] ;
+221 -> 222 ;
+
+223[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0, 0, 0]\nclass = Obesity_Type_I"] ;
+221 -> 223 ;
+
+224[label="entropy = 0.0\nsamples = 2\nvalue = [0, 0, 0, 0, 0, 0, 2]\nclass = Overweight_Level_II"] ;
+220 -> 224 ;
+
+225[label="entropy = 0.0\nsamples = 18\nvalue = [0, 0, 0, 0, 0, 0, 18]\nclass = Overweight_Level_II"] ;
+215 -> 225 ;
+
+226[label="FCVC < 2.5\nentropy = 1.5287681141335399\nsamples = 551\nvalue = [  0   0  89 222 236   0   4]\nclass = Obesity_Type_III"] ;
+0 -> 226 ;
+
+227[label="Weight < 109.82403500000001\nentropy = 0.9384187364627891\nsamples = 284\nvalue = [  0   0  76 204   0   0   4]\nclass = Obesity_Type_II"] ;
+226 -> 227 ;
+
+228[label="Height < 1.7542135\nentropy = 1.1563876339599142\nsamples = 104\nvalue = [ 0  0 62 38  0  0  4]\nclass = Obesity_Type_I"] ;
+227 -> 228 ;
+
+229[label="CH2O < 1.5\nentropy = 0.5185697317883058\nsamples = 43\nvalue = [ 0  0  5 38  0  0  0]\nclass = Obesity_Type_II"] ;
+228 -> 229 ;
+
+230[label="entropy = 0.0\nsamples = 38\nvalue = [0, 0, 0, 38, 0, 0, 0]\nclass = Obesity_Type_II"] ;
+229 -> 230 ;
+
+231[label="entropy = 0.0\nsamples = 5\nvalue = [0, 0, 5, 0, 0, 0, 0]\nclass = Obesity_Type_I"] ;
+229 -> 231 ;
+
+232[label="Height < 1.9085364999999999\nentropy = 0.3491843735073079\nsamples = 61\nvalue = [ 0  0 57  0  0  0  4]\nclass = Obesity_Type_I"] ;
+228 -> 232 ;
+
+233[label="Height < 1.874025\nentropy = 0.12565805017256743\nsamples = 58\nvalue = [ 0  0 57  0  0  0  1]\nclass = Obesity_Type_I"] ;
+232 -> 233 ;
+
+234[label="entropy = 0.0\nsamples = 57\nvalue = [0, 0, 57, 0, 0, 0, 0]\nclass = Obesity_Type_I"] ;
+233 -> 234 ;
+
+235[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 0, 0, 1]\nclass = Overweight_Level_II"] ;
+233 -> 235 ;
+
+236[label="entropy = 0.0\nsamples = 3\nvalue = [0, 0, 0, 0, 0, 0, 3]\nclass = Overweight_Level_II"] ;
+232 -> 236 ;
+
+237[label="Age < 21.5\nentropy = 0.3943002379274748\nsamples = 180\nvalue = [  0   0  14 166   0   0   0]\nclass = Obesity_Type_II"] ;
+227 -> 237 ;
+
+238[label="Height < 1.85239\nentropy = 0.7219280948873623\nsamples = 15\nvalue = [ 0  0 12  3  0  0  0]\nclass = Obesity_Type_I"] ;
+237 -> 238 ;
+
+239[label="CH2O < 2.5\nentropy = 0.8112781244591328\nsamples = 4\nvalue = [0 0 1 3 0 0 0]\nclass = Obesity_Type_II"] ;
+238 -> 239 ;
+
+240[label="entropy = 0.0\nsamples = 3\nvalue = [0, 0, 0, 3, 0, 0, 0]\nclass = Obesity_Type_II"] ;
+239 -> 240 ;
+
+241[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0, 0, 0]\nclass = Obesity_Type_I"] ;
+239 -> 241 ;
+
+242[label="entropy = 0.0\nsamples = 11\nvalue = [0, 0, 11, 0, 0, 0, 0]\nclass = Obesity_Type_I"] ;
+238 -> 242 ;
+
+243[label="CH2O < 2.5\nentropy = 0.09454834067208458\nsamples = 165\nvalue = [  0   0   2 163   0   0   0]\nclass = Obesity_Type_II"] ;
+237 -> 243 ;
+
+244[label="TUE < 1.5\nentropy = 0.05363316840061028\nsamples = 164\nvalue = [  0   0   1 163   0   0   0]\nclass = Obesity_Type_II"] ;
+243 -> 244 ;
+
+245[label="entropy = 0.0\nsamples = 163\nvalue = [0, 0, 0, 163, 0, 0, 0]\nclass = Obesity_Type_II"] ;
+244 -> 245 ;
+
+246[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0, 0, 0]\nclass = Obesity_Type_I"] ;
+244 -> 246 ;
+
+247[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0, 0, 0]\nclass = Obesity_Type_I"] ;
+243 -> 247 ;
+
+248[label="NCP < 2.5\nentropy = 0.6319763586119346\nsamples = 267\nvalue = [  0   0  13  18 236   0   0]\nclass = Obesity_Type_III"] ;
+226 -> 248 ;
+
+249[label="Age < 29.5\nentropy = 0.35335933502142136\nsamples = 15\nvalue = [ 0  0  1 14  0  0  0]\nclass = Obesity_Type_II"] ;
+248 -> 249 ;
+
+250[label="entropy = 0.0\nsamples = 14\nvalue = [0, 0, 0, 14, 0, 0, 0]\nclass = Obesity_Type_II"] ;
+249 -> 250 ;
+
+251[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0, 0, 0]\nclass = Obesity_Type_I"] ;
+249 -> 251 ;
+
+252[label="Height < 1.7554714999999999\nentropy = 0.3926636153330577\nsamples = 252\nvalue = [  0   0  12   4 236   0   0]\nclass = Obesity_Type_III"] ;
+248 -> 252 ;
+
+253[label="FAF < 0.5\nentropy = 0.04411928310443161\nsamples = 207\nvalue = [  0   0   1   0 206   0   0]\nclass = Obesity_Type_III"] ;
+252 -> 253 ;
+
+254[label="entropy = 0.0\nsamples = 148\nvalue = [0, 0, 0, 0, 148, 0, 0]\nclass = Obesity_Type_III"] ;
+253 -> 254 ;
+
+255[label="Age < 24.5\nentropy = 0.12394986771100759\nsamples = 59\nvalue = [ 0  0  1  0 58  0  0]\nclass = Obesity_Type_III"] ;
+253 -> 255 ;
+
+256[label="entropy = 0.0\nsamples = 58\nvalue = [0, 0, 0, 0, 58, 0, 0]\nclass = Obesity_Type_III"] ;
+255 -> 256 ;
+
+257[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 1, 0, 0, 0, 0]\nclass = Obesity_Type_I"] ;
+255 -> 257 ;
+
+258[label="Weight < 133.879565\nentropy = 1.197176081368212\nsamples = 45\nvalue = [ 0  0 11  4 30  0  0]\nclass = Obesity_Type_III"] ;
+252 -> 258 ;
+
+259[label="CH2O < 2.5\nentropy = 1.1216407621868583\nsamples = 16\nvalue = [ 0  0 11  4  1  0  0]\nclass = Obesity_Type_I"] ;
+258 -> 259 ;
+
+260[label="Weight < 121.4352505\nentropy = 0.41381685030363374\nsamples = 12\nvalue = [ 0  0 11  0  1  0  0]\nclass = Obesity_Type_I"] ;
+259 -> 260 ;
+
+261[label="entropy = 0.0\nsamples = 11\nvalue = [0, 0, 11, 0, 0, 0, 0]\nclass = Obesity_Type_I"] ;
+260 -> 261 ;
+
+262[label="entropy = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1, 0, 0]\nclass = Obesity_Type_III"] ;
+260 -> 262 ;
+
+263[label="entropy = 0.0\nsamples = 4\nvalue = [0, 0, 0, 4, 0, 0, 0]\nclass = Obesity_Type_II"] ;
+259 -> 263 ;
+
+264[label="entropy = 0.0\nsamples = 29\nvalue = [0, 0, 0, 0, 29, 0, 0]\nclass = Obesity_Type_III"] ;
+258 -> 264 ;
+
+}
