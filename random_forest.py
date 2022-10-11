@@ -37,11 +37,7 @@ class Random_Forest:
     def fit(self):
 
         for iter in range(self.num_of_estimators):
-            print(iter)
             self.classifiers[iter].build()
-            # print(self.classifiers[iter].dtree)
-            # self.classifiers[iter].prune()
-            # print(self.classifiers[iter].best_tree)
             self.classifiers[iter].traverse_tree(file_name='result\\my log file\\_result{}.txt'.format(iter))
             self.classifiers[iter].traverse_tree_make_graph_count(classifier=self.classifiers[iter].dtree)
             self.classifiers[iter].traverse_tree_make_graph(file_name='result\\my log file\\_result{}.dot'.format(iter))
@@ -51,13 +47,14 @@ class Random_Forest:
     def predict(self, test_Data):
         y_pred = list()
         y_pred_temp = list()
+
         for tree in self.classifiers:
 
             y_pred_temp.append(tree.predict(test_Data))
         y_pred_temp = np.array(y_pred_temp).transpose()
+
         for r in range(y_pred_temp.shape[0]):
             y_pred.append(max(list(y_pred_temp[r]), key=list(y_pred_temp[r]).count))
-        print(y_pred)
 
         return y_pred
 

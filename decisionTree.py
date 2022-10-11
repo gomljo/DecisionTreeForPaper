@@ -3,32 +3,33 @@ from ccp import *
 from common import *
 
 
-# decision tree 구성 시에 고려해야할 것
+# Decision tree
 
-# 1. tree building
+# 1. Tree building
 
-    #   1-1. calculate entropy and information gain
+# 1.1. Calculate entropy and information gain
+# 1.1.1. Calculate entropy
+# 1.1.2. Calculate information gain
 
-        #   1-1-1. binary partition
-        #   1-1-2. multi partition
+# 1.2. Partition of numerical values
+# 1.2.1. Select column and value that have lower entropy
 
-    #   1-2. partition of continuous values
+# 1.3. Partition of categorical values
+# 1.3.1. Select column and value that have lower entropy
 
-        #   1-2-1.
-        #   1-2-2.
-        #   1-2-3.
+# 2. Pruning
 
-# 2. pruning
-    # 2-1. pre-pruning(Decision tree's parameter controll)
+# 2.1. Pre-pruning(Decision tree's hyperparameter control)
 
-        # 2-1-1. controll tree depth
-        # 2-1-2. controll node's minimum samples
-        # 2-1-3. controll number of samples when parent node do partition
+# 2.1.1. Control tree depth
+# 2.1.2. Control node's minimum samples
+# 2.1.3. Control number of samples when parent node do partition
 
-    # 2-2 post-pruning(build best tree with defensing overfitting)
-        # 2-2-1. cost complexity pruning
+# 2.2 Post-pruning(build best tree with defensing over-fitting)
+# 2.2.1. cost complexity pruning(ccp)
 
-# 3. make decision tree to Ensemble model
+# 3. Make decision tree to Ensemble model
+# 3.1. Build random forest
 
 class DecisionTreeClassifier_OWN:
 
@@ -54,7 +55,6 @@ class DecisionTreeClassifier_OWN:
 
         # data
         self.data = self.raw_data[self.raw_data.columns.difference([outComeLabel])]
-        print(self.data)
         self.data_cols = list(self.data.columns)
 
         # for cross validation set
@@ -69,7 +69,7 @@ class DecisionTreeClassifier_OWN:
         self.effective_alphas = list()
 
     def calc_entropy(self, data):
-        """이 함수는 엔트로피를 구하는 함수입니다."""
+        """calculate entropy"""
         entropy = 0
         data_col_value = set(data)
 
@@ -82,7 +82,7 @@ class DecisionTreeClassifier_OWN:
         return entropy
 
     def calc_continuous_value_information_gain(self, data, parent_entropy):
-        """이 함수는 연속적인 값들을 가지는 열의 엔트로피를 구하기 위한 메소드입니다."""
+        """This function finds the entropy of a column with continuous values."""
         eps = 0.1 ** 10
         continuous_info_gain = 0
         partition_data = [[], []]
@@ -94,6 +94,7 @@ class DecisionTreeClassifier_OWN:
         sorted_target_label = self.target.loc[data.sort_values().index]
         sorted_data = data.sort_values()
         dcs_criteria = 0
+
         # Help to find discontinuity index
         idx = list(data.sort_values().index)
 
@@ -104,8 +105,6 @@ class DecisionTreeClassifier_OWN:
         op = sorted_target_label.iloc[0]
 
         # find discontinuity index from data
-        # print(len(sorted_target_label))
-
         for i in range(1, len(sorted_target_label)):
 
             # if op and next index's value does not match, change op to next index's value
@@ -115,21 +114,17 @@ class DecisionTreeClassifier_OWN:
                 if len(sorted_data.loc[sorted_data > sorted_data[idx[i]]]) == 0:
 
                     if len(set(sorted_data.loc[sorted_data <= sorted_data[idx[i]]])) == 1:
-
                         boundary_values.append((sorted_data.loc[sorted_data == sorted_data[idx[i]]].iloc[0]))
-
                     else:
-
                         boundary_values.append((sorted_data.loc[sorted_data < sorted_data[idx[i]]].iloc[-1] + sorted_data.loc[sorted_data >= sorted_data[idx[i]]].iloc[0])/2)
-
                 else:
-
                     boundary_values.append((sorted_data[idx[i]] + sorted_data.loc[sorted_data > sorted_data[idx[i]]].iloc[0])/2)
         boundary_values = sorted(list(set(boundary_values)))
 
         # calc entropy each discontinuity point
         iters = len(boundary_values)
         partition_idx = [[], []]
+
         for iter in range(iters):
 
             values = []
@@ -174,17 +169,17 @@ class DecisionTreeClassifier_OWN:
     def calc_non_continuous_value_information_gain(self, data, parent_entropy):
         """이 함수는 연속적인 값들을 가지는 열의 엔트로피를 구하기 위한 메소드입니다."""
 
-
-        # 불연속적인 열들의 Information gain값을 저장하는 변수
+        # Information gain values of discrete columns
         non_continuous_info_gain = 0
 
         partition_idx_final = None
         dcs_criteria_final = None
         values_final = None
 
-        # 부모노드에서 decision criteria에 따라서 분기후 좌측 자식노드와 우측 자식노드에 해당하는 데이터의 pandas 인덱스를 저장하는 변수
+        # Variable that stores the pandas index of the data corresponding to the left child node
+        # and the right child node after branching according to the decision criteria in the parent node
         partition_data = [[], []]
-        #
+
         subset_weight = [[], []]
 
         partition_idx = [[],[]]
@@ -192,6 +187,7 @@ class DecisionTreeClassifier_OWN:
         part_entropy = np.zeros(len(self.target_col_value))
 
         cols = sorted(list(set(data)))
+
         if len(set(cols)) == 2:
             cols = cols[0]
         for col in cols:
@@ -216,7 +212,7 @@ class DecisionTreeClassifier_OWN:
 
             partition_data[0], partition_data[1] = left_data, right_data
             subset_weight[0], subset_weight[1] = subset_left_weight, subset_right_weight
-            # values = []
+
             for idx_i_g, part_data in enumerate(partition_data):
                 temp = []
                 for idx_en, val in enumerate(self.target_col_value):
@@ -270,7 +266,7 @@ class DecisionTreeClassifier_OWN:
         return part_col, child_decision_criteria, part_index, child_values
 
     def partition(self, node=None):
-        # print('partition')
+
         total_rows = self.workQueue.pop()
 
         target_label = self.target.loc[node.match_index][self.target_col]
@@ -350,12 +346,10 @@ class DecisionTreeClassifier_OWN:
         for data_idx in range(len(test_data)):
             index = 0
             data = test_data.iloc[data_idx]
-            # print(data)
+
             while True:
 
-                # print(index, self.best_tree[index].dcs_criteria)
                 if (tree[index].dcs_criteria is None) and (tree[index].classes is not None):
-                    # print(self.best_tree[index].target)
                     pred_y.append(tree[index].target)
                     break
                 if tree[index].dcs_criteria_type == 'numeric':
@@ -419,10 +413,9 @@ class DecisionTreeClassifier_OWN:
 
         return STACK.pop(), top - 1
 
-    def traverse_tree_make_graph_count(self, node_index=0,file_name=None, classifier=None, count=0):
+    def traverse_tree_make_graph_count(self, node_index=0, file_name=None, classifier=None, count=0):
         eps = 0.1
 
-        # level = 0
         tree = classifier
         top = -1
         stack = list()
@@ -621,7 +614,6 @@ class DecisionTreeClassifier_OWN:
         self.delete_subtree(node_index=right_node_index)
 
     def prune(self, node_index=0):
-        # effective_alpha_temp = np.finfo(np.float64).max
         self.effective_alpha = np.finfo(np.float64).max
         alpha = 0
         cnt = 0
@@ -659,12 +651,6 @@ class DecisionTreeClassifier_OWN:
                     else:
                         min_alpha.append(alpha_final[iter])
                     iter += 1
-
-            # delete node by cost complexity pruning
-            # for m_alp in min_alpha:
-            #     print(m_alp)
-            # print(np.round(min_alpha[0].alpha, 2))
-            # print(self.dtree[min_alpha[0].node_idx])
             if np.round(min_alpha[0].alpha, 2) == 0.0:
                 self.best_tree = self.dtree.copy()
                 break
@@ -691,7 +677,6 @@ class DecisionTreeClassifier_OWN:
 
     def feature_importance(self, is_prune=False):
 
-        # tree = None
         f_i = np.zeros(len(self.data_cols))
         total = 0
         if is_prune:

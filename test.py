@@ -73,16 +73,6 @@ class test_result:
 pd.set_option('display.max_columns', 500)
 Data = pd.read_csv(
     r'G:\내 드라이브\DECISIONTREE\ObesityDataSet_raw_and_data_sinthetic (2)\ObesityDataSet_raw_and_data_sinthetic.csv')
-# Data = label_processing(Data,7)
-# s_data = convert_string_to_numeric(Data)
-# # print(s_data)
-#
-# s_data = s_data.astype({'Age': 'int', 'FCVC': 'int', 'NCP': 'int', 'CH2O': 'int', 'FAF': 'int', 'TUE': 'int'})
-# train_x, test_x, train_y, test_y = train_test_split(s_data.iloc[:,:-1], s_data['NObeyesdad'], random_state=0, shuffle=True)
-# sci_clf = DecisionTreeClassifier(criterion='entropy')
-# sci_clf.fit(train_x,train_y)
-#
-# export_graphviz(sci_clf, out_file='result/scikit-learn dot/'+' result_obesity7.dot', feature_names=list(s_data.columns)[:-1])
 
 data = label_processing(Data,7)
 data = data.astype({'Age': 'int', 'FCVC': 'int', 'NCP': 'int', 'CH2O': 'int', 'FAF': 'int', 'TUE': 'int'})
@@ -91,26 +81,6 @@ train_data = pd.merge(train_x, train_y, left_index=True, right_index=True)
 clf = DecisionTreeClassifier_OWN(DATA=train_data, outComeLabel='NObeyesdad')
 clf.build()
 
-
-# f_i = clf.feature_importance()
-# print(clf.data_cols)
-# print(f_i)
-# f_i_ = dict()
-# for i, col in enumerate(clf.data_cols):
-#     f_i_[col] = f_i[i]
-#
-# f_i_ = sorted(f_i_.items(), key=operator.itemgetter(1))
-#
-# res = dict((x,y) for x,y in f_i_)
-#
-#
-#
-# print(res)
-# plt.barh(np.arange(len(clf.data_cols)), res.values())
-# plt.yticks(np.arange(len(clf.data_cols)), res.keys(), fontsize=15)
-# plt.ylabel('features', fontsize=20)
-# plt.xlabel('feature importance when 7 classes classified', fontsize=20)
-# plt.show()
 clf.prune()
 y_pred_train = clf.predict(train_x, is_prune=True)
 
@@ -122,30 +92,3 @@ print(confusion_matrix(test_y, y_pred))
 print(f1_score(test_y, y_pred, average='macro'))
 print(precision_score(test_y, y_pred,average='macro'))
 print(recall_score(test_y, y_pred,average='macro'))
-# data = data.astype({'Age': 'int', 'FCVC': 'int', 'NCP': 'int', 'CH2O': 'int', 'FAF': 'int', 'TUE': 'int'})
-#
-# classes = [2,3,7]
-# acc = []
-#
-# for i in range(3):
-#
-#     data = label_processing(Data,classes[i])
-#     data = data.astype({'Age': 'int', 'FCVC': 'int', 'NCP': 'int', 'CH2O': 'int', 'FAF': 'int', 'TUE': 'int'})
-#     train_x, test_x, train_y, test_y = train_test_split(data.iloc[:, :-1], data['NObeyesdad'], random_state=0, shuffle=True)
-#     train_data = pd.merge(train_x, train_y, left_index=True, right_index=True)
-#     clf = DecisionTreeClassifier_OWN(DATA=train_data, outComeLabel='NObeyesdad')
-#     clf.build()
-#     clf.prune()
-#     y_pred = clf.predict(test_x, is_prune=True)
-#     acc.append(accuracy_score(test_y, y_pred)*100)
-#     print(accuracy_score(test_y, y_pred))
-#     clf.traverse_tree_make_graph_count(classifier=clf.dtree)
-#     clf.traverse_tree_make_graph(file_name='result\\my dot file\\'+'medicine_prune_result_binary{}.dot'.format(i))
-
-# plt.plot(0, acc[0], label='2 classes')
-# plt.plot(1, acc[1], label='3 classes')
-# plt.plot(2, acc[2], label='7 classes')
-# plt.legend()
-# plt.xticks([0,1,2], ['2 classes', '3 classes', '7 classes'])
-# plt.grid()
-# plt.show()
